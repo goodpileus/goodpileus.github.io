@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tower</title>
+  <style>
+    body {
+      margin:0;
+      padding:0;
+      background:rgb(71,102,66);
+    }
+
+    .parallax {
+        /* The image used */
+        background-image: url("particles5.gif");
+
+        /* Set a specific height */
+        min-height: 4000px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size:300px;
+        /* background-size: cover; */
+        filter:blur(0px);
+    }
+    .windows {
+      min-height:4000px;
+      width:100%;
+      background-image:url(windows.png);
+      background-size:100%;
+      font-size:36px;
+      position:absolute;
+      top:0;
+    }
+  </style>
+</head>
+<body>
+  <div class="parallax"></div>
+  <div class="windows">
+</div>
+
+</body>
+</html>

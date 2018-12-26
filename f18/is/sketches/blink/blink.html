@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>blink</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+        <style>
+            html {
+                background: rgb(203,202,202);
+            }
+            body {
+              margin:0;
+            }
+
+            @keyframes spin {
+                0% {transform: rotate(0)}
+                100% {transform: rotate(360deg);}
+            }
+
+            @keyframes color {
+
+                0% { opacity: 0; } /* Turn off */
+                .001% { opacity: 1; }
+
+                /* Keep off state for a short period */
+
+                50.999% { opacity: 1; } /* Turn back on */
+                51% { opacity: 0; }
+                100% {opacity:0; }
+            }
+
+            @keyframes color2 {
+                0% { opacity: 1; } /* Turn off */
+                .001% { opacity: 0; }
+
+                /* Keep off state for a short period */
+
+                50.999% { opacity: 0; } /* Turn back on */
+                51% { opacity: 1; }
+                100% {opacity:1; }
+            }
+            .bigbox {
+                display:flex;
+                flex-flow:row wrap;
+                position:fixed;
+                /* top:50vh;
+                left:50vw;
+                transform: translate(-50vw, -50vh); */
+                width:100vw;
+                height:100vh;
+                z-index:-1;
+            }
+
+            .spin {
+                /* animation: spin linear 4s infinite; */
+            }
+
+            .square {
+                width:9.09%;
+                /* height:12.5%; */
+            }
+
+            .box {
+                background: black;
+            }
+
+            .a {
+              /* animation: color2 alternate ease-in-out 10s infinite; */
+            }
+
+            .b {
+              animation: color alternate ease-in-out 5s infinite;
+            }
+            .c {
+              animation: color2 alternate ease-in-out 5s infinite;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="bigbox">
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box b square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box b square"></div>
+            <div class="box b square"></div>
+            <div class="box c square"></div>
+            <div class="box b square"></div>
+            <div class="box b square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+
+            <div class="box a square"></div>
+            <div class="box c square"></div>
+            <div class="box c square"></div>
+            <div class="box c square"></div>
+            <div class="box c square"></div>
+            <div class="box c square"></div>
+            <div class="box c square"></div>
+            <div class="box c square"></div>
+            <div class="box c square"></div>
+            <div class="box c square"></div>
+            <div class="box a square"></div>
+
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box b square"></div>
+            <div class="box b square"></div>
+            <div class="box c square"></div>
+            <div class="box b square"></div>
+            <div class="box b square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box b square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+            <div class="box a square"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>mash</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+        <style>
+            html {
+                background: rgb(255,255,255);
+                animation: color 10s infinite alternate;
+            }
+
+            @keyframes color {
+              0% {background:rgb(200,200,200);}
+              100% {background:rgb(64,64,64);}
+            }
+
+            body {
+              background-image: url(particles5.gif);
+              background-size: 180px;
+              /* margin:2rem; */
+              height: 100vh;
+              overflow: hidden;
+              /* margin:0; */
+            }
+
+            img {
+              max-width: 100%;
+              min-width: 50vw;
+              /* width:60vw; */
+              min-height: 50vh;
+              max-height:100%;
+              position:fixed;
+            }
+
+            .l {
+              left:0;
+              /* max-width: 100vmax; */
+            }
+
+            .r {
+              right:0;
+            }
+
+            .t {
+              top:0;
+            }
+
+            .b {
+              bottom:0;
+            }
+
+            .container {
+              height:100%;
+              width:100%;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              /* justify-content: space-between; */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+          <img class="l t" src="earth.gif" alt="">
+          <img class="r t" src="earth2.gif" alt="">
+          <img class="l b" src="earth3.gif" alt="">
+          <img class="r b" src="earth4.gif" alt="">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>The Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/flickity.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Work+Sans:400,700" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="load"></div>
+        <div class="carousel--wrap galleryRoom">
+
+            <div class="nav--wrap">
+              <a href="index.html"><div class="nav-restart">
+                <span>restart<span>
+              </div></a>
+
+              <div class="dest prev-dest">To your Profile Room</div>
+              <div class="dest next-dest">Through the Strange Door</div>
+            </div>
+
+            <div class="nav-info">
+                  <div id="Btn" class="navBtn">
+                    <img class="info" src="img/ui/info.svg" alt="">
+                    <img class="info" src="img/ui/info_hover.svg" alt="">
+                  </div>
+            </div>
+
+            <div class="carousel">
+
+                <div class="carousel-cell navP prev-panel">
+                    <a class="navP-wrap" href="profile.html">
+                        <span>&larr;</span>
+                    </a>
+                </div>
+
+              <!-- Portrait 1 -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/gallery/gallery1.1.svg" alt="">
+                    </div>
+                    <div class="marquee galleryMarquee">
+                        <span> @johnathan316 left a comment on your photo: "The end is near!" </span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                        <span> &nbsp; &nbsp;  @dark_trilobite liked your photo!</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                        <span> &nbsp; &nbsp; @spiderboyfriend2 liked your photo!</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Ad Case -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/gallery/gallery2.1.svg" alt="">
+                    </div>
+                    <div class="marquee galleryMarquee">
+                        <span> @sad_mazda left a comment on your photo: "follow for follow pls?"</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                        <span> &nbsp; &nbsp; @trapstardon left a comment on your photo: "where can I buy anesthesia?"</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Portrait 2 -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/gallery/gallery3.2.svg" alt="">
+                    </div>
+                    <div class="marquee galleryMarquee">
+                        <span> @pepsi_disciple liked your photo!</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                        <span> &nbsp; &nbsp;@carmensanfransisco left a comment on your photo: "love this"</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                        <span> &nbsp; &nbsp;@nazi liked your photo!</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Portrait 3 -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/gallery/gallery5.4.svg" alt="">
+                    </div>
+                    <div class="marquee galleryMarquee">
+                        <span> @karen4 left a comment on your photo: "this takes me waaay back! we were so young!"</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                        <span> &nbsp; &nbsp;@mark_z liked your photo! &nbsp;</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                        <span> &nbsp; &nbsp;@xXlord_danielXx left a comment on your photo: "i hate you"</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Door -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/gallery/gallery4.1.svg" alt="">
+                    </div>
+                    <div class="marquee galleryMarquee">
+                          <span> Looks like there's no new images to show you right now.&nbsp;</span>
+                          <span> Be sure to check back soon. There's so much more to see.</span>
+                          <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <div class="carousel-cell navP next-panel">
+                    <a class="navP-wrap" href="hellstairs.html">
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <img class="modal-head" src="img/ui/frame.svg" alt="">
+            <div class="modal-body">
+              <p class="centerT">This is <span class="blueT">The Gallery.</span></p>
+              <p>When you need your ceaseless visual information fix, this is the place to go. Day after day, minute after minute, the images will continue to surge forth.</p>
+              <p>Alongside notifications, the image feed is an essential part of your digital sustenance. Don't forget to visit here at least once a day.</p>
+            </div>
+            <div class="modalBtn">
+              <p>okay</p>
+            </div>
+          </div>
+
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
+        <script src="js/jquery.marquee.min.js"></script>
+        <script src="js/typeit.min.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>

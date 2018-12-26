@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+  background:black;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /*background:rgb(65,84,99);*/
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+  overflow:hidden;
+}

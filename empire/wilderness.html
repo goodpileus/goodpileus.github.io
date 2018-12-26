@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Limits</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/flickity.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Work+Sans:400,700" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="load"></div>
+        <div class="carousel--wrap wildernessRoom">
+
+            <div class="nav--wrap">
+                <a href="index.html"><div class="nav-restart">
+                  <span>restart<span>
+                </div></a>
+
+                <div class="dest prev-dest">To Throne Room</div>
+                <div class="dest next-dest">Leave the Empire?</div>
+            </div>
+
+            <div class="nav-info">
+                  <div id="Btn" class="navBtn">
+                    <img class="info" src="img/ui/info.svg" alt="">
+                    <img class="info" src="img/ui/info_hover.svg" alt="">
+                  </div>
+            </div>
+
+            <div class="carousel">
+
+                <div class="carousel-cell navP prev-panel">
+                    <a class="navP-wrap" href="throne.html">
+                        <span>&larr;</span>
+                    </a>
+                </div>
+
+              <!-- ? -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/wilderness/wild1.1.svg" alt="">
+                    </div>
+                    <div class="marquee wildernessMarquee">
+                        <span> &nbsp;</span>
+                    </div>
+                </div>
+
+                <!-- ? -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/wilderness/wild2.1.svg" alt="">
+                    </div>
+                    <div class="marquee wildernessMarquee">
+                        <span> &nbsp;</span>
+                    </div>
+                </div>
+
+                <!-- ? -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/wilderness/wild3.1.svg" alt="">
+                    </div>
+                    <div class="marquee wildernessMarquee">
+                        <span> &nbsp;</span>
+                    </div>
+                </div>
+
+                <!-- Door -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/wilderness/wild4.1.svg" alt="">
+                    </div>
+                    <div class="marquee wildernessMarquee">
+                        <span> &nbsp;</span>
+                    </div>
+                </div>
+
+                <div id="finalBtn" class="carousel-cell navP next-panel">
+                    <a class="navP-wrap" href="#">
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <img class="modal-head" src="img/ui/flower.svg" alt="">
+            <div class="modal-body">
+              <p class="centerT">These are the <span class="blueT">Limits of the Empire</span>.</p>
+              <p>This land will soon be totally integrated into the Empire's enterprise. It will be transformed from this useless wilderness and turned into some form of valuable product or service. It will be a brand new place to spend money and entertain yourself.</p>
+              <p>Surrounding the Empire is a great, ever-expanding wall. Be extremely wary of crossing this threshold. </p>
+              <p>The difference between <em class="greenT">inside</em> and <em class="redT">outside</em> is vast.</p>
+            </div>
+            <div class="modalBtn">
+              <p>okay</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="finalModal" class="modal">
+
+          <div class="modal-content modal--warn">
+            <img class="modal-head" src="img/ui/warn.svg" alt="">
+            <div class="modal-body">
+              <p class="centerT redT">Oh no!</p>
+              <p class="centerT">You're about to leave the empire.</p>
+              <p>We strongly suggest that you don't. Beyond the Empire lies a world devoid of convenience. It is filled with danger and sluggishness. You will have no one to protect you, no one to suggest things for you.</p>
+              <p class="centerT">Are you sure?</p>
+            </div>
+            <a href="end.html"><div class="lastBtn exitModalBtn">
+              <p>yes</p>
+            </div></a>
+
+            <div class="lastBtn finalModalBtn">
+              <p>no</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
+        <script src="js/jquery.marquee.min.js"></script>
+        <script src="js/typeit.min.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/finalmodal.js"></script>
+    </body>
+</html>

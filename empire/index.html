@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Portal to Empire</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/flickity.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Work+Sans:400,700" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="load"></div>
+        <div class="options--wrap endRoom">
+            <div class="flexWrap">
+                <div class="searchBar">
+                    <p id="searchtype"></p>
+                </div>
+                  <div id="Btn" class="searchBtn redBtn">
+                      <p>ctrl</p>
+                  </div>
+
+                  <a class="searchBtn greenBtn" href="profile.html">
+                      <p>submit</p>
+                  </a>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content modal--warn">
+            <img class="modal-head" src="img/ui/warn.svg" alt="">
+            <div class="modal-body">
+              <p class="centerT redT">Oh no!</p>
+              <p>This option requires more money than you currently have in your SpendFriend&trade; account.</p>
+              <p class="centerT">Please <span class="greenT btnT">submit</span> instead.</p>
+            </div>
+            <div class="modalBtn">
+              <p>okay</p>
+            </div>
+          </div>
+
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
+        <script src="js/jquery.marquee.min.js"></script>
+        <script src="js/typeit.min.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>

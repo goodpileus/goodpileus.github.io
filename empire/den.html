@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>The Den</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/flickity.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Work+Sans:400,700" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="load"></div>
+        <div class="carousel--wrap denRoom">
+
+            <div class="nav--wrap">
+              <a href="index.html"><div class="nav-restart">
+                <span>restart<span>
+              </div></a>
+
+              <div class="dest prev-dest">To the Boiler Room</div>
+              <div class="dest next-dest">Leave the Den</div>
+            </div>
+
+            <div class="nav-info">
+                  <div id="Btn" class="navBtn">
+                    <img class="info" src="img/ui/info.svg" alt="">
+                    <img class="info" src="img/ui/info_hover.svg" alt="">
+                  </div>
+            </div>
+
+            <div class="carousel">
+
+                <div class="carousel-cell navP prev-panel">
+                    <a class="navP-wrap" href="hell.html">
+                        <span>&larr;</span>
+                    </a>
+                </div>
+
+              <!-- Look Around -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/den/den1.1.svg" alt="">
+                    </div>
+                    <div class="marquee denMarquee darkT">
+                        <span> Look at the screen.&nbsp;</span>
+                        <span> Look into the screen.</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                        <span> &nbsp; &nbsp;Look at the screen.&nbsp;</span>
+                        <span> Look into the screen.</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- The Web is Physical -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/den/den2.1.svg" alt="">
+                    </div>
+                    <div class="marquee denMarquee darkT">
+                        <span> Touch the fabric of the web.&nbsp;</span>
+                        <span> Feel its texture.&nbsp;</span>
+                        <span> Think of the hands that weave this web.</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- It is Your Home -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/den/den3.1.svg" alt="">
+                    </div>
+                    <div class="marquee denMarquee darkT">
+                        <span> Whose hands are they? &nbsp;</span>
+                        <span> Are they your hands? &mdash; The hands of others? &mdash; Hands of machines? &mdash; Of math? &mdash; Of the Market?</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Treat it Like One -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/den/den4.1.svg" alt="">
+                    </div>
+                    <div class="marquee denMarquee darkT">
+                        <span> Each day we wake here.&nbsp;</span>
+                        <span> We live our lives here.&nbsp;</span>
+                        <span> It should be a tranquil place.&nbsp;</span>
+                        <span> This space is still new. &nbsp; We have the opportunity to make it our own.</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+
+                <!-- Culottes -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/den/den6.1.svg" alt="">
+                    </div>
+                    <div class="marquee denMarquee darkT">
+                        <span> Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale!</span>
+                        <span> Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale! Sale!</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Door -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/den/den5.1.svg" alt="">
+                    </div>
+                    <div class="marquee denMarquee darkT">
+                        <span> Are we content with the way things are? To be confronted each day with a never-ending mound of hate and product?&nbsp;</span>
+                        <span> Does the way this space looks, feels, and functions not affect us significantly?</span>
+                        <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <div class="carousel-cell navP next-panel">
+                    <a class="navP-wrap" href="thronestairs.html">
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal modal--show">
+
+          <div class="modal-content modal--warn">
+            <img class="modal-head" src="img/ui/warn.svg" alt="">
+            <div class="modal-body">
+              <p class="centerT redT">Uh oh!</p>
+              <p>You're not supposed to be here. This is the extremist faction's den. They are not to be trusted! They've somehow infiltrated the Empire and are busy spreading disinformation.</p>
+              <p>Don't read anything here and leave through the nearest door!</p>
+            </div>
+            <div class="modalBtn">
+              <p>okay</p>
+            </div>
+          </div>
+
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
+        <script src="js/jquery.marquee.min.js"></script>
+        <script src="js/typeit.min.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>

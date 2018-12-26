@@ -1,0 +1,85 @@
+body {
+  background: rgb(159, 159, 159);
+  background-image: url(../img/jungle1.gif);
+  animation: scroll 1000s linear infinite;
+}
+
+.wrap {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube {
+  background-image: url(../img/checks2.gif);
+  background-size: 200px;
+  background-position: center center;
+  /* border: 1px solid rgba(255,255,0); */
+  /* border: 18px ridge rgba(255,255,0); */
+  width:90vw;
+  height:90vh;
+  /* background:green; */
+  /* margin-bottom:1rem; */
+  animation: scroll 500s linear infinite;
+  position:fixed;
+  transition: width .5s, height .5s;
+}
+
+.z {
+  /* border: 1px solid rgba(0,0,0); */
+}
+
+.a {
+  width:80vw;
+  height:80vh;
+}
+
+.b {
+  width:70vw;
+  height:70vh;
+}
+
+.c {
+  width:60vw;
+  height:60vh;
+}
+
+.d {
+  width:50vw;
+  height:50vh;
+}
+
+.e {
+  width:40vw;
+  height:40vh;
+}
+
+.f {
+  width:30vw;
+  height:30vh;
+}
+
+.g {
+  width:20vw;
+  height:20vh;
+}
+
+.h {
+  width:10vw;
+  height:10vh;
+}
+
+.h:hover {
+  transition: width .5s, height .5s;
+  width:9vw;
+  height:9vh;
+  /* background:rgb(255,244,101); */
+}
+
+.butterfly {
+  position: fixed;
+  width:100px;
+  height:100px;
+  top:0;
+  animation: fly 20s linear infinite;
+}

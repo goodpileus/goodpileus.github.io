@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+      <title>tale</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8" />
+      <meta name="description" content="Independent Study for Fall semester VCU Visual Communications MFA">
+      <meta name="keywords" content="Aidan, Quinlan, Design, Graphic">
+      <meta name="author" content="Aidan Quinlan">
+
+      <link href='//fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
+      <style>
+          body {
+              background-color:white;
+              color: black;
+              font-family: sans-serif;
+              font-size: 30px;
+          }
+          #typewriter {
+              white-space: pre;
+          }
+      </style>
+
+
+      <script
+		  src="https://code.jquery.com/jquery-1.12.4.min.js"
+		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+		  crossorigin="anonymous"></script>
+      <script src="typewriter.js"></script>
+      <script src="animate.js"></script>
+      <script src="howler.min.js"></script>
+
+    </head>
+    <body>
+        <p id="typewriter"></p>
+
+        <script>
+        // Audio files are royalty-free from http://www.soundjay.com/typewriter-sounds.html.
+        var carriageReturnSound = new Howl({
+            src: ['']
+        });
+        var keystrokeSound = new Howl({
+            src: ['beep-low3.wav']
+        });
+        var currentSound = null;
+
+        function playSound (character) {
+            var nextSound = null;
+            carriageReturnSound.pause();
+            keystrokeSound.pause();
+
+            if (character == "\n") {
+                carriageReturnSound.currentTime = 0;
+                nextSound = carriageReturnSound;
+            } else if (character != " ") {
+                keystrokeSound.currentTime = 0;
+                nextSound = keystrokeSound;
+            }
+
+            if (nextSound != null) {
+                if (currentSound != null) {
+                    currentSound.stop();
+                }
+                currentSound = nextSound;
+                currentSound.play();
+            }
+        }
+
+
+        var typewriter = new Typewriter($("#typewriter"));
+        typewriter.setCaret("");
+        typewriter.setCaretPeriod(0);
+        typewriter.setDelay(100, 100);
+        typewriter.setCharacterCallback(playSound);
+        animate(typewriter);
+        </script>
+    </body>
+</html>

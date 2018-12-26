@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="language" content="english">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<title>randomly positioned boxes</title>
+
+<style type="text/css">
+.boxes {
+	position: absolute;
+}
+
+#text1 {
+    color: white;
+	font-family: "Times", Times New Roman, serif;
+	font-size: 16px;
+	font-weight: bold;
+    line-height: 24px;
+    background-color: black;
+}
+
+#text2 {
+	color: white;
+	font-family: "Times", Times New Roman, serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+    background-color: blue;
+}
+
+#text3 {
+	color: white;
+	font-family: "Times", Times New Roman, serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+    background-color: green;
+}
+
+#text4 {
+	color: white;
+	font-family: "Times", Times New Roman, serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+    background-color: red;
+}
+</style>
+
+<script type="text/javascript">
+var boxDims = new Array();
+
+function setRandomPos(elements,x,dx){
+elements.each(function(){
+  var conflict = true;
+  while (conflict) {
+      fixLeft=(Math.floor(Math.random()*x)*10) + dx;
+      fixTop = (Math.floor(Math.random()*40)*10) + 180;
+      $(this).offset({
+          left: fixLeft,
+          top: fixTop
+      });
+      var box = {
+          top: parseInt(window.getComputedStyle($(this)[0]).top),
+          left: parseInt(window.getComputedStyle($(this)[0]).left),
+          width: parseInt(window.getComputedStyle($(this)[0]).width),
+          height: parseInt(window.getComputedStyle($(this)[0]).height)
+      }
+      conflict = false;
+      for (var i=0;i<boxDims.length;i++) {
+          if (overlap(box,boxDims[i])) {
+              conflict = true;
+              break;
+          } else {
+              conflict = false;
+          }
+      }
+  }
+  boxDims.push(box)
+
+});
+}
+
+function overlap(box1,box2) {
+var x1 = box1.left
+var y1 = box2.top;
+var h1 = box1.height;
+var w1 = box1.width;
+var b1 = y1 + h1;
+var r1 = x1 + w1;
+var x2 = box1.left;
+var y2 = box1.top;
+var h2 = box1.height;
+var w2 = box1.width;
+var b2 = y2 + h2;
+var r2 = x2 + w2;
+
+var buf = 24;
+
+if (b1 + buf < y2 || y1 > b2 + buf || r1 + buf < x2 || x1 > r2 + buf) return false;
+return true;
+}
+
+setRandomPos($(".boxes"),40,40);
+</script>
+
+</head>
+
+<body>
+
+  <div id="box1" class="boxes">
+  <div id="text1">&nbsp;&nbsp;Lorem Ipsum Dolor Sit Amet&nbsp;&nbsp;</div>
+  </div>
+
+  <div id="box2" class="boxes">
+  <div id="text2">&nbsp;&nbsp;Lorem Ipsum Dolor Sit Amet&nbsp;&nbsp;</div>
+  </div>
+
+  <div id="box3" class="boxes">
+  <div id="text3">&nbsp;&nbsp;Lorem Ipsum Dolor Sit Amet&nbsp;&nbsp;</div>
+  </div>
+
+  <div id="box4" class="boxes">
+  <div id="text4">&nbsp;&nbsp;Lorem Ipsum Dolor Sit Amet&nbsp;&nbsp;</div>
+  </div>
+
+</body>

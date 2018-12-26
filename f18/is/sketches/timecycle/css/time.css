@@ -1,0 +1,116 @@
+body {
+  /* display:flex; */
+  /* position: absolute; */
+  /* height:100%; */
+  /* width:100%; */
+  overflow: hidden;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* background:rgb(36,36,36); */
+  background: rgb(29,29,29) url(../img/particles5.gif);
+  background-size: 150px;
+}
+
+.day {
+  animation: day 10s alternate infinite ease-in-out;
+}
+
+.sunset {
+  animation: sunset 10s alternate infinite ease-in-out;
+}
+
+.night {
+  animation: night 10s alternate infinite ease-in-out;
+}
+
+.container {
+  /* position: fixed; */
+  /* position: absolute; */
+  display:flex;
+  background:black;
+  color:rgb(68,65,88);
+  justify-content: center;
+  font-size: 14px;
+}
+
+.top {
+  position: fixed;
+  /* position: relative; */
+  /* height:5%; */
+  height:18px;
+  width:100%;
+}
+
+.left {
+  position: fixed;
+  writing-mode: vertical-rl;
+  /* text-orientation: mixed; */
+  transform:rotate(-180deg);
+  /* max-height:100%; */
+  left:0;
+  height:100%;
+  width:18px;
+}
+
+.right {
+  position: fixed;
+  /* position: relative; */
+  writing-mode: vertical-rl;
+  /* text-orientation: mixed; */
+  height:100%;
+  right:0;
+  width:18px;
+}
+
+
+.bottom {
+  position: fixed;
+  width:100%;
+  /* height:5%; */
+  bottom:0;
+  transform:rotate(-180deg);
+  /* position: relative; */
+  height:18px;
+}
+
+.house {
+  position:absolute;
+  width:80px;
+  height:80px;
+  left:50%;
+  /* top:50%; */
+  bottom:14px;
+  transform:translateX(-50%);
+}
+
+#light {
+  position:absolute;
+  width:50px;
+  height:52px;
+  border-radius: 100%;
+  left:50%;
+  bottom:0px;
+  z-index: -1;
+  /* top:51%; */
+  transform:translate(-50%, -50%);
+}
+
+.time {
+  /* width:100px; */
+  /* display: block; */
+}
+
+@keyframes day {
+  0% { background:rgb(189,215,217); }
+  100% { background:rgb(117,149,235); }
+}
+
+@keyframes sunset {
+  0% { background:rgb(217,146,101); }
+  100% { background:rgb(201,71,71); }
+}
+
+@keyframes night {
+  0% { background:rgb(121,108,130); }
+  100% { background:rgb(52,43,119); }
+}

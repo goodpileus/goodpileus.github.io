@@ -1,0 +1,298 @@
+html {
+    /* background: #3b372f url(../img/particles5.gif); */
+    margin: 0;
+}
+
+body {
+  /* background-image: url(slowpulse.gif); */
+  /* background-size: 50px; */
+  margin:0;
+  height: 100vh;
+  overflow: hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width:100%;
+  max-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+p {
+  margin: 0;
+}
+
+.noise {
+  background: #383838 url(../img/ocean3.gif);
+  background-size:100vh;
+  /* background-size: 100% 100%; */
+  background-position: center center;
+  width:200vmax;
+  height:200vmax;
+  position: fixed;
+  animation: rotate 40s linear infinite;
+}
+
+.container {
+  height:65%;
+  width:70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transform:translateY(-3vh);
+  color:#b9b9b9;
+}
+
+/* .container p {
+  width:100%;
+  text-align: center;
+  background:red;
+} */
+
+.caption {
+  font-family: 'PT sans caption', sans-serif;
+  /* padding:0 1rem; */
+  text-align: center;
+  /* width:100%; */
+  position:fixed;
+  background:#000;
+  /* border:10px solid black; */
+  bottom:0;
+  transform:translateY(15vh);
+  padding:.7rem .9rem;
+  /* display:none; */
+  border-radius: 12px;
+}
+
+.caption p {
+  animation: text 3s ease-in-out infinite alternate;
+}
+
+.content-wrap:hover .caption {
+  display: block;
+}
+
+.middle {
+  display: flex;
+  flex-wrap: nowrap;
+  width:100%;
+  height:100%;
+}
+
+.frame {
+  /* background: rgb(0,0,0); */
+  transition: border .1s;
+  cursor:pointer;
+}
+
+.frame:hover {
+  /* background:rgb(61,61,61); */
+}
+
+.top {
+  width:100%;
+  border-bottom   : 0px solid transparent;
+  border-left   : 3vh solid transparent;
+  border-right  : 3vh solid transparent;
+  border-top : 3vh solid #000;
+  /* height:3vh; */
+}
+
+.top:hover {
+  border-top: 3vh solid #464646;
+}
+
+.left {
+  position: relative;
+  transform: translateY(-3vh);
+  /* width:3vh; */
+  height:100%;
+  border-top   : 3vh solid transparent;
+  border-left   : 3vh solid #000;
+  border-right  : 0px solid transparent;
+  border-bottom : 3vh solid transparent;
+}
+
+.left:hover {
+  border-left: 3vh solid #464646;
+}
+
+.right {
+  position: relative;
+  transform: translateY(-3vh);
+  right:0;
+  /* width:3vh; */
+  height:100%;
+  border-top   : 3vh solid transparent;
+  border-right   : 3vh solid #000;
+  border-left  : 0px solid transparent;
+  border-bottom : 3vh solid transparent;
+  /* width:3vh; */
+}
+
+.right:hover {
+  border-right: 3vh solid #464646;
+}
+
+.bottom {
+  width:100%;
+  border-top   : 0px solid transparent;
+  border-left   : 3vh solid transparent;
+  border-right  : 3vh solid transparent;
+  border-bottom : 3vh solid #000;
+  /* height:3vh; */
+}
+
+.bottom:hover {
+  border-bottom: 3vh solid #464646;
+}
+
+.content-wrap {
+  width:100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #7c745f; */
+}
+
+.content p {
+  text-align: center;
+  max-height:90%;
+  width:90%;
+  overflow: hidden;
+
+}
+
+.walker {
+  position: fixed;
+  bottom:10px;
+  left:10px;
+}
+
+.speed {
+  position: relative;
+  height:500%;
+  min-width:500%;
+  background-image: url(../img/speed2.gif);
+  background-size:15% 15%;
+  animation: rotate 125s infinite linear;
+  background-position: center;
+}
+
+.wheat {
+  background-image: url(../img/wheat.gif);
+  background-size:contain;
+  /* background-size:100%; */
+  animation: scroll2 200s linear infinite;
+  background-position: center center;
+}
+
+.march {
+  background-image: url(../img/walking.gif);
+  background-size:60px;
+  /* background-size:100%; */
+  animation: scroll 50s linear infinite;
+  background-position: center center;
+}
+
+.freefall {
+  background-image: url(../img/freefall.gif);
+  /* background-size:200px; */
+  background-repeat:  no-repeat;
+  /* background-size:100%; */
+  animation: scroll3 10s linear infinite;
+  background-position: center ;
+}
+
+.plant {
+  background-image:url(../img/datura.gif);
+  background-size:contain;
+  animation: scroll 200s linear infinite;
+  background-position: center;
+}
+
+.narrow {
+  background-image:url(../img/narrow.gif);
+  background-size:contain;
+  animation: scroll 200s linear infinite;
+  background-position: center;
+}
+
+.rose {
+  background-image:url(../img/rose2.gif);
+  background-size:contain;
+  animation: scroll 200s linear infinite;
+  background-position: center;
+}
+
+.floorplan {
+  background-image: url(../img/floorplan.gif);
+  background-size:contain;
+  /* background-size:100%; */
+  animation: scroll2 200s linear infinite;
+  background-position: center center;
+}
+
+.island {
+  background-image: url(../img/island.gif);
+  background-size:contain;
+  /* background-size:100%; */
+  animation: scroll 50s linear infinite;
+  background-position: center center;
+}
+
+.entrance {
+  background-image:url(../img/entrance.gif);
+  background-size:contain;
+  /* background-size:100% 100%; */
+  background-position: center;
+  animation: scroll-side 100s linear infinite;
+}
+
+
+@keyframes scroll{
+  0% {background-position: 0 0;}
+  100% {background-position: -100vh 50vh;}
+}
+
+@keyframes scroll2{
+  0% {background-position: 0 0;}
+  100% {background-position: 50vh 100vh;}
+}
+
+@keyframes scroll3{
+  0% {background-position: 50% -10vh;}
+  100% {background-position: 75% 100vh;}
+}
+
+
+@keyframes scroll-side{
+  0% {background-position: 0 0;}
+  100% {background-position: 100vh 0;}
+}
+
+@keyframes text{
+  0% {transform: translateY(-3);}
+  100% {transform: translateY(3px);}
+}
+
+@keyframes rotate{
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}

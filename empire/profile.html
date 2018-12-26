@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Profile Room</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/flickity.css" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Work+Sans:400,700" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="load"></div>
+        <div class="nav--wrap">
+          <a href="index.html"><div class="nav-restart">
+            <span>restart<span>
+          </div></a>
+
+          <div class="dest prev-dest">To Index</div>
+          <div class="dest next-dest">To Gallery</div>
+        </div>
+
+
+        <div class="nav-info">
+              <div id="Btn" class="navBtn">
+                <img class="info" src="img/ui/info.svg" alt="">
+                <img class="info" src="img/ui/info_hover.svg" alt="">
+              </div>
+        </div>
+
+        <div class="carousel--wrap profileRoom">
+
+            <div class="carousel">
+
+                <div class="carousel-cell navP prev-panel">
+                    <a class="navP-wrap" href="index.html">
+                        <span>&larr;</span>
+                    </a>
+                </div>
+
+                <!-- Table -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/profile/profile1.9.svg" alt="">
+                    </div>
+                    <div class="marquee profileMarquee">
+                      <span>You have 32 unchecked notifications</span>
+                      <span>and 1203 unread e-mails. &nbsp; Please read your e-mail.</span>
+                      <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Bed -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/profile/profile4.3.svg" alt="">
+                    </div>
+                    <div class="marquee profileMarquee">
+                      <span> Don't be alarmed by the camera. </span>
+                      <span> For the safety and economic foundation of our empire, we monitor everything that occurs within our boundaries. </span>
+                      <span> Your data is anonymous in theory.</span>
+                      <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Train -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/profile/profile3.4.svg" alt="">
+                    </div>
+                    <div class="marquee profileMarquee">
+                      <span> This is the Accelerator Train. </span>
+                      <span> &nbsp; Grand ideas of capital and technology are loaded on to it to be implemented as fast as possible. </span>
+                      <span> &nbsp; It functions using the "Manifest D" operating system. </span>
+                      <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <!-- Door -->
+                <div class="carousel-cell">
+                    <div class="scene-container">
+                      <img src="img/profile/profile2.3.svg" alt="">
+                    </div>
+                    <div class="marquee profileMarquee">
+                          <span> Here is the door from your profile room to the rest of the Empire.</span>
+                          <span> &nbsp; Go and be free! Enjoy your life in the Empire. </span>
+                          <span> &nbsp; And don't forget, <em>Superior</em> is having a sale today. </span>
+                          <span> &nbsp; &nbsp; &#9728;</span>
+                    </div>
+                </div>
+
+                <div class="carousel-cell navP next-panel">
+                    <a class="navP-wrap" href="gallery.html">
+                        <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal modal--show">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <img class="modal-head" src="img/ui/sun.svg" alt="">
+            <div class="modal-body">
+              <p class="centerT">Good Morning!</p>
+              <p class="centerT">You look a bit new...</p>
+              <p> This room is your <span class="blueT">Profile Room</span>. Take a look around. But don't stay in your room all day. The Empire has a lot more to offer. Just be careful not to leave the Empire. The warmth of our embrace extends far, but there are places the Empire hasn't yet integrated into its catalogue of products&mdash;use caution to avoid these spaces!</p>
+              <div class="tips">
+                <div class="tip-row">
+                  <div class="tip-cellImg"><img src="img/ui/hand2.svg" alt=""></div>
+                  <div class="tip-cell"><p>Click and drag to look around.</p></div>
+                </div>
+                <br>
+                <div class="tip-row">
+                  <div class="tip-cellImg"><img src="img/ui/info.svg" alt=""></div>
+                  <div class="tip-cell"><p>The magnifying glass will provide more information about the room you're in.</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="modalBtn">
+              <p>okay</p>
+            </div>
+          </div>
+
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/flickity.pkgd.min.js"></script>
+        <script src="js/jquery.marquee.min.js"></script>
+        <script src="js/typeit.min.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+</html>

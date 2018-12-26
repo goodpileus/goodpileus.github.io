@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  background:black;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  font-family: 'times new roman', serif;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+canvas {
+  /*animation:skew 3s infinite alternate ease-in-out;*/
+   /*filter:blur(20px); */
+}
+
+.type {
+  position: fixed;
+  /*color:#808080;*/
+  color: rgb(90, 90, 90);
+  font-size: 1.2rem;
+  text-align: center;
+  bottom:100px;
+  left:50%;
+  transform:translate(-50%,50%);
+  /*width:50%;*/
+  /* padding-right:2rem; */
+  /* animation: move 20s infinite ease-in-out; */
+  z-index: 9999;
+  border:1px solid rgb(90, 90, 90);
+  /* min-width:100%; */
+  /*height:160px;*/
+  max-height:160px;
+  padding:10px;
+   background: black;
+  /* background:red; */
+}
+
+#typed {
+  z-index:999;
+  /*background:black;*/
+}
+
+
+@keyframes skew {
+  0% {transform:skew(-5deg);}
+  2% {transform:skew(-5deg);}
+  98% {transform:skew(5deg);}
+  100% {transform:skew(5deg);}
+}
