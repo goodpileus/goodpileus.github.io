@@ -1,0 +1,236 @@
+body {
+  background: rgb(166,166,166);
+  margin:2rem;
+  font-family: 'pt sans caption', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(255,84,84);
+
+}
+
+a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+ul {
+  /* margin:0; */
+  padding:0;
+}
+
+li {
+  /* background:rgb(166,166,166); */
+  list-style: none;
+  margin:0;
+  /* padding: .5rem; */
+  border-bottom: .5px solid rgba(0,0,0,.5);
+  border-right: .5px solid rgba(0,0,0,.5);
+  border-left: .5px solid rgba(0,0,0,.5);
+
+  /* border-bottom: 6px ridge rgba(0,0,0,.5);
+  border-right: 6px ridge rgba(0,0,0,.5);
+  border-left: 6px ridge rgba(0,0,0,.5); */
+  display:flex;
+}
+
+li img {
+  display:none;
+  position:fixed;
+  bottom:2rem;
+  right:2rem;
+  /* z-index: -1; */
+  max-width:300px;
+  border: .5px solid rgba(0,0,0,.5);
+  /* border: 6px ridge rgba(0,0,0,.5); */
+}
+
+li:hover img {
+  /* display: block; */
+}
+
+a li {
+  color:black;
+  /* padding: .3rem .5rem; */
+  transition: background .2s;
+}
+
+a li:hover {
+  background:rgba(255,84,84,.83);
+  /* animation: color 5s linear infinite alternate; */
+}
+
+canvas {
+  /* position:fixed; */
+  /* top:0; */
+  /* left:0; */
+}
+
+.nav-btn {
+  position: fixed;
+  width:60px;
+  height:100vh;
+  top:0;
+  /* background:red; */
+}
+
+.nav-btn:hover {
+  background: rgba(255,84,84,.83);
+}
+
+.left {
+  left:0;
+  /* border-right:1px dashed white; */
+}
+
+.right {
+  right:0;
+  /* border-left:1px dashed white; */
+}
+
+.principles {
+  border-bottom: .5px ridge rgba(0,0,0,.5);
+  border-right: .5px ridge rgba(0,0,0,.5);
+  border-left: .5px ridge rgba(0,0,0,.5);
+  padding:1.5rem 2.5rem 1rem 2.7rem;
+  width: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  /* font-weight: 700; */
+  font-size: 1.2rem;
+  /* background: gold; */
+  box-shadow: inset 0 0 40px white;
+}
+
+.principles p {
+  /* font-family: 'pt sans caption', sans-serif; */
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  /* font-style: italic; */
+}
+
+.principles li {
+  border:none;
+  list-style: upper-roman;
+  margin-bottom:1rem;
+  display:list-item;
+  padding-left:.5rem;
+  /* text-align:center; */
+  /* width:100%;
+  background:green; */
+}
+
+.a {
+  width:50%;
+  padding: .3rem .5rem;
+  /* text-align: right; */
+}
+
+.b {
+  width:50%;
+  border-left: .5px solid rgba(0,0,0,.5);
+  /* border-left:6px ridge rgba(0,0,0,.5); */
+  padding: .3rem .5rem;
+}
+
+#wrapper {
+  /* background: red; */
+  max-width:560px;
+  margin: 0 auto;
+  opacity:0;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+}
+
+#loading {
+  background-color: rgb(166,166,166);
+  /* background-color: green; */
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 999;
+}
+
+#loading-obj {
+  position:absolute;
+  left:50vw;
+  top:50vh;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.block {
+  /* max-width: 510px; */
+}
+
+.block p {
+  /* padding-left:1rem; */
+}
+
+#cube {
+  /* background-image: url(../img/checks.  background: rgb(166,166,166);
+); */
+  background-size: 200px;
+  background-position: center center;
+  border: .5px solid rgba(0,0,0,.5);
+  /* border: 6px ridge rgba(0,0,0,.5); */
+  width:100%;
+  height:200px;
+  /* background:green; */
+  margin-bottom:1rem;
+  animation: scroll 900s linear infinite;
+}
+
+.head-label {
+  background:rgba(255,255,255,.17);
+  border: .5px solid rgba(0,0,0,.5);
+  /* border: 6px ridge rgba(0,0,0,.5); */
+  text-align: center;
+  margin:0;
+  padding: .3rem .5rem;
+}
+
+.update {
+  /* width:100%; */
+  /* background:green; */
+  text-align: center;
+  margin-top: 2rem;
+  font-size: .8rem;
+}
+
+#sketch {
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-self: center;
+  max-height:200px;
+  border: .5px solid rgba(0,0,0,.5);
+  background: rgb(150,150,150);
+}
+
+
+@keyframes scroll{
+  0% {background-position: 0 0;}
+  100% {background-position: -500vh 200vh;}
+}
+
+@keyframes color{
+  0% {filter:hue-rotate(0deg);}
+  100% {filter:hue-rotate(20deg);}
+}
+
+@media (min-width:560px) {
+  .principles {
+    padding:1.5rem 4.5rem 1rem 5rem;
+  }
+
+  li:hover img {
+    display: block;
+  }
+}

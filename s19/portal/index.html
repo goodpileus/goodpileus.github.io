@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>AQ.S_19</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="description" content="">
+  <meta name="keywords" content="Aidan, Quinlan, Design, Graphic">
+  <meta name="author" content="Aidan Quinlan">
+
+  <!--css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="img/favi.png">
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="loading">
+    <div id="loading-obj"></div>
+  </div>
+
+  <div id="wrapper">
+    <div class="nav">
+      <a class="nav-btn left" href="../../f18/is/principles.html">
+      </a>
+    </div>
+
+    <div class="block">
+      <div id="cube"></div>
+    </div>
+
+      <div class="block">
+        <p class="head-label">Word of the Moment</p>
+        <div class="principles">
+          <p>Glacis</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <p class="head-label">Sketches</p>
+          <ul>
+
+            <a href="sketches/bus/index.html" target="blank">
+              <li>
+                <div class="a">bus</div>
+                <div class="b">1.1</div>
+                <img src="img/bus.png">
+              </li>
+            </a>
+
+          </ul>
+      </div>
+
+      <div class="block">
+        <p class="head-label">Texts</p>
+          <ul>
+            <a href="http://luckysoap.com/statements/handmadeweb.html" target="blank">
+              <li>
+                <div class="a">J.R. Carpenter</div>
+                <div class="b">A Handmade Web</div>
+              </li>
+            </a>
+
+            <a href="http://thecomposingrooms.com/research/reading/2013/e-flux_Hito%20Steyerl_15.pdf" target="blank">
+              <li>
+                <div class="a">Hito Steyerl</div>
+                <div class="b">The Wretched of the Screen</div>
+              </li>
+            </a>
+
+            <a href="https://coolguy.website/writing/basic-html-is-the-new-punk-folk-explosion.html" target="blank">
+              <li>
+                <div class="a">Zach Mandeville</div>
+                <div class="b">Basic HTML is the New Folk Explosion</div>
+              </li>
+            </a>
+          </ul>
+      </div>
+
+      <div class="block">
+        <p class="head-label">Links</p>
+        <ul>
+          <a href="https://aidanquinlan.net" target="blank">
+            <li>
+              <div class="a">personal website</div>
+            </li>
+          </a>
+
+          <a href="https://www.are.na/aidan-quinlan/peace-web" target="blank">
+            <li>
+              <div class="a">are.na</div>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="block">
+        <p class="head-label">Current Time:</p>
+        <div id="sketch">
+        </div>
+      </div>
+
+      <p class="update">( 01.28.2019 )</p>
+
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+  <script src="sketch.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+   $(function() {
+    var images = ['earth1.gif'];
+    $('#cube').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+   });
+
+   window.onload = function() {
+    console.log(':-)');
+
+    // hide loading mask
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("wrapper").style.opacity = "1";
+   };
+  </script>
+</body>
