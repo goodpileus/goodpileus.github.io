@@ -1,0 +1,60 @@
+body {
+  background: rgb(0,0,0);
+  /* background-image: url(../img/urth3.gif); */
+  background-position: center;
+  /* background-size: cover; */
+  /* margin:0 2rem; */
+  height:100vh;
+  display: flex;
+  align-content: center;
+  font-family: 'vt323', monospace;
+  line-height: normal;
+  font-size: 14px;
+  overflow: hidden;
+  animation: background 30s infinite alternate ease-in-out;
+  animation-delay: 7s;
+}
+
+img {
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+audio {
+  position: fixed;
+  opacity: 0;
+}
+
+.wrp{
+  width:100vw;
+  /* height:100vh; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.wrapper {
+  position: fixed;
+  align-self: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin:0 auto;
+  width:110px;
+  height:120px;
+  transform: skew(0deg, 0deg);
+  animation: skew 12s infinite linear;
+  animation-delay: -1s;
+  filter: blur(3px);
+}
+
+@keyframes skew{
+  0% {transform:rotateY(0deg);}
+  /* 50% {transform:skew(2deg,3deg);} */
+  100% {transform:rotateY(360deg);}
+}
+
+@keyframes background{
+  0% {background:rgb(0,0,0);}
+  100% {background:rgb(62,62,62)}
+}

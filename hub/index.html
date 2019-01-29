@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>HUB WORLD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="description" content="">
+  <meta name="keywords" content="Aidan, Quinlan, Design, Graphic">
+  <meta name="author" content="Aidan Quinlan">
+
+  <!--css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="img/favi.png">
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="loading">
+    <div id="loading-obj"></div>
+  </div>
+
+  <div id="wrapper">
+
+    <div class="block">
+      <a class="cube f18" href="f18/index.html">
+        <div class="cube-hover">Fall 18</div>
+      </a>
+    </div>
+
+    <div class="block">
+      <a class="cube s19" href="s19/index.html">
+        <div class="cube-hover">Spring 19</div>
+      </a>
+    </div>
+
+    <div class="block">
+      <a class="cube workshop" href="#">
+        <div class="cube-hover">Soon</div>
+      </a>
+    </div>
+
+    <!-- <div class="block">
+      <div id="cube"></div>
+    </div> -->
+
+      <div class="block">
+        <!-- <p class="head-label">Links</p> -->
+        <ul>
+          <a href="https://aidanquinlan.net" target="blank">
+            <li>
+              <div class="a">personal website</div>
+            </li>
+          </a>
+
+          <a href="https://aidanquinlan.net/b" target="blank">
+            <li>
+              <div class="a">process blog</div>
+            </li>
+          </a>
+
+          <a href="f18/sem/index.html" target="blank">
+            <li>
+              <div class="a">F_18 seminar blog</div>
+            </li>
+          </a>
+
+          <a href="https://www.are.na/aidan-quinlan/peace-web" target="blank">
+            <li>
+              <div class="a">are.na</div>
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <p class="update">( 01.28.2019 )</p>
+
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+  <script src="sketch.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+   // $(function() {
+   //  var images = ['earth1.gif'];
+   //  $('#cube').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+   // });
+
+   window.onload = function() {
+    console.log(':-)');
+
+    // hide loading mask
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("wrapper").style.opacity = "1";
+   };
+  </script>
+</body>

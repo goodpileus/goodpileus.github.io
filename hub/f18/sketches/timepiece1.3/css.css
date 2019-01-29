@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  background:black;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /*background:rgb(65,84,99);*/
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+  overflow:hidden;
+  animation:skew 15s infinite alternate ease-in-out;
+}
+
+canvas {
+}
+
+@keyframes skew {
+  0% {transform:skew(-5deg);}
+  2% {transform:skew(-5deg);}
+  98% {transform:skew(5deg);}
+  100% {transform:skew(5deg);}
+}
+
+.particle-wrap {
+  position:fixed;
+  display:flex;
+  top:0;
+  left:0;
+}
+
+.parallax {
+    /* The image used */
+    
+  height:100vh;
+  width:100vw;
+  background-image: url(particles5.gif);
+  /*border-right:1px solid white;*/
+
+  /* Set a specific height */
+  min-height: 1000px;
+  /* Create the parallax scrolling effect */
+  /*background-attachment: fixed;*/
+  background-position: left;
+  background-repeat: repeat;
+  background-size:250px;
+  z-index:9999;
+  position:relative;
+  top:0;
+  opacity:.1;
+  /* background-size: cover; */
+  /*animation: scroll2 40s ease-in-out infinite;*/
+}
+
+@keyframes scroll {
+  0% {background-position: 0 100vh;}
+  100% {background-position: 0 0;}
+}
+
+@keyframes scroll2 {
+  0% {background-position: 0 0;}
+  50% {background-position: -2000px 500px;}
+  100% {background-position: 0 1000px;}
+}

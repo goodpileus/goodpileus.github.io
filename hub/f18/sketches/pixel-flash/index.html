@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>pixel flash</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+        <style>
+            html {
+                background: rgb(203,202,202);
+            }
+            body {
+              margin:0;
+            }
+
+            @keyframes spin {
+                0% {transform: rotate(0)}
+                100% {transform: rotate(360deg);}
+            }
+
+            @keyframes color {
+                0% {background:black;}
+                100% {background:rgba(255,255,255,0);}
+            }
+            @keyframes color2 {
+                0% {background:rgba(255,255,255,0);}
+                100% {background:red;}
+            }
+
+            .bigbox {
+                display:flex;
+                flex-flow:row wrap;
+                position:fixed;
+                /* top:50vh;
+                left:50vw;
+                transform: translate(-50vw, -50vh); */
+                width:100vw;
+                height:100vh;
+                z-index:-1;
+            }
+
+            .spin {
+                /* animation: spin linear 4s infinite; */
+            }
+
+            .square {
+                width:10%;
+                /* height:12.5%; */
+            }
+
+            .box1 {
+                background: rgb(255, 190, 166);
+                /* outline: 1px solid black; */
+                animation: color alternate ease-in-out 10s infinite;
+            }
+            .box2 {
+                background: rgb(237,203,191);
+                /* outline: 1px solid black; */
+                animation: color2 alternate ease-in-out 10s infinite;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="bigbox spin">
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box1 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box2 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+
+            <div class="box2 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box2 square"></div>
+            <div class="box2 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+            <div class="box2 square"></div>
+            <div class="box1 square"></div>
+        </div>
+    </body>
+</html>

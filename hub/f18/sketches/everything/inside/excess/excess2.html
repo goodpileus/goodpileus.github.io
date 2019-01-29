@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fatigue</title>
+  <style>
+    body {
+      margin:0;
+      padding:0;
+      background: rgb(0,0,0);
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 100vh;
+      overflow: hidden;
+    }
+
+    img {
+      /* position: absolute; */
+      /* width:100%;
+      height:100vh; */
+    }
+
+    .scroll {
+        /* The image used */
+        /* background-image: url("scroll.jpg"); */
+
+        /* Set a specific height */
+        /* min-height: 4000px; */
+
+        /* Create the parallax scrolling effect */
+        /* background-attachment: fixed; */
+        /* background-position: center; */
+        /* background-repeat: repeat; */
+    }
+
+    * {
+      margin: 0;
+    }
+
+    .bar {
+      height: 11.11vh;
+      width:33.33vw;
+      background: 0px 0px url('longboy.gif') repeat-y;
+      /* -webkit-animation: scroll .01s ease-in-out infinite; */
+      animation: scroll 25s linear infinite;
+      background-size: 100% 100vh;
+      /* filter:blur(20px); */
+    }
+
+    .a {
+      animation: scroll 15s linear infinite;
+    }
+
+    .b {
+      animation: scroll 10s linear infinite;
+    }
+
+    .c {
+      animation: scroll 5s linear infinite;
+    }
+
+    .d {
+      animation: scroll 2.5s linear infinite;
+    }
+
+    .e {
+      animation: scroll 1s linear infinite;
+    }
+
+    .bar2 {
+      height: 11.11vh;
+      width:33.33vw;
+      background: 0px 0px url('longboy2.gif') repeat-y;
+      /* -webkit-animation: scroll .01s ease-in-out infinite; */
+      background-size:100% 100vh;
+      animation: scroll2 25s linear infinite;
+      /* filter:blur(5px); */
+    }
+
+    .f {
+      animation: scroll2 15s linear infinite;
+    }
+
+    .g {
+      animation: scroll2 10s linear infinite;
+    }
+
+    .h {
+      animation: scroll2 5s linear infinite;
+    }
+
+    .i {
+      animation: scroll2 2.5s linear infinite;
+    }
+
+    .j {
+      animation: scroll2 1s linear infinite;
+    }
+
+    /* .bar:hover{
+      animation-play-state: paused;
+    } */
+
+    /* .bar2:hover{
+      animation-play-state: paused;
+    } */
+
+    .stone {
+      position: fixed;
+      background: 0px 0px url('stone2.gif');
+      background-position: center center;
+      /* background-size:190% 160%; */
+      height:100vh;
+      /* animation: scroll3 50s linear infinite; */
+      max-width:768px;
+      width:100%;
+      left:50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    @keyframes scroll {
+      from {background-position: 0 100vh;}
+      to {background-position: 0 0;}
+    }
+
+    @keyframes scroll2 {
+      from {background-position: 0 0;}
+      to {background-position: 0 100vh;}
+    }
+
+    @keyframes scroll3 {
+      from {background-position: 0 768px;}
+      to {background-position: 0 0;}
+    }
+
+    @keyframes rotate {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="bar e"></div>
+  <div class="bar2 f"></div>
+  <div class="bar e"></div>
+
+  <div class="bar2 g"></div>
+  <div class="bar e"></div>
+  <div class="bar2 g"></div>
+
+  <div class="bar d"></div>
+  <div class="bar2 g"></div>
+  <div class="bar d"></div>
+
+  <div class="bar2 h"></div>
+  <div class="bar d"></div>
+  <div class="bar2 h"></div>
+
+  <div class="bar c"></div>
+  <div class="bar2 h"></div>
+  <div class="bar c"></div>
+
+  <div class="bar2 i"></div>
+  <div class="bar c"></div>
+  <div class="bar2 i"></div>
+
+  <div class="bar b"></div>
+  <div class="bar2 i"></div>
+  <div class="bar b"></div>
+
+  <div class="bar2 j"></div>
+  <div class="bar b"></div>
+  <div class="bar2 j"></div>
+
+  <div class="bar"></div>
+  <div class="bar2 j"></div>
+  <div class="bar"></div>
+
+  <!-- <div class="bar2 j"></div>
+  <div class="bar"></div>
+  <div class="bar2 j"></div>
+
+  <div class="bar"></div>
+  <div class="bar2"></div>
+  <div class="bar"></div> -->
+
+  <!-- <div class="stone"></div> -->
+</body>
+</html>

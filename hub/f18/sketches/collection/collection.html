@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>collection</title>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      background:rgb(19,19,23);
+    }
+    .draggable {
+      /* width: 150px; */
+      /* height: 150px; */
+      /* padding: 0.5em; */
+      /* background:black; */
+      position:absolute;
+      cursor: grab;
+    }
+
+    .a {
+      top:25%;
+      left:60%;
+    }
+
+    .b {
+      top:52%;
+      left:30%;
+    }
+
+    .c {
+      top:57%;
+      left:52%;
+    }
+
+    .d {
+      top:37%;
+      left:22%;
+    }
+
+    .box {
+      width:100px;
+      height:100px;
+      background:black;
+    }
+
+    img {
+      max-width: 200px;
+    }
+
+  </style>
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".draggable" ).draggable();
+  } );
+  </script>
+</head>
+<body>
+
+<div class="draggable a"><img src="2.jpg" alt=""></div>
+<div class="draggable c"><img src="1.jpg" alt=""></div>
+<div class="draggable d"><img src="earth.gif" alt=""></div>
+<div class="draggable b"><img src="key.png" alt=""></div>
+<div class="draggable box a"></div>
+<div class="draggable box b"></div>
+<div class="draggable box c"></div>
+
+
+</body>
+</html>

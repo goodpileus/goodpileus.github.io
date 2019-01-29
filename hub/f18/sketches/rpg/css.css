@@ -1,0 +1,91 @@
+html {
+  padding:0;
+  margin:0;
+}
+
+body {
+  width:100vw;
+  height:100vh;
+  background:#000;
+  cursor: none;
+  cursor: crosshair;
+}
+
+audio {
+  position: fixed;
+}
+
+a {
+  outline:none;
+}
+
+#container {
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.inner {
+  /* background-image: url(assets/zones.gif); */
+  /* background-size: 30%; */
+  /* background-repeat: repeat;
+  background-position: center center; */
+  display:flex;
+  flex-direction:row;
+  width:5000px;
+  height:5000px;
+  white-space: normal;
+  /* transform: skew(150deg); */
+  animation: spin linear 200s infinite;
+}
+
+.cube {
+  display:flex;
+  min-width:400px;
+  flex-wrap:wrap;
+  height:400px;
+}
+
+.a {
+  background-image: url(assets/bar.gif);
+  background-position: center;
+  /* width:100vw; */
+  width:5000px;
+  height:9000px;
+  /* transform: rotate(270deg); */
+  /* filter:blur(2px); */
+  /* border:1px solid red; */
+}
+
+.type {
+  font-family: 'cute font', serif;
+  position: fixed;
+  color:#000;
+  font-size: 20rem;
+  line-height: 10rem;
+  /* text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; */
+  /* left:50%; */
+  text-align: center;
+  bottom:50%;
+  left:50%;
+  transform: translate(-50%, 50%);
+  max-width:100vw;
+  /* padding-right:2rem; */
+  /* animation: move 20s infinite ease-in-out; */
+  z-index: 2;
+  /* min-width:100%; */
+  min-height:20px;
+  /* background:red; */
+  pointer-events: none;
+  filter:blur(2px);
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

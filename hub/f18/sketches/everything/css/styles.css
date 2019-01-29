@@ -1,0 +1,154 @@
+body {
+  background: rgb(0,0,0);
+  overflow: hidden;
+  /* font-family: 'vt323', monospace; */
+  line-height: .8rem;
+}
+
+.type {
+  font-family: 'vt323', monospace;
+  line-height: normal;
+  font-size: 14px;
+  position: fixed;
+  color:rgb(142, 171, 215);
+  font-size: 1.2rem;
+  bottom:1rem;
+  left:1rem;
+  max-width:80vw;
+  z-index: -1;
+  min-height:20px;
+}
+
+#typed {
+  text-align: center;
+}
+
+.marquee-wrap {
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  top:0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  /* position: fixed; */
+  /* border-top:1px solid black; */
+  font-size: 1.2rem;
+  width:100%;
+  /* top:0; */
+  padding:.4rem;
+  /* background:rgb(196,127,127); */
+  pointer-events: none;
+}
+
+.marquee:hover {
+  background:none;
+}
+
+.wrap {
+  height:100vh;
+  width:100vw;
+  animation: scroll 900s linear infinite;
+}
+
+.textbox-wrap {
+  position: fixed;
+  max-width: 500px;
+  top:2rem;
+  left:2rem;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom:1rem;
+  background:rgb(57,52,52);
+  color:rgb(249,221,123);
+  padding:.2rem 1rem;
+}
+
+.text-center {
+ text-align: center;
+}
+
+.button-wrap{
+  position: fixed;
+  width:30%;
+  /* background:red; */
+  bottom:10%;
+  left:50%;
+  transform:translateX(-50%);
+  /* height:10px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  /* width:20%; */
+  padding:0 2rem;
+  height:4rem;
+  /* background:green; */
+  /* background-image: url("../img/dirt.gif"); */
+  /* border:3px solid rgb(249,221,123); */
+  /* margin-left:4rem; */
+  transition: transform .5s;
+  background: rgb(57,52,52);
+  color: rgb(249,221,123);
+  text-decoration: none;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  /* transform: scale(.95); */
+  background: rgb(249,221,123);
+  color: rgb(57,52,52);
+  /* border:3px solid rgb(57,52,52); */
+}
+
+.object {
+  position:fixed;
+}
+
+.object:hover img{
+  /* opacity: 0; */
+  transform:scale(1.2);
+}
+
+.object:hover{
+  /* background:rgb(249,221,123); */
+  /* background:rgb(57,52,52); */
+}
+
+.garden {
+  background-image: url("../img/dirt.gif");
+}
+
+.excess {
+  background-image: url("../img/crackle.gif");
+}
+
+.fatigue {
+  background-image: url("../img/grass.gif");
+}
+
+@keyframes fly {
+  0% {transform:translate(-20vw, 110vh);}
+  30% {transform:translate(-20vw, 110vh);}
+  100% {transform:translate(110vw, -10vh);}
+}
+
+@keyframes float {
+  0% {transform:translate(-50%, -47%);}
+  100% {transform:translate(-50%, -53%);}
+}
+
+@keyframes scroll{
+  0% {background-position: 0 0;}
+  100% {background-position: -500vh 200vh;}
+}
