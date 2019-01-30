@@ -136,6 +136,8 @@ a li:hover {
 
 #cube {
   display: block;
+  background-color:rgb(156, 168, 209);
+  background-blend-mode: overlay;
   background-size: 200px;
   background-position: center center;
   border: .5px solid rgba(0,0,0,.5);
@@ -143,7 +145,7 @@ a li:hover {
   margin-bottom:1rem;
   animation: scroll 900s linear infinite;
   cursor:pointer;
-  
+
 }
 
 #cube:hover {

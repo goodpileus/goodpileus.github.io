@@ -20,7 +20,7 @@ var easing = 0.005;
 var colors = [];
 
 function setup() {
-  var canvas = createCanvas(560, 250);
+  var canvas = createCanvas(560, 50);
   canvas.parent('sketch');
 
   // createCanvas(10, windowHeight);

@@ -1,5 +1,5 @@
 body {
-  background: rgb(166,166,166);
+  background: rgb(226, 226, 226);
   margin:2rem;
   font-family: 'pt sans caption', sans-serif;
 }
@@ -40,11 +40,12 @@ li img {
 
 a li {
   color:black;
-  transition: background .2s;
+  transition: background .2s, color .2s;
 }
 
 a li:hover {
-  background:rgba(255,84,84,.83);
+  color:white;
+  background:rgba(0, 0, 0, 0.83);
 }
 
 .a {
@@ -151,9 +152,10 @@ a li:hover {
   display:flex;
   justify-content: center;
   align-self: center;
-  max-height:200px;
+  max-height:50px;
   border: .5px solid rgba(0,0,0,.5);
-  background: rgb(150,150,150);
+  background: rgb(226, 226, 226);
+  filter:grayscale(1);
 }
 
 
