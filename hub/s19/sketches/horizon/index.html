@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>horizon</title>
+    <style>
+
+    body{
+      margin:0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width:110vw;
+      height:110vh;
+      position: fixed;
+      z-index: 1;
+      filter:blur(8px);
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+    }
+    .segment {
+      background:black;
+      width:100%;
+      height:100%;
+    }
+
+    .window {
+      width:100%;
+    }
+
+    video {
+      /* width:100%; */
+      height:100vh;
+      position:fixed;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+    }
+
+    </style>
+</head>
+
+<body>
+  <video autoplay loop>
+   <source src="horizon_2.mp4">
+  </video>
+
+</body>
+</html>
