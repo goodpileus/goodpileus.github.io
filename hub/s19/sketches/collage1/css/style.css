@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+
+}
+
+body{
+  margin:0;
+  background: #484d57;
+  overflow: hidden;
+  font-size: 1rem;
+  min-height: 100%;
+  animation: breathe 20s infinite alternate ease-in-out;
+}
+
+p{
+  margin:0;
+}
+
+.wrap {
+  min-height:100vh;
+  max-height:100vh;
+  display: flex;
+  padding:3rem;
+}
+
+.literature {
+  position: relative;
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.5rem;
+}
+
+.wall {
+  width:5rem;
+  background: linear-gradient(to right, rgba(243,226,199,0) 0%, rgba(255,203,125,1) 50%, rgba(233,212,179,0) 100%);
+  background: linear-gradient(to right, rgba(243,226,199,0) 0%, rgba(255, 78, 78, 1) 50%, rgba(233,212,179,0) 100%);
+  background-repeat: repeat;
+  background-size:200% 100%;
+  animation: left .4s infinite linear;
+}
+
+.frame {
+  height:5rem;
+  width:100%;
+  background: linear-gradient(to bottom, rgba(243,226,199,0) 0%, rgba(255,203,125,1) 50%, rgba(233,212,179,0) 100%);
+  background: linear-gradient(to bottom, rgba(243,226,199,0) 0%, rgba(255, 78, 78, 1) 50%, rgba(233,212,179,0) 100%);
+  background-repeat: repeat;
+  background-size:100% 200%;
+  animation: up .4s infinite linear;
+}
+
+.left {
+  /* border-radius: 20px 0px 0px 20px; */
+  animation: right 4s infinite linear;
+
+}
+
+.right {
+  /* border-radius: 0px 20px 20px 0px; */
+  animation: left 4s infinite linear;
+
+}
+
+.top {
+  animation: down 4s infinite linear;
+
+}
+
+.bottom {
+  animation: up 4s infinite linear;
+
+}
+
+.container {
+  position: relative;
+  width:100%;
+  min-height:80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.window {
+  overflow: hidden;
+}
+
+.a {
+  width:100%;
+  height:100%;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(39, 39, 48, 1) 45%, rgba(39, 39, 48, 1) 55%, rgba(0,0,0,0) 100%);
+  background-repeat: repeat;
+  background-size:25% 50%;
+  animation: up 60s infinite linear;
+}
+
+.b {
+  width:50%;
+  height:20%;
+  background: radial-gradient(ellipse at center, rgba(169,181,209,1) 0%, rgba(169,181,209,1) 44%, rgba(88,122,85,1) 100%);
+  background-repeat: repeat;
+  background-size:50% 25%;
+  animation: up 20s infinite linear;
+}
+
+.c {
+  position: absolute;
+  width:100%;
+  height:10%;
+  bottom:18%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(30,30,38,1) 45%, rgba(30,30,38,1) 55%, rgba(0,0,0,0) 100%);
+}
+
+.down {
+  animation: down 60s infinite linear;
+}
+
+@keyframes down {
+  0% {background-position:  0 -200%;}
+  100% {background-position:  0 0%;}
+}
+
+@keyframes up {
+  0% {background-position:  0 0%;}
+  100% {background-position:  0 -200%;}
+}
+
+@keyframes left {
+  0% {background-position:  0 0;}
+  100% {background-position:  -200% 0;}
+}
+
+@keyframes right {
+  0% {background-position:  -200% 0;}
+  100% {background-position:  0 0;}
+}
+
+@keyframes breathe {
+  0% {background: #484d57;}
+  100% {background: #0a0a0a;}
+}

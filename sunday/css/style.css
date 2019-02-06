@@ -1,23 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+
+}
+
 body{
   margin:0;
   background: #b4bac7;
   overflow: hidden;
   font-size: 1rem;
+  min-height: 100%;
 }
 
 p{
   margin:0;
 }
 
-.container {
-  position: fixed;
-  bottom:0;
-  right:0;
+.wrap {
+  min-height:100vh;
+  max-height:100vh;
+  display: flex;
+  padding:1rem;
+}
+
+.literature {
+  position: relative;
+  /* min-height: 100%; */
   width:50%;
-  height:100%;
+  /* overflow: scroll; */
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.5rem;
+  /* margin-right:3rem; */
+}
+
+.literature img {
+  width: 100%;
+}
+
+.literature p{
+  font-family: 'pt sans narrow', sans-serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  position: relative;
+  /* display: block; */
+  /* top:50%; */
+  /* right:0; */
+  /* transform:translateY(-50%); */
+  width:50%;
+  min-height:100%;
   display: flex;
   /* border:1px solid rgb(0, 0, 0); */
   flex-direction: column;
+  /* margin-right: 1.5%; */
+  /* padding: 1rem; */
 }
 
 .container p {
@@ -60,7 +101,7 @@ p{
   height:10%;
   bottom:18%;
   /* opacity:.5; */
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 20%, rgba(48,48,48,1) 50%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(30,30,38,1) 45%, rgba(30,30,38,1) 55%, rgba(0,0,0,0) 100%);
 }
 
 .item {
@@ -96,7 +137,7 @@ p{
   position: fixed;
   top:0;
   left:0;
-  background: linear-gradient(to bottom, rgba(99,99,99,1) 0%, rgba(204,204,204,1) 45%, rgba(204,204,204,1) 55%, rgba(99,99,99,1) 100%);
+  background: linear-gradient(to bottom, rgba(99,99,99,1) 0%, #b4bac7 45%, #b4bac7 55%, #80a7ff 100%);
   background-repeat: repeat;
   animation: down 250s infinite linear;
   background-size:100% 5%;
@@ -105,8 +146,9 @@ p{
 .sign {
   position: fixed;
   font-family: 'Nanum Gothic Coding', monospace;
-  top:1rem;
-  left:1rem;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
   background:#80a7ff;
   /* border-radius: 12px; */
   padding:1.3rem 1.5rem;
