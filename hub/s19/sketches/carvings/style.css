@@ -1,0 +1,49 @@
+body {
+  background: black;
+}
+
+img{
+  max-width: 100%;
+}
+
+.wrap {
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+
+  margin:1rem auto;
+  /* background:red; */
+}
+
+.block {
+  padding:1rem;
+  width:15%;
+  /* background:red; */
+}
+
+.text {
+  margin:0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.rectangle {
+  position: fixed;
+  bottom:20px;
+  left:50px;
+  width:200px;
+  height:100px;
+  background:black;
+}
+
+.circle {
+  position: absolute;
+  bottom:120px;
+  left:50px;
+  width:100px;
+  height:100px;
+  background:black;
+  border-radius:50%;
+}
