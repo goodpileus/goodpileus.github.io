@@ -4,11 +4,13 @@ body {
 
 img{
   max-width: 100%;
-  border:2px solid rgb(255, 176, 0);
 }
 
 h1 {
   font-family: 'times new roman', serif;
+  padding: 5px;
+  border:2px solid rgb(255, 176, 0);
+  background:rgb(209, 140, 98);
 }
 
 .text {
