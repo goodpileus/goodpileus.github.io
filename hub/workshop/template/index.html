@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- The <head> is an essential part of the html document, it should always be preceded by the doctype and language elements. It includes the "title" of the page, which is the text that appears in the browser tab, as well as links to stylesheets, javascript, and other external material. -->
+
 <head>
   <meta charset="utf-8">
   <title>template</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- Then comes the <body>, where all the content of the page goes. This is where we'll spend most of our time building the structure of the page and adding text and images. -->
 <body>
+  <!-- Think of a div as a kind of general container, a blank slate that we can define and use as we like, whether to actually contain something or just define/refer to something. -->
   <div class="circle"></div>
   <div class="rectangle"></div>
 
   <div class="text">
+    <!-- An <h1> tag stands for "heading 1" think of it like a paragraph style that you would use and define in indesign. -->
     <h1>A Rant About "Technology"</h1>
+
+    <!-- A <p> tag stands for "paragraph". All of these tags carry default attributes and styles, but can be overridden to look and behave any way we like. -->
     <p>In an interesting and favorable notice of Changing Planes (which you can find elsewhere on the site, in Spanish and English), the Argentinean reviewer asserts that since Le Guin isn't a hard science fiction writer, "technology is carefully avoided." I stuck a footnote onto this in my translation of the article, and here is the footnote expanded — because this business is really getting my goat.</p>
 
     <p>'Hard' sf is all about technology, and 'soft' sf doesn't have any technology, right? And my books don't have technology in them, because I am only interested in psychology and emotions and squashy stuff like that, right?</p>
 
     <p>Not right. How can genuine science fiction of any kind lack technological content? Even if its principal interest isn't in engineering or how machines work — if like most of mine, it's more interested in how minds, societies, and cultures work — still, how can anybody make a story about a future or an alien culture without describing, implicitly or explicitly, its technology?</p>
 
-    <img src="img/coyote.gif" alt="">
+    <!-- The <img> tag is for inserting images into a page, every <img> tag needs an src or "source" and and alt attribute, which assits in accesibility if the image is unable to load or be seen by the user. We can use a url taken from somewhere else on the internet or we can refer to our own image that we've included in our website folder. The path to the image is important and depends on the location of your html document. -->
+    <img src="img/coyote.gif" alt="coyote">
 
     <p>Nobody can. I can't imagine why they'd want to.</p>
 
@@ -41,7 +50,12 @@
     <p>And all science fiction is, in one way or another, technological. Even when it's written by people who don't know what the word means.</p>
 
     <p>All the same, I agree with my reviewer that I don't write hard science fiction. Maybe I write easy science fiction. Or maybe the hard stuff's inside, hidden — like bones, as opposed to an exoskeleton....</p>
+    <!-- The <a> tag is how we create links! It is followed by href which stands for "hypertext reference." Then we can link to other pages in our website or extend our reach to anywhere else in the web. -->
     - <a href="http://www.ursulakleguin.com/">Ursula K Le Guin</a>
+
+    <p>
+      <a href="newpage.html">Next</a>
+    </p>
   </div>
 
 </body>
