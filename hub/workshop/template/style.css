@@ -1,29 +1,37 @@
 body {
-  background: rgb(133, 163, 115);
+  background: rgb(90, 149, 108);
 }
 
 img{
+  display:inline-block;
   max-width: 100%;
 }
 
-h1 {
-  font-family: 'times new roman', serif;
-  padding: 5px;
-}
-
 p {
-  width:500px;
+  max-width:700px;
+  display:inline-block;
+  text-align: center;
 }
 
 .rectangle {
-  width:500px;
+  width:190px;
   height:100px;
-  background:black;
+  display: inline-block;
+  background:orange;
 }
 
 .circle {
-  width:500px;
+  width:190px;
   height:100px;
-  background:black;
+  display: inline-block;
+  background:blue;
   border-radius:50%;
 }
+
+ .egg {
+   display: inline-block;
+   width: 126px;
+   height: 180px;
+   background-color: red;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+ }
