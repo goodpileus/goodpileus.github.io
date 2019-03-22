@@ -9,30 +9,20 @@ img{
 h1 {
   font-family: 'times new roman', serif;
   padding: 5px;
-  border:2px solid rgb(255, 176, 0);
-  background:rgb(209, 140, 98);
 }
 
-.text {
-  margin:0 auto;
-  max-width: 500px;
-  text-align: center;
+p {
+  width:500px;
 }
 
 .rectangle {
-  position: fixed;
-  bottom:20px;
-  left:50px;
-  width:200px;
+  width:500px;
   height:100px;
   background:black;
 }
 
 .circle {
-  position: absolute;
-  bottom:120px;
-  left:50px;
-  width:100px;
+  width:500px;
   height:100px;
   background:black;
   border-radius:50%;
