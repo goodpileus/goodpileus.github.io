@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- today is sunday -->
+<!-- today we do nothing -->
+
+<!-- it is february 24, 2019 -->
+<!-- sundays we should wash our bodies in the waterfall-->
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sunday - closed</title>
-    <link rel="stylesheet" href="assets/css/shutter.css">
+    <title>sunday</title>
+
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Nunito|PT+Sans+Narrow" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <script>
+    $( function() {
+      $( ".draggable" ).draggable();
+    } );
+    </script>
 </head>
 
 <body>
-  <div class="shutter"></div>
+  <div class="total-wrap">
 
-  <div class="sign">
-    <p>
-      Sorry,<br /> we're closed<br /><br />
-    </p>
-    <p>
-      Mon:&nbsp; closed <br />
-      Tue:&nbsp; closed <br />
-      Wed:&nbsp; closed <br />
-      Thu:&nbsp; closed <br />
-      Fri:&nbsp; closed <br />
-      Sat:&nbsp; closed <br />
-      Sun:&nbsp; open <br />
-    </p>
+    <div class="wrap">
+      <img src="assets/img/panel.gif" alt="" />
+      
+      <div class="light"></div>
+    </div>
+
   </div>
-
 
 </body>
 </html>
