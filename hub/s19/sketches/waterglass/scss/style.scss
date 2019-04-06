@@ -1,0 +1,92 @@
+$batteryWidth: 156px;
+$batteryHeight: 72px;
+$batteryBorderSize: 2px;
+$batteryStrokeColor: #000;
+$batteryBorderRadius: 2px;
+$batteryNubSize: $batteryHeight * 0.5;
+
+.battery-manager {
+  padding: 0 20px;
+
+  > .info { margin-bottom: 15px; }
+  margin-bottom: 30px;
+}
+
+.battery {
+  position: relative;
+  width: $batteryWidth;
+  height: $batteryHeight;
+  border: $batteryBorderSize solid $batteryStrokeColor;
+  border-radius: $batteryBorderRadius;
+  position: relative;
+  padding: $batteryBorderSize + 1;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -1 * (($batteryNubSize*0.35) + $batteryBorderSize + 2);
+    margin-top:-1 * ($batteryNubSize/2);
+    width: $batteryNubSize;
+    height: $batteryNubSize;
+    background: $batteryStrokeColor;
+    clip: rect(0, $batteryNubSize, $batteryNubSize, ($batteryNubSize*0.65));
+    border-radius: 50%;
+  }
+
+  > .level {
+    width: 0%;
+    height: 100%;
+    background: $batteryStrokeColor;
+    border-radius: $batteryBorderRadius/2;
+  }
+  @for $i from 0 through 20 {
+    > .level--#{$i * 5} {
+      width: 5% * $i;
+    }
+  }
+
+  > .bolt {
+    display: none;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom: 24px solid $batteryStrokeColor;
+    position: absolute;
+    transform: rotateZ(27deg);
+    top: calc(50% - 24px);
+    left: calc(50% - 2px);
+
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-top: 24px solid $batteryStrokeColor;
+      position: absolute;
+      margin-top: 18px;
+    }
+  }
+
+  > .bolt--border {
+    @extend .bolt;
+    display: none;
+    border: 9px solid transparent;
+    border-bottom: 28px solid #fff;
+    left: calc(50% - 5px);
+    top: calc(50% - 29px);
+
+    &:after {
+      border: 9px solid transparent;
+      border-top: 28px solid #fff;
+      margin-top: 18px;
+      left: -5px;
+    }
+  }
+
+  &--is-plugged {
+    .bolt,
+    .bolt--border { display: block; }
+  }
+}

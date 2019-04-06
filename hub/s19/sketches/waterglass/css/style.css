@@ -1,0 +1,171 @@
+body{
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+.info {
+  display:none;
+}
+
+.wrap {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+}
+
+.battery-manager {
+  /* padding: 0 20px; */
+  margin-bottom: 30px;
+}
+.battery-manager > .info {
+  margin-bottom: 15px;
+}
+
+.battery {
+  transform: rotate(270deg);
+  position: relative;
+  min-width: 90vh;
+  height: 60vw;
+  /* height:300; */
+  border: 1px solid #969696;
+  border-radius: 80px 0 0 80px;
+  position: relative;
+  padding: 0px;
+}
+
+/* .battery:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -16.6px;
+  margin-top: -18px;
+  width: 36px;
+  height: 36px;
+  background: #000;
+  clip: rect(0, 36px, 36px, 23.4px);
+  border-radius: 50%;
+} */
+
+.battery > .level {
+  width: 0%;
+  height: 100%;
+  background: #e6f5f6;
+  border-radius: 1px;
+  border-radius: 80px 0 0 80px;
+}
+.battery > .level--0 {
+  width: 0%;
+}
+.battery > .level--5 {
+  width: 5%;
+}
+.battery > .level--10 {
+  width: 10%;
+}
+.battery > .level--15 {
+  width: 15%;
+}
+.battery > .level--20 {
+  width: 20%;
+}
+.battery > .level--25 {
+  width: 25%;
+}
+.battery > .level--30 {
+  width: 30%;
+}
+.battery > .level--35 {
+  width: 35%;
+}
+.battery > .level--40 {
+  width: 40%;
+}
+.battery > .level--45 {
+  width: 45%;
+}
+.battery > .level--50 {
+  width: 50%;
+}
+.battery > .level--55 {
+  width: 55%;
+}
+.battery > .level--60 {
+  width: 60%;
+}
+.battery > .level--65 {
+  width: 65%;
+}
+.battery > .level--70 {
+  width: 70%;
+}
+.battery > .level--75 {
+  width: 75%;
+}
+.battery > .level--80 {
+  width: 80%;
+}
+.battery > .level--85 {
+  width: 85%;
+}
+.battery > .level--90 {
+  width: 90%;
+}
+.battery > .level--95 {
+  width: 95%;
+}
+.battery > .level--100 {
+  width: 100%;
+}
+.battery > .bolt, .battery > .bolt--border {
+  display: none;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom: 24px solid #000;
+  position: absolute;
+  -webkit-transform: rotateZ(27deg);
+          transform: rotateZ(27deg);
+  top: calc(50% - 24px);
+  left: calc(50% - 2px);
+}
+.battery > .bolt:after, .battery > .bolt--border:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top: 24px solid #000;
+  position: absolute;
+  margin-top: 18px;
+}
+.battery > .bolt--border {
+  display: none;
+  border: 9px solid transparent;
+  border-bottom: 28px solid #fff;
+  left: calc(50% - 5px);
+  top: calc(50% - 29px);
+}
+.battery > .bolt--border:after {
+  border: 9px solid transparent;
+  border-top: 28px solid #fff;
+  margin-top: 18px;
+  left: -5px;
+}
+.battery--is-plugged .bolt, .battery--is-plugged .battery > .bolt--border,
+.battery--is-plugged .bolt--border {
+  display: block;
+}
+
+@media all and (min-width: 800px) {
+  .battery {
+    height: 300px;
+    border-radius: 120px 0 0 120px;
+  }
+
+  .battery > .level {
+    border-radius: 120px 0 0 120px;
+  }
+}
