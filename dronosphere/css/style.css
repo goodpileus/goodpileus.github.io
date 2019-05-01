@@ -1,0 +1,128 @@
+body {
+  padding-left:1rem;
+  margin:0;
+  overflow-x: hidden;
+  background:rgb(167, 186, 244);
+  /* cursor:none; */
+}
+
+p {
+  text-align: center;
+}
+
+
+@font-face {
+    font-family: BillyRegular;
+    src: url(../assets/billy_regular.woff);
+    font-weight:400;
+}
+
+a {
+  display:inline;
+  color:white;
+  font-family: BillyRegular, Arial, sans-serif;
+  font-size: 5rem;
+  text-decoration: none;
+  margin:1rem;
+  /* transition: color .1s ease-in-out; */
+}
+
+a:hover {
+  color:black;
+  /* cursor:none; */
+}
+
+ul {
+  padding:0;
+  margin:0;
+  max-width: 100vw;
+  /* text-align: center; */
+}
+
+li {
+  list-style: none;
+  display:inline-block;
+}
+
+.loader-container {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  -moz-animation: scaleUp 3s ease-in-out;
+  -webkit-animation: scaleUp 3s ease-in-out;
+  animation: scaleUp 20s ease-in-out;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  z-index: -9999;
+
+}
+.loader-container .loader {
+  background: white;
+  border-radius: 100%;
+  filter: blur(20px);
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes $animationName {
+  50% {
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@-moz-keyframes scaleUp {
+  50% {
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@-ms-keyframes scaleUp {
+  50% {
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes scaleUp {
+  10% {
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
