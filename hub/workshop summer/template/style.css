@@ -1,0 +1,39 @@
+body {
+  background: rgb(90, 149, 108);
+}
+
+img{
+  display:inline-block;
+  max-width: 100%;
+}
+
+p {
+  max-width:700px;
+  display:inline-block;
+  text-align: center;
+}
+
+.rectangle {
+  width:190px;
+  height:100px;
+  display: inline-block;
+  background: rgb(0,0,0);
+}
+
+.circle {
+  width:190px;
+  height:100px;
+  display: inline-block;
+  background: linear-gradient(to right, rgba(239,197,202,1) 0%, rgba(210,75,90,1) 50%, rgba(186,39,55,1) 51%, rgba(241,142,153,1) 100%);
+  border-radius:20%;
+}
+
+ .egg {
+   display: inline-block;
+   width: 126px;
+   height: 180px;
+   background-color: red;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+ }
+
+ #triangle-up { width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid red; }
