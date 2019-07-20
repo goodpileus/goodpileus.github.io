@@ -1,0 +1,40 @@
+html {
+  background: linear-gradient(to bottom, rgba(242,231,201,1) 0%, rgba(231,239,197,1) 25%, rgba(191,215,181,1) 50%, rgba(163,196,188,1) 75%, rgba(65,60,88,1) 100%);
+}
+
+h1 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 40px;
+  color: #33333;
+  margin: 5px;
+}
+
+.footer {
+  color: #ffff;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.box1 {
+  width: 100%;
+  height: 1500px;
+  background: linear-gradient(to bottom, rgba(242,231,201,1) 0%, rgba(231,239,197,1) 100%);
+}
+
+.box2 {
+  width: 100%;
+  height: 1500px;
+  background: linear-gradient(to bottom, rgba(231,239,197,1) 0%, rgba(191,215,181,1) 100%);
+}
+
+.box3 {
+  width: 100%;
+  height: 1500px;
+  background: linear-gradient(to bottom, rgba(191,215,181,1) 0%, rgba(163,196,188,1) 100%);
+}
+
+.box4 {
+  width: 100%;
+  height: 1500px;
+  background: linear-gradient(to bottom, rgba(163,196,188,1) 0%, rgba(65,60,88,1) 100%);
+}

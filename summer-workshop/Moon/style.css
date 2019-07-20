@@ -1,0 +1,55 @@
+body {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* a{
+  margin-bottom: 100px;
+} */
+
+h{
+  padding: 5px;
+  font-size: 200px;
+  color: #3F7FBF;
+  font-family: Satisfy, "Open Sans",monospace;
+  text-align: center;
+
+}
+
+.book {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+p {
+  font-size: 100px;
+  color: #3F7FBF;
+  font-family: Satisfy, "Open Sans",monospace;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.notes {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+
+.sleep {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
+.cat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}

@@ -1,0 +1,96 @@
+html{
+}
+h1{
+  color: rgb(36,136,145);
+  margin: 0 auto;
+  font-size: 35px;
+}
+
+p{
+  color: rgb(36,136,145);
+  /* font-size:30px; */
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.small-text{
+  color: rgb(36,136,145);
+  font-size: 20px;
+  margin: 0 auto;
+}
+/* p{
+  width: 200px;
+  padding:50px;
+  margin: 0 auto;
+  background: rgb(52, 220, 224);
+  color: rgb(17, 86, 92);
+  text-align: center;
+  font-size: 30px;
+  font-family: 'DM Serif Display', serif;
+  border: 5px solid rgb(17, 86, 92);
+
+} */
+img {
+  display: block;
+  width: 500px;
+  margin-top: 10px;
+  margin: 0 auto;
+
+}
+
+.pinkbox {
+  width: 1000px;
+  height: 30px;
+  background: pink;
+  border: 5px solid lightblue;
+  margin: 0 auto;
+}
+
+/* .anotherbox {
+  width: 100px;
+  height: 100px;
+  background: url('dog.jpg');
+
+} */
+
+.square {
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+  border: 5px solid pink;
+  margin: 0 auto;
+  margin-top: 15px
+}
+
+.rectangle{
+  width: 300px;
+  height: 200px;
+  background: rgb(17, 86, 92);
+  border: 5px solid pink;
+  margin: 0 auto;
+  margin-bottom: 15px
+}
+
+.pinkbox {
+  width: 900px;
+  height: 30px;
+  background: pink;
+  border: 5px solid lightblue;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+  
+
+
+
+
+/* .circle {
+  width: 200px;
+  height: 200px;
+  background: darkred;
+  border-radius: 30% 50% 0 50%;
+  position:relative;
+  top: 20px;
+  left: 20px;
+} */

@@ -1,0 +1,39 @@
+h1{
+  font-size: 42px;
+  color: #E4439E;
+  font-family: 'Arvo', serif;
+  vertical-align: middle;
+}
+ p{
+  width: 500px;
+  padding: 20px;
+  background: #E4439E;
+  background-position: center;
+  color: #A91874;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Arvo', serif;
+}
+a{
+  font-size: 36px;
+  background-color: #A9186A;
+  font-family: 'Arvo', serif;
+}
+img {
+  width: 200px;
+  vertical-align: middle;
+}
+
+img {
+  width: 200px;
+}
+p2{
+  width: 500px;
+  padding: 20px;
+  background: transparent;
+  background-position: center;
+  color: #A91874;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Arvo', serif;
+}

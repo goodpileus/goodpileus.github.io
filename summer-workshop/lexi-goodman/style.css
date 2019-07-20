@@ -1,0 +1,56 @@
+html{
+  background: url('andioop.gif');
+}
+
+
+
+p {
+  width: 500px;
+  padding: 20px;
+  margin:50px
+  background: rgb(255, 100, 100);
+  color: #e0d56f;
+  text-align: center;
+  font-size: 20px;
+}
+
+img {
+  display:block;
+  width: 200px;
+  margin: 1px 4px 6px 2px
+}
+
+.mybox {
+  width: 50px;
+  height: 50px;
+  background: green;
+  border: 10px dashed blue;
+}
+
+.anotherbox {
+  width: 800px;
+  height: 800px;
+  background: url('giphy.gif');
+  <img class='tenor.gif'>
+  background-size: contain;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background: green;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0 0;
+position: relative;
+  top: 20px;
+  left:60px;
+  background: blue;
+}

@@ -1,0 +1,92 @@
+html {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLd4DmyuGcP4pRoxLk_epqLs6a9ZxODgszUdb9AGJKUK686PiN4Q);
+
+}
+h1 {
+  padding: 50px;
+  background: rgba(249, 127, 194, 0.69);
+  color: #022644;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Mountains of Christmas', cursive;
+  margin: 5 auto;
+
+
+}
+
+h2 {
+  width: 500px;
+  padding: 10px;
+  background: rgba(200, 127, 194, 0.69);
+  color: #022644;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Mountains of Christmas', cursive;
+
+
+
+}
+
+.clown {
+  width: 1000px;
+  height: 500px;
+  background: url(https://media.istockphoto.com/vectors/clowns-faces-icons-big-set-vector-illustration-vector-id926924252);
+}
+.cake {
+  width: 1000px;
+  height: 600px;
+  background: url(file:///Users/emily.panek/Downloads/gs.jpg);
+}
+
+.apple {
+  width: 1000px;
+  height: 500px;
+  background: url(https://c8.alamy.com/comp/RD39B6/seamless-backgroundtexture-with-red-and-green-juicy-apples-with-leaves-and-shadow-vector-illustration-eps10-RD39B6.jpg);
+}
+
+.corn {
+  width: 1000px;
+  height: 600px;
+  background: url(file:///Users/emily.panek/Downloads/DD-Pink-Sparkles-Background-77878-Preview.jpg);
+
+}
+.de {
+  width: 100px;
+  background: rgba(200, 127, 194, 0.69);
+  padding: 5px;
+  margin: 0 auto;
+}
+.des {
+  width: 470px;
+  background: rgba(200, 127, 194, 0.69);
+  padding: 5px;
+  margin: 0 auto;
+}
+
+p {
+  width: 800px;
+  padding: 20px;
+  color: #2f4f4f;
+  text-align: center;
+  font-size: 18px;
+
+  font-family: 'Handlee', cursive;
+
+}
+
+img {
+  width: 400px;
+margin: 2 auto;
+}
+
+
+
+
+.cat {
+  width: 9000px;
+  height: 50px;
+  background: rgba(249, 127, 194, 0.69);
+  position: fixed;
+  Bottom: 1%
+
+}

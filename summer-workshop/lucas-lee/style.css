@@ -1,0 +1,17 @@
+html {
+}
+a:hover{cursor:nw-resize;}
+
+p {
+  width: 100px;
+  padding: 20px;
+  color: #000000;
+  text-align: center;
+  margin: 0 auto
+}
+
+img {
+  display:block;
+  width: 350px;
+  margin: 0 auto;
+}
