@@ -7,6 +7,15 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i|IBM+Plex+Sans:300,300i,400,400i,600,600i&display=swap" rel="stylesheet">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/favi.png">
+
+    <style>
+    :root {
+      --yellow: rgba(189, 217, 254, 1);
+    }
+    </style>
 </head>
 
 <body>
@@ -24,20 +33,87 @@
       <div class="content">
 
         <div class="content-panel">
-          <h2>General</h2>
-          <div class="btn-wrap">
-            <a class="btn" href="#">Place for Rest</a>
-            <a class="btn" href="#">Are.na Archive</a>
+
+          <h2>Materials</h2>
+          <p>First, we will need a text-editor to write our code in.</p>
+
+          <p>I suggest Atom because it's free, accesible, and the editor that I use. </p>
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="https://atom.io/">Atom</a>
           </div>
+
+          <hr class="hr-blank" />
+
+          <p>But, ultimately, choosing a text-editor comes down to personal preference. Feel free to explore your other options:</p>
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="https://www.sublimetext.com/">Sublime Text</a>
+            <a class="btn" target="_blank" href="http://brackets.io/">Brackets</a>
+            <a class="btn" target="_blank" href="https://notepad-plus-plus.org/">Notepad++</a>
+          </div>
+
+          <hr class="hr-blank" />
+          <hr class="hr-blank" />
+          <hr class="hr-blank" />
+
+          <p>Next is the browser. If you don't already have Chrome downloaded, go ahead and download it. We'll use it as our primary browser to test our websites (for consistency and its developer tools).</p>
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="https://www.google.com/chrome/">Chrome</a>
+          </div>
+
+
+          <span id="reading"></span><div class="hr-sun"></div>
+
+          <h2>Reading</h2>
+          <div class="btn-wrap column">
+            <a class="btn" target="_blank" href="http://luckysoap.com/statements/handmadeweb.html">J.R. Carpenter, A Handmade Web</a>
+            <a class="btn" target="_blank" href="http://ursulakleguinarchive.com/Note-Technology.html">Ursula K. Le Guin, A Rant on Technology</a>
+            <a class="btn" target="_blank" href="https://www.are.na/blog/the-poetry-of-tools">Mindy Seu, The Poetry of Tools</a>
+            <a class="btn" target="_blank" href="https://frankchimero.com/writing/the-webs-grain/">Frank Chimero, The Web’s Grain</a>
+            <a class="btn" target="_blank" href="https://frankchimero.com/writing/the-good-room/">Frank Chimero, The Good Room</a>
+            <a class="btn" target="_blank" href="https://coolguy.website/writing/basic-html-is-the-new-punk-folk-explosion.html">Zach Mandeville, Basic HTML Is the New Punk Folk Explosion</a>
+            <a class="btn" target="_blank" href="https://www.youtube.com/watch?v=9KKMnoTTHJk">Anil Dash, The Web We Lost</a>
+            <a class="btn" target="_blank" href="https://thecreativeindependent.com/people/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/">Laurel Schwulst, My Website is a Shifting House Next to a River of Knowledge</a>
+          </div>
+
+          <span id="resource"></span><div class="hr-sun"></div>
+
+
+          <h2>Reference</h2>
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="https://www.w3schools.com/">w3schools</a>
+            <a class="btn" target="_blank" href="https://devdocs.io/">DevDocs</a>
+            <a class="btn" target="_blank" href="https://validator.w3.org/">HTML Validator</a>
+          </div>
+
           <hr class="hr-blank">
           <hr class="hr-blank">
           <hr class="hr-blank">
+
           <h2>Tutorial/Lesson</h2>
-          <div class="btn-wrap">
-            <a class="btn" href="projects/poem.html">Poem</a>
-            <a class="btn" href="projects/story.html">Story</a>
-            <a class="btn" href="projects/site.html">Site Specific</a>
-            <a class="btn" href="projects/final.html">Final</a>
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="https://internetingishard.com/html-and-css/">Interneting is Hard</a>
+            <a class="btn" target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp</a>
+          </div>
+
+          <hr class="hr-blank">
+          <hr class="hr-blank">
+          <hr class="hr-blank">
+
+          <h2>Designers</h2>
+          <div class="btn-wrap row">
+            <a class="btn" target="_blank" href="http://laurelschwulst.com/">Laurel Schwulst</a>
+            <a class="btn" target="_blank" href="http://www.mindyseu.com/">Mindy Seu</a>
+            <a class="btn" target="_blank" href="http://cdxs.ist/">Becca Abbe</a>
+            <a class="btn" target="_blank" href="https://bellkiosk.site/">Elliot Cost</a>
+            <a class="btn" target="_blank" href="https://raphaelbastide.com/">Raphael Bastide</a>
+            <a class="btn" target="_blank" href="http://shirazn.es/">Shiraz Gallab</a>
+            <a class="btn" target="_blank" href="https://jas.life">Jeffrey Alan Scudder</a>
+            <a class="btn" target="_blank" href="https://rahulshinde.com/">Rahul Shinde</a>
+            <a class="btn" target="_blank" href="https://frankchimero.com/">Frank Chimero</a>
+            <a class="btn" target="_blank" href="https://www.jon-kyle.com/">Jon-Kyle Mohr</a>
+            <a class="btn" target="_blank" href="https://urcad.es">Édouard Urcades</a>
+            <a class="btn" target="_blank" href="https://ertdfgcvb.xyz/">Andreas Gysin</a>
+            <a class="btn" target="_blank" href="https://eatock.com/">Daniel Eatock</a>
           </div>
         </div>
 
@@ -45,6 +121,12 @@
 
       <div class="garden">
         <a class="garden-btn" href="#"></a>
+      </div>
+
+      <div class="bottom-nav">
+          <a class="bottom-btn" href="#">top</a>
+          <a class="bottom-btn" href="#reading">reading</a>
+          <a class="bottom-btn" href="#resource">resource</a>
       </div>
 
       <div class="fade-top"></div>
