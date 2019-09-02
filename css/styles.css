@@ -3,10 +3,11 @@
 }
 
 :root {
-  --textcolor: rgb(203, 195, 218);
-  --bg: rgb(137, 131, 149);
-  --hover: rgb(18, 160, 136);
+  --textcolor: rgb(42, 42, 42);
+  --bg: #d7cec2;
+  --hover: #f06235;
   --tan: rgb(201, 210, 206);
+  --nicegreen: #aabb7f;
   --green: rgb(132, 206, 155);
   --yellow: rgb(242, 220, 165);
   --border: rgba(20,20,20,.6);
@@ -18,7 +19,7 @@
 
 ::-moz-selection {
   /* background: rgb(242, 220, 165); */
-  background:white;
+  background:var(--hover);
 }
 
 html {
@@ -56,6 +57,13 @@ ul {
 li {
   list-style:none;
   line-height: 1.75rem;
+}
+
+hr {
+  border:none;
+  border-bottom:1px solid var(--textcolor);
+  /* height:4px; */
+  margin:1rem 0;
 }
 
 button {
@@ -96,7 +104,8 @@ button {
   -o-transition: opacity 1s ease-in-out;
   /* margin:1rem; */
   padding: 1rem;
-  cursor: help;
+  /* cursor: help; */
+  /* pointer-events: none; */
 }
 
 
@@ -109,6 +118,7 @@ button {
   width:100%;
   justify-content: space-between;
   align-items: flex-start;
+
   /* height:2rem; */
   /* background:orange; */
 }
@@ -121,6 +131,7 @@ button {
 
 #phrase {
   font-style:italic;
+  margin-right: 4rem;
   /* background: green; */
   /* text-align: center; */
   /* flex-grow: 1; */
@@ -135,6 +146,7 @@ button {
   display: flex;
   /* height:100%; */
   justify-content: flex-end;
+  z-index: 9999;
   /* align-items: center; */
 }
 
@@ -144,16 +156,20 @@ button {
   align-items: center;
   justify-content: center;
   /* height:100%; */
-  width:2rem;
+  width:3.5rem;
+  height:3.5rem;
   text-align: center;
-  border:1px solid var(--textcolor);
-  border-radius: 50%;
-  transition: background .3s ease-in-out;
+  /* border:1px solid var(--textcolor); */
+  background: var(--textcolor);
+  /* border-radius: 50%; */
+  border-radius: 20px;
+  transition: background .1s ease-in-out;
   /* padding:.2rem 0; */
+  /* font-size: 2rem; */
 }
 
 #links-btn:hover {
-  background: rgb(255, 255, 255);
+  background: var(--hover);
   cursor: pointer;
 }
 
@@ -161,32 +177,42 @@ button {
 /* PULSAR
 --------------------------------------- */
 #pulsar-wrap {
-  position: absolute;
-  top:0;
+  position: fixed;
+  bottom:0;
   left:0;
   width:100%;
-  height:100%;
+  height:50%;
   /* background: red; */
-  z-index: -1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
   flex-direction: column;
+  /* border-top:1px solid var(--textcolor); */
 }
 
 #pulsar {
   /* position: absolute; */
   /* border:1px dashed var(--textcolor); */
-  border-radius: 50%;
-  width:30rem;
-  height:20rem;
+  /* border-radius: 50%; */
+  width:100%;
+  height:100%;
+  z-index: 99;
   max-height: 100vh;
   max-width: 100vw;
+  border: none;
   /* margin:1rem; */
-  background: linear-gradient(to bottom, rgba(168,191,163,0) 0%, rgba(51,51,51,1) 50%, rgba(168,191,163,0) 100%);
+  background: linear-gradient(to bottom, rgba(168,191,163,0) 0%, rgba(45, 45, 45, 1) 50%, rgba(168,191,163,0) 100%);
   background-repeat: repeat;
-  animation: down 150s infinite linear;
-  background-size:100% 20%;
+  animation: down 120s infinite linear;
+  background-size:100% 15%;
+}
+
+#pulsar:hover {
+  /* background:var(--hover); */
+  background: linear-gradient(to bottom, rgba(168,191,163,0) 0%, var(--hover) 50%, rgba(168,191,163,0) 100%);
+  background-repeat: repeat;
+  animation: down 120s infinite linear;
+  background-size:100% 15%;
 }
 
 @keyframes down {
@@ -196,22 +222,32 @@ button {
 }
 
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+  margin-top: 1rem;
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; */
+  /* position: fixed; */
   /* background: rgb(136, 119, 148); */
-  border-radius: 50%;
-  width:30rem;
-  height:20rem;
+  /* border-radius: 50%; */
+  /* top:0; */
+  /* padding-left: 1rem; */
+  /* width:100%; */
+  /* height:50%; */
   opacity: 0;
-  max-height: 100vh;
-  max-width: 100vw;
-  transition: opacity .3s ease-in-out;
+  /* z-index: -1;
+  font-size: 2rem; */
+  /* line-height: 3rem; */
+  /* text-align: center; */
+  /* max-height: 100vh; */
+  /* max-width: 100vw; */
+  /* display: none; */
+  transition: opacity .1s ease-in-out;
+  pointer-events: none;
 }
 
 .about-toggle {
   opacity:1;
+  pointer-events: all;
 }
 
 
@@ -288,23 +324,23 @@ button {
 /* MEDIA QUERY
 --------------------------------------- */
 @media (min-width:800px) {
-  #header {
-    flex-direction: row;
+  /* #header {
+    flex-direction: c;
     align-items: flex-start;
-  }
+  } */
 
-  #name {
+  /* #name {
     width:33%;
-  }
+  } */
 
-  #phrase {
+  /* #phrase {
     width:33%;
-    text-align: center;
+    text-align: center; */
   }
 
-  #links {
+  /* #links {
     position: relative;
     width:33%;
     justify-content: flex-end;
-  }
+  } */
 }

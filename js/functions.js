@@ -36,6 +36,12 @@ window.onload = function() {
   document.getElementById("wrapper").style.opacity = "1";
 }
 
+var interval = setInterval(timer, 5000);
+
+function timer() {
+  newPhrase();
+}
+
 // RANDOM LIST
 // ---------------------------------------------
 // var random = document.querySelector('.random');
