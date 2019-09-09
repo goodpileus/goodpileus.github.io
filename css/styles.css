@@ -5,7 +5,7 @@
 :root {
   --textcolor: rgb(42, 42, 42);
   --bg: #d7cec2;
-  --hover: #f06235;
+  --hover: #316e3f;
   --tan: rgb(201, 210, 206);
   --nicegreen: #aabb7f;
   --green: rgb(132, 206, 155);
@@ -179,7 +179,7 @@ button {
 #pulsar-wrap {
   position: fixed;
   bottom:0;
-  left:0;
+  right:0;
   width:100%;
   height:50%;
   /* background: red; */
@@ -203,16 +203,36 @@ button {
   /* margin:1rem; */
   background: linear-gradient(to bottom, rgba(168,191,163,0) 0%, rgba(45, 45, 45, 1) 50%, rgba(168,191,163,0) 100%);
   background-repeat: repeat;
-  animation: down 120s infinite linear;
-  background-size:100% 15%;
+  animation: down 150s infinite linear;
+  background-size:100% 8%;
+  /* border-left: 1px solid var(--textcolor); */
 }
 
 #pulsar:hover {
   /* background:var(--hover); */
-  background: linear-gradient(to bottom, rgba(168,191,163,0) 0%, var(--hover) 50%, rgba(168,191,163,0) 100%);
+  /* background: linear-gradient(to bottom, rgba(168,191,163,0) 0%, var(--hover) 50%, rgba(168,191,163,0) 100%);
   background-repeat: repeat;
-  animation: down 120s infinite linear;
-  background-size:100% 15%;
+  animation: down 150s infinite linear;
+  background-size:100% 8%; */
+}
+
+.object {
+  width:100%;
+  height:100%;
+  background:var(--textcolor);
+  background:rgb(159, 173, 88);
+  position: absolute;
+  opacity: 0;
+
+  transition: opacity 1s ease;
+  /* top:50%;
+  left:50%;
+  transform: translate(-50%, -50%); */
+  /* border-radius: 50%; */
+}
+
+#pulsar-wrap:hover .object {
+  opacity: 1;
 }
 
 @keyframes down {
@@ -233,7 +253,7 @@ button {
   /* padding-left: 1rem; */
   /* width:100%; */
   /* height:50%; */
-  opacity: 0;
+  opacity: 1;
   /* z-index: -1;
   font-size: 2rem; */
   /* line-height: 3rem; */
@@ -242,7 +262,7 @@ button {
   /* max-width: 100vw; */
   /* display: none; */
   transition: opacity .1s ease-in-out;
-  pointer-events: none;
+  pointer-events: all;
 }
 
 .about-toggle {
@@ -324,23 +344,9 @@ button {
 /* MEDIA QUERY
 --------------------------------------- */
 @media (min-width:800px) {
-  /* #header {
-    flex-direction: c;
-    align-items: flex-start;
-  } */
-
-  /* #name {
-    width:33%;
-  } */
-
-  /* #phrase {
-    width:33%;
-    text-align: center; */
+  #pulsar-wrap {
+    /* right:0; */
+    width:50%;
+    height:100%;
   }
-
-  /* #links {
-    position: relative;
-    width:33%;
-    justify-content: flex-end;
-  } */
 }
