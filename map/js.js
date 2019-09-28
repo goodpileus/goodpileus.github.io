@@ -2,6 +2,15 @@
 //   $('#container').autoscroll();
 // });
 
+// only loads once the window completely loads
+window.onload = function() {
+  console.log(':-)');
+
+  // hide loading mask
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("container").style.opacity = "1";
+}
+
 let viewport = document.querySelector('#container')
 let content = viewport.querySelector('.bib')
 let img = content.querySelector('img')
@@ -26,7 +35,7 @@ img.addEventListener('load', () => {
   let offsetX = img.scrollWidth - viewport.offsetWidth
   let offsetY = img.scrollHeight - viewport.offsetHeight
   sb.setPosition({
-    x: offsetX / 2,
-    y: offsetY / 2.3
+    x: offsetX / 2.045,
+    y: offsetY / 2.36
   })
 })
