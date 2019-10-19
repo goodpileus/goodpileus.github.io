@@ -1,0 +1,235 @@
+:root {
+  --green: rgb(129,255,140);
+  --green2: rgb(111,217,120);
+  --textC: rgb(40);
+}
+
+html{
+  margin:0;
+  font-family: monospace;
+}
+
+@font-face {
+    font-family: labmono;
+    src: url(assets/LabMono-Regular.otf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background:rgb(200,200,200);
+}
+
+canvas {
+  vertical-align: top;
+}
+
+p {
+  margin:0;
+}
+
+#generatorCanvas{
+
+}
+
+#controls {
+
+}
+
+.slider {
+  width:200px;
+}
+
+.button {
+  font-family: labmono;
+  font-size: 12px;
+  background: rgb(240,240,240);
+  border: none;
+  width:300px;
+  color: black;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background:rgb(129,255,140);
+  cursor:pointer;
+}
+
+.button:active {
+  background:rgb(111,217,120);
+}
+
+.button:focus, .btntogOff:focus, .btntogOn:focus {
+  outline: none;
+}
+
+.btntogOn {
+  font-family: labmono;
+  font-size: 12px;
+  background: rgb(129,255,140);
+  border: 1px solid black;
+  width:200px;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.btntogOn:hover {
+  background:rgb(111,217,120);
+  cursor:pointer;
+}
+
+.btntogOn:active {
+  background:rgb(111,217,120);
+}
+
+.btntogOff {
+  font-family: labmono;
+  font-size: 12px;
+  background: rgb(220,220,220);
+  border: 1px solid black;
+  width:200px;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.btntogOff:hover {
+  background:rgb(200,200,200);
+  cursor:pointer;
+}
+
+.btntogOff:active {
+  background:rgb(129,255,140);
+}
+
+input[type=range].slider {
+  -webkit-appearance: none;
+  height:15px;
+  width: 200px;
+  background: none;
+}
+input[type=range].slider:focus {
+    outline: none;
+}
+
+input[type=range].slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: rgba(100, 100, 100, 0.9);
+  border-radius: 0px;
+  border: 0px solid rgba(1, 1, 1, 0);
+}
+
+input[type=range].slider::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 0px solid rgba(255, 0, 0, 1);
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background: #646464;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.25px;
+}
+input[type=range].slider:focus::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 0px solid rgba(255, 0, 0, 1);
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background: rgb(255,0,0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.25px;
+}
+
+input[type=range].slider:focus::-webkit-slider-runnable-track {
+  /* background: rgba(227, 227, 227, 0.9); */
+}
+
+input[type=range].slider::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: rgba(100, 100, 100, 0.9);
+  border-radius: 0px;
+  border: 0px solid rgba(1, 1, 1, 0);
+}
+
+input[type=range].slider:focus::-moz-range-track {
+  outline: none;
+  border:none;
+}
+
+input[type=range]::-moz-focus-outer {
+  border:none;
+}
+
+input[type=range].slider::-moz-range-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 0px solid rgba(0, 0, 0, 1);
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background: #646464;
+  cursor: pointer;
+}
+input[type=range].slider:focus::-moz-range-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 0px solid rgba(255, 0, 0, .9);
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background: rgb(255,0,0);
+  cursor: pointer;
+}
+
+input[type=range].slider::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range].slider::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(1, 1, 1, 1);
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range].slider::-ms-fill-upper {
+  background: rgba(100, 100, 100, 0.9);
+  border: 1px solid rgba(1, 1, 1, 1);
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range].slider::-ms-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 1px solid rgba(0, 0, 0, 1);
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background: #646464;
+  cursor: pointer;
+  height: 1.5px;
+}
+input[type=range].slider:focus::-ms-fill-lower {
+  background: rgba(100, 100, 100, 0.9);
+}
+input[type=range].slider:focus::-ms-fill-upper {
+  background: rgba(227, 227, 227, 0.9);
+}
