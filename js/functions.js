@@ -13,7 +13,30 @@ var loadMssg = [
  "moving into a new space",
  "something's gone wrong in the garden",
  "archive maybe",
- "the sound of the fan on medium is the ideal sound"
+ "the sound of the fan on medium is the ideal sound",
+ "is a secret enough?",
+ "soft-hitting message",
+ "no arrival",
+ "moving to Nevada to buy waterfront property",
+ "spent the night worrying",
+ "when I leave I am replaced by a bench",
+ "hesitating",
+ "maybe the sun will rise tomorrow",
+ "no solution",
+ "ambiguous wall",
+ "trembling with un-academic panic",
+ "going over the hill into the dim world",
+ "horizontal ritual",
+ "something's gone wrong with the compass",
+ "good error",
+ "more elipses...",
+ "fearing the end of bees",
+ "dispersed and peripheral",
+ "a space built by worry",
+ "sunless, sunset, sunfull, sunrise, stretch",
+ "horizontal ritual",
+ "I cancel myself",
+ "I have not met Alexa"
 ];
 // randomize
 document.getElementById("phrase").innerHTML = loadMssg[
@@ -41,49 +64,71 @@ function timer() {
   newPhrase();
 }
 
+// var door = document.querySelector(".door");
+// // var body = document.querySelector("body");
+//
+// door.addEventListener("mouseenter", function() {
+//     document.body.classList.toggle("alert");
+// });
+
+$(".door").hover(
+  function() {
+    $('body').addClass( "alert" );
+    $('.about').addClass( "hide" );
+    $('.garden-sign').removeClass( "hide" );
+    $('.garden-sign').removeClass( "sign-delay" );
+  }, function() {
+    $('body').removeClass( "alert" );
+    $('.about').removeClass( "hide" );
+    $('.garden-sign').addClass( "hide" );
+    $('.garden-sign').addClass( "sign-delay" );
+
+  }
+);
+
 // RANDOM LIST
 // ---------------------------------------------
-var random = document.querySelector('.random');
-for (var i = random.children.length; i >= 0; i--) {
-    random.appendChild(random.children[Math.random() * i | 0]);
-}
+// var random = document.querySelector('.random');
+// for (var i = random.children.length; i >= 0; i--) {
+//     random.appendChild(random.children[Math.random() * i | 0]);
+// }
 
 // ADVANCE SLIDES
 // ---------------------------------------------
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slide");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.opacity = "0";
-    x[i].style.zIndex = "0";
-  }
-  x[slideIndex-1].style.opacity = "1";
-  x[slideIndex-1].style.zIndex = "999";
-}
-
-document.onkeydown = function(e) {
-    switch (e.keyCode) {
-        case 37:
-            //left
-            plusDivs(-1);
-            break;
-        case 39:
-            //right
-            plusDivs(+1);
-            break;
-    }
-};
-
-function toggleAbout() {
-  var about = document.querySelector(".about");
-  about.classList.toggle("about-toggle");
-}
+// var slideIndex = 1;
+// showDivs(slideIndex);
+//
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+//
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("slide");
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length} ;
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.opacity = "0";
+//     x[i].style.zIndex = "0";
+//   }
+//   x[slideIndex-1].style.opacity = "1";
+//   x[slideIndex-1].style.zIndex = "999";
+// }
+//
+// document.onkeydown = function(e) {
+//     switch (e.keyCode) {
+//         case 37:
+//             //left
+//             plusDivs(-1);
+//             break;
+//         case 39:
+//             //right
+//             plusDivs(+1);
+//             break;
+//     }
+// };
+//
+// function toggleAbout() {
+//   var about = document.querySelector(".about");
+//   about.classList.toggle("about-toggle");
+// }

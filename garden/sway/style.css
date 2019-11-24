@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  background:rgb(162, 168, 218);
+  animation: night-day 40s alternate linear infinite;
+  max-width:100%;
+  overflow: hidden;
+}
+
+#wrapper {
+  opacity:0;
+  transition: opacity 3s ease-in-out;
+  /* transition-delay: 1s; */
+}
+
+.ground {
+  background:rgb(142, 181, 152);
+  width:100vw;
+  height:30vh;
+  position: fixed;
+  bottom:0;
+  left:0;
+  filter:blur(30px);
+  animation: night-day-grass 40s alternate linear infinite;
+}
+
+.garden {
+  display: flex;
+  height:100vh;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flower-wrap {
+  /* position: fixed; */
+  /* bottom:0; */
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  filter: blur(10px);
+}
+
+.low {
+  justify-content: space-around;
+}
+
+.low .flower .bud {
+  /* background:rgb(255, 115, 96); */
+}
+
+.high {
+  justify-content: space-around;
+}
+
+.high .flower .bud {
+  /* background:rgb(255, 224, 64); */
+}
+
+.flower {
+  /* position: fixed; */
+  /* background:red; */
+  /* bottom:0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: sway 7s infinite alternate ease-in-out;
+  max-height:100%;
+  /* min-width:100%; */
+}
+
+.bud {
+  width:10vw;
+  height:6vw;
+  /* background:rgb(117, 83, 233); */
+  background: white;
+  /* background: black; */
+  border-radius: 50%;
+  position: relative;
+  top:2px;
+  /* display: none; */
+}
+
+.stem {
+  width:1.5vw;
+  height:15vh;
+  background:rgb(163, 161, 199);
+}
+
+@keyframes sway{
+  0% {
+    transform: skewX(20deg);
+    }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+@keyframes grow{
+  0% {transform: scale(.3); left:-50vw;}
+  50% {transform: scale(2);}
+  100% {transform: scale(.3); left:150vw;}
+}
+
+@keyframes night-day{
+  0% {background:white;}
+  10% {background:white;}
+  30% {background:rgb(210, 210, 210);}
+  40% {background:rgb(163, 161, 199);}
+  60% {background:rgb(163, 161, 199);}
+  70% {background:rgb(210, 210, 210);}
+  90% {background:white;}
+  100% {background:white;}
+}
+
+@keyframes night-day-simple{
+  0% {background:black;}
+  100% {background:white;}
+}
+
+@keyframes night-day-grass{
+  0% {background:rgb(41, 56, 41);}
+  50% {background:rgb(126, 205, 147);}
+  100% {background:rgb(41, 56, 41);}
+}
+
+@keyframes night-day-window{
+  0% {background:rgb(62, 51, 45);}
+  50% {background:rgb(179, 124, 95);}
+  100% {background:rgb(62, 51, 45);}
+}
