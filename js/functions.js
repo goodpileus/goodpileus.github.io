@@ -1,9 +1,3 @@
-
-// removes no-js class if user has javascript enabled
-(function (doc, classToAdd) {
-  doc.className = (doc.className).replace("no-js", classToAdd);
-})(document.documentElement, "js");
-
 // welcome messages
 var loadMssg = [
  "cloudy ridges",
@@ -52,83 +46,74 @@ function newPhrase() {
 // only loads once the window completely loads
 window.onload = function() {
   console.log(':-)');
-
-  // hide loading mask
-  document.getElementById("loading").style.display = "none";
-  document.getElementById("wrapper").style.opacity = "1";
+  document.body.style.opacity = "1";
 }
 
-var interval = setInterval(timer, 5000);
+var interval = setInterval(timer, 10000);
 
 function timer() {
   newPhrase();
 }
 
-// var door = document.querySelector(".door");
-// // var body = document.querySelector("body");
-//
-// door.addEventListener("mouseenter", function() {
-//     document.body.classList.toggle("alert");
-// });
-
-$(".door").hover(
-  function() {
-    $('body').addClass( "alert" );
-    $('.about').addClass( "hide" );
-    $('.garden-sign').removeClass( "hide" );
-    $('.garden-sign').removeClass( "sign-delay" );
-  }, function() {
-    $('body').removeClass( "alert" );
-    $('.about').removeClass( "hide" );
-    $('.garden-sign').addClass( "hide" );
-    $('.garden-sign').addClass( "sign-delay" );
-
-  }
-);
-
 // RANDOM LIST
 // ---------------------------------------------
-// var random = document.querySelector('.random');
-// for (var i = random.children.length; i >= 0; i--) {
-//     random.appendChild(random.children[Math.random() * i | 0]);
-// }
+var random = document.querySelector('.random');
+for (var i = random.children.length; i >= 0; i--) {
+    random.appendChild(random.children[Math.random() * i | 0]);
+}
 
 // ADVANCE SLIDES
 // ---------------------------------------------
-// var slideIndex = 1;
-// showDivs(slideIndex);
-//
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
-//
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("slide");
-//   if (n > x.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = x.length} ;
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.opacity = "0";
-//     x[i].style.zIndex = "0";
-//   }
-//   x[slideIndex-1].style.opacity = "1";
-//   x[slideIndex-1].style.zIndex = "999";
-// }
-//
-// document.onkeydown = function(e) {
-//     switch (e.keyCode) {
-//         case 37:
-//             //left
-//             plusDivs(-1);
-//             break;
-//         case 39:
-//             //right
-//             plusDivs(+1);
-//             break;
-//     }
-// };
-//
-// function toggleAbout() {
-//   var about = document.querySelector(".about");
-//   about.classList.toggle("about-toggle");
-// }
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    // x[i].style.zIndex = "0";
+  }
+  x[slideIndex-1].style.display = "block";
+  // x[slideIndex-1].style.zIndex = "999";
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            //left
+            plusDivs(-1);
+            break;
+        case 39:
+            //right
+            plusDivs(+1);
+            break;
+    }
+};
+
+$('.slide img').click(function() {
+  plusDivs(+1);
+
+  var obj = document.createElement("audio");
+      obj.src = "sound/click.wav";
+      obj.play();
+      obj.volume = 0.05;
+  }
+);
+
+var tooltips = document.querySelectorAll('.toolspan span');
+
+window.onmousemove = function (e) {
+    var x = (e.clientX + 5) + 'px',
+        y = (e.clientY + 10) + 'px';
+    for (var i = 0; i < tooltips.length; i++) {
+        tooltips[i].style.top = y;
+        tooltips[i].style.left = x;
+    }
+};
