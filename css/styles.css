@@ -135,7 +135,7 @@ h1 {
   opacity: 1;
   transition: opacity 5s ease;
   pointer-events: all;
-  max-width: 650px;
+  max-width: 560px;
 }
 
 .hide {
@@ -161,7 +161,7 @@ h1 {
 
 #phrase {
   font-style:italic;
-  max-width: 610px;
+  max-width: 560px;
   padding-left: 2rem;
 }
 
@@ -213,7 +213,8 @@ h1 {
 .after {
   margin: 2rem 0 0 0;
   /* padding: 2rem; */
-  max-width: 610px;
+  max-width: 560px;
+
 
 }
 
@@ -345,14 +346,29 @@ h1 {
 
 /* MEDIA QUERY
 --------------------------------------- */
-@media (max-width:1200px) {
+@media (max-width:600px) {
   body {
+    /* font-size: 1.1rem;
+    line-height: 1.4rem; */
   }
 
   #wrapper {
     flex-direction: column;
   }
 
-  .about {
+  #phrase {
+    padding-left: 1rem;
+  }
+
+  ul {
+    padding-left:1rem;
+  }
+
+  .indent {
+    margin-left: 1rem;
+  }
+
+  .slide-wrap {
+    margin-left: 0;
   }
 }
