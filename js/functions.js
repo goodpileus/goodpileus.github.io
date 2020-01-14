@@ -21,11 +21,9 @@ var loadMssg = [
  "trembling with un-academic panic",
  "going over the hill into the dim world",
  "horizontal ritual",
- "something's gone wrong with the compass",
  "good error",
  "more elipses...",
  "fearing the end of bees",
- "dispersed and peripheral",
  "a space built by worry",
  "sunless, sunset, sunfull, sunrise, stretch",
  "horizontal ritual",
@@ -117,3 +115,11 @@ window.onmousemove = function (e) {
         tooltips[i].style.left = x;
     }
 };
+
+$('.magnify').click(function() {
+  $('.magnify').toggleClass( "active" );
+  $('.slide-img').toggleClass( "grow" );
+  // $('.slide img').css( "max-height", "80vh" );
+
+  }
+);

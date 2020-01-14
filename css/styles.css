@@ -213,9 +213,11 @@ h1 {
 .after {
   margin: 2rem 0 0 0;
   /* padding: 2rem; */
+  /* max-width: 560px; */
+}
+
+.thank-you {
   max-width: 560px;
-
-
 }
 
 
@@ -245,7 +247,7 @@ h1 {
   justify-content: flex-end;
 }
 
-.slide img{
+.slide-img{
   position: relative;
   overflow: hidden;
   /* width: 610px; */
@@ -254,6 +256,10 @@ h1 {
   border:1px solid var(--textcolor);
   cursor: pointer;
   background:var(--bg2);
+}
+
+.grow {
+  max-height: 80vh;
 }
 
 .content {
@@ -277,7 +283,19 @@ h1 {
   background: transparent;
 }
 
+.magnify {
+  position: absolute;
+  left:-2rem;
+  cursor: pointer;
+}
 
+.magnify::before {
+  content:"+";
+}
+
+.active::before {
+  content:"-";
+}
 
 .fade {
   background: linear-gradient(
