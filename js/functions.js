@@ -105,6 +105,14 @@ $('.slide img').click(function() {
   }
 );
 
+$('.magnify').click(function() {
+  var obj = document.createElement("audio");
+      obj.src = "sound/click.wav";
+      obj.play();
+      obj.volume = 0.05;
+  }
+);
+
 var tooltips = document.querySelectorAll('.toolspan span');
 
 window.onmousemove = function (e) {
