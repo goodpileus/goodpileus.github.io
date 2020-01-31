@@ -60,6 +60,14 @@ function timer() {
 //     random.appendChild(random.children[Math.random() * i | 0]);
 // }
 
+function playSound() {
+  var obj = document.createElement("audio");
+      obj.src = "sound/click.wav";
+      obj.play();
+      obj.volume = 0.05;
+}
+
+
 // ADVANCE SLIDES
 // ---------------------------------------------
 var slideIndex = 1;
@@ -87,29 +95,36 @@ document.onkeydown = function(e) {
         case 37:
             //left
             plusDivs(-1);
+            playSound();
             break;
         case 39:
             //right
             plusDivs(+1);
+            playSound();
             break;
     }
 };
 
-$('.slide img').click(function() {
+$('.slide-img').click(function() {
   plusDivs(+1);
-
-  var obj = document.createElement("audio");
-      obj.src = "sound/click.wav";
-      obj.play();
-      obj.volume = 0.05;
-  }
+  playSound();
+}
 );
 
 $('.magnify').click(function() {
-  var obj = document.createElement("audio");
-      obj.src = "sound/click.wav";
-      obj.play();
-      obj.volume = 0.05;
+  playSound();
+  }
+);
+
+$('.fw').click(function() {
+  plusDivs(+1);
+  playSound();
+  }
+);
+
+$('.bw').click(function() {
+  plusDivs(-1);
+  playSound();
   }
 );
 
@@ -127,6 +142,7 @@ window.onmousemove = function (e) {
 $('.magnify').click(function() {
   $('.magnify').toggleClass( "active" );
   $('.slide-img').toggleClass( "grow" );
+  $('.embed-wrap').toggleClass( "video-grow" );
   // $('.slide img').css( "max-height", "80vh" );
 
   }
