@@ -44,7 +44,7 @@ function newPhrase() {
 // only loads once the window completely loads
 window.onload = function() {
   console.log(':-)');
-  document.body.style.opacity = "1";
+  document.getElementById("total-wrap").style.opacity = "1";
 }
 
 var interval = setInterval(timer, 10000);
