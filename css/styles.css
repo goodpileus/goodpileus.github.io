@@ -176,12 +176,6 @@ h1 {
   align-items: flex-start;
 }
 
-/* #phrase {
-  font-style:italic;
-  max-width: 560px;
-  padding-left: 2rem;
-} */
-
 #phrase {
   font-style:italic;
   max-width: 560px;
