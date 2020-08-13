@@ -44,11 +44,12 @@ function newPhrase() {
 // only loads once the window completely loads
 window.onload = function() {
   console.log(':-)');
-  setTimeout(loadPage, 2200);
+  setTimeout(loadPage, 800);
 }
 
 function loadPage() {
-document.getElementById("total-wrap").style.opacity = "1";
+  document.getElementById("total-wrap").style.opacity = "1";
+  document.body.style.opacity = "1";
 }
 
 var interval = setInterval(timer, 10000);
