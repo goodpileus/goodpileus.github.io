@@ -133,7 +133,7 @@ $('.bw').click(function() {
   }
 );
 
-var tooltips = document.querySelectorAll('.toolspan span');
+var tooltips = document.querySelectorAll('.toolspan .tooltip');
 
 window.onmousemove = function (e) {
     var x = (e.clientX + 5) + 'px',
