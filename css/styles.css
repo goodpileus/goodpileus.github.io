@@ -64,11 +64,12 @@ img {
 a {
   color: var(--textcolor);
   background: var(--accent);
-  /* padding:.1rem; */
+  padding:.1rem;
   text-decoration: none;
   /* display: inline-block; */
-  transition: background .2s ease;
+  transition: background .01s ease;
   /* white-space: pre; */
+  border-radius: var(--br);
 }
 
 a:hover {
