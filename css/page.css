@@ -32,14 +32,14 @@ img {
 .image-feed {
   display: flex;
   flex-direction: column-reverse;
+  border-top:2px dotted var(--accent);
 }
 
 .image-feed > div {
   /* margin-bottom: 3rem; */
   position: relative;
   padding:1.5rem 0;
-  border-top:1px solid var(--accent);
-  border-bottom:1px solid var(--accent);
+  border-bottom:2px dotted var(--accent);
   /* display: flex; */
 }
 
