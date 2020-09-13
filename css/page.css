@@ -61,6 +61,10 @@ img {
     max-height:100%;
   }
 
+  #total-wrap {
+    margin:1rem;
+  }
+
   .ged {
     text-align: center;
   }
