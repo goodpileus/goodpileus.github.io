@@ -3,11 +3,11 @@
 }
 
 :root {
-  --textcolor: rgb(68, 56, 44);
+  --textcolor: #6c5234;
   --accent: #f5f2e4;
-  --bg: #e8e3d1;
-  --bg2:#DFD8BB;
-  --bg3:#a88d73;
+  --bg: #E5E8CC;
+  --bg2:#cfd2b7;
+  --bg3:#999f68;
   --br:2.5px;
 
   --bu-bg2:rgb(212, 216, 237);
