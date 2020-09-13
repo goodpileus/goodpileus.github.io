@@ -39,6 +39,22 @@
   unicode-range: U+0000-1254;
 }
 
+@font-face {
+    font-family: 'selectric-mono';
+    src: url('../fonts/selectricmono.woff2') format('woff2'),
+         url('../fonts/selectricmono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'selectric-roman';
+    src: url('../fonts/selectricroman.woff2') format('woff2'),
+         url('../fonts/selectricroman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 html {
   font-size:17px;

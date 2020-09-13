@@ -1,15 +1,5 @@
-
-
-// only loads once the window completely loads
-window.onload = function() {
-  console.log(':-)');
-  setTimeout(loadPage, 800);
-}
-
-function loadPage() {
-  document.getElementById("total-wrap").style.opacity = "1";
-  document.body.style.opacity = "1";
-}
+document.getElementById("total-wrap").style.opacity = "1";
+document.body.style.opacity = "1";
 
 // RANDOM LIST
 // ---------------------------------------------
