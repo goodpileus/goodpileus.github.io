@@ -1,6 +1,3 @@
-document.getElementById("total-wrap").style.opacity = "1";
-document.body.style.opacity = "1";
-
 // RANDOM LIST
 // ---------------------------------------------
 // var random = document.querySelector('.random');
