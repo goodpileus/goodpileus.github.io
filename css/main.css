@@ -189,6 +189,16 @@ a.block:hover {
   background: linear-gradient(to right, var(--website) 0%, var(--software) 100%);
 }
 
+.block.toolspan {
+  color:var(--textcolor);
+  cursor: pointer;
+}
+
+.block.toolspan .tooltip {
+  /* background:rgb(224, 231, 233); */
+
+}
+
 
 hr {
   border:none;
@@ -319,6 +329,12 @@ h1 {
   z-index: 9999;
   background: var(--accent);
   border-radius: var(--br);
+  padding:1rem;
+  box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.12);
+}
+
+.toolspan .tool-img {
+  padding:0;
 }
 
 /* .tooltip {
@@ -327,7 +343,7 @@ h1 {
 
 .tooltip p {
   line-height: 1.1rem;
-  padding:1rem;
+  /* padding:1rem; */
   color:var(--textcolor);
 }
 
