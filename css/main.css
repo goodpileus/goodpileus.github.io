@@ -432,6 +432,7 @@ h1 {
 
 .embed-wrap {
   max-width: 790px;
+  display: none;
 }
 
 .video-grow {
@@ -466,7 +467,7 @@ iframe::selection {
 }
 
 .mobile-video {
-  display:none;
+  display:block;
 }
 
 .grow {
@@ -599,6 +600,7 @@ iframe::selection {
   filter: blur(3px);
 
 }
+
 
 @keyframes down {
   /* 0% {background-position:  0 0;} */
