@@ -584,6 +584,49 @@ iframe::selection {
   width:70px;
 }
 
+.grif {
+  /* border:1px solid var(--textcolor); */
+  width:4rem;
+  height:1.5rem;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  border-radius: var(--br);
+  display: flex;
+  filter:blur(2px);
+}
+
+.within {
+  width:100%;
+  height:100%;
+  /* border:1px solid var(--textcolor); */
+  /* transform: skewY(10deg); */
+  border-radius: var(--br) 0 0 var(--br);
+
+  background: linear-gradient(to left, var(--textcolor) 20%, rgba(255, 255, 255, 1) 100%);
+  background-repeat: repeat;
+  animation: right 40s infinite linear;
+  background-size:50% 100%;
+
+  /* background:rgb(176, 220, 235); */
+
+}
+
+.without {
+  width:100%;
+  height:100%;
+  /* transform: skewY(-10deg); */
+  /* border:1px solid var(--textcolor); */
+  border-left:none;
+  border-radius: 0 var(--br) var(--br) 0;
+  background: linear-gradient(to right, var(--textcolor) 20%, rgba(255, 255, 255, 1) 100%);
+  background-repeat: repeat;
+  animation: left 40s infinite linear;
+  background-size:50% 100%;
+
+  /* background:rgb(176, 220, 235); */
+
+}
+
 
 .shutter {
   width:100%;
@@ -603,9 +646,18 @@ iframe::selection {
 
 
 @keyframes down {
-  /* 0% {background-position:  0 0;} */
   0% {background-position:  0 -200%;}
-  100% {background-position:  -400% 0}
+  100% {background-position:  0 0}
+}
+
+@keyframes right {
+  0% {background-position:  -420% 0;}
+  100% {background-position:  0 0}
+}
+
+@keyframes left {
+  0% {background-position:  0 0;}
+  100% {background-position:  -420% 0}
 }
 
 
