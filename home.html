@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+  <title>--</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="description" content="Home">
+  <meta name="keywords" content="Aidan, Quinlan, Ged">
+  <meta name="author" content="Aidan Quinlan">
+  <meta name="google-site-verification" content="jeU2ai_0IF5pJXT762j7oH7WIvQ4vRU-V5uJZXhPWQw" />
+  <meta name="google-site-verification" content="jeU2ai_0IF5pJXT762j7oH7WIvQ4vRU-V5uJZXhPWQw" />
+
+  <!--css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="img/home/favi.png">
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,300i,400,400i&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="total-wrap">
+    <div class="time"></div>
+    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+      <input name="sitesearch" type="hidden">
+      <input autocomplete="on" class="form-control search" name="q" placeholder="..." required="required"  type="text">
+      <!-- <button class="button" type="submit">Search</button> -->
+    </form>
+
+    <!-- <div class="image-wrap">
+      <img src="img/home/tree.gif">
+      <img src="img/home/tree.gif">
+      <img src="img/home/tree.gif">
+      <img src="img/home/tree.gif">
+      <div class="grove">o/</div>
+      <img src="img/home/tree.gif">
+      <img src="img/home/tree.gif">
+      <img src="img/home/tree.gif">
+      <img src="img/home/tree.gif">
+    </div> -->
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <!-- <script src="js/functions.js"></script> -->
+
+  <script>
+    document.getElementById("total-wrap").style.opacity = "1";
+    document.body.style.opacity = "1";
+
+  	var d = new Date();
+  	var n = d.getHours();
+
+    function checkTime(i) {
+      if (i < 10) {
+          i = "0" + i;
+      }
+      return i;
+    }
+
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      // add a zero in front of numbers<10
+      m = checkTime(m);
+      s = checkTime(s);
+			var time = document.querySelectorAll('.time');
+			for (i = 0; i < time.length; i++) {
+				time[i].innerHTML = h + ":" + m;
+			}
+      t = setTimeout(function () {
+          startTime()
+      }, 500);
+    }
+    startTime();
+  </script>
+</body>
+
+</html>
