@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
+/*-------------------------
+  GRID
+--------------------------*/
+
+.grid-overlay {
+  height:100vh;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+  opacity:0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.active {
+  opacity:.3;
+}
+
+.h-base {
+  height:20px;
+  border-bottom:1px solid red;
+  flex-shrink: 0;
+}
+
+.hor-guides {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  overflow:hidden;
+  flex-wrap: wrap;
+}
+
+.hor {
+  height:33.3333%;
+  /* background:green; */
+  width:100%;
+  border-bottom:1px solid red;
+}
+
+.vert-guides {
+  display: flex;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.vert {
+  height:100vh;
+  border-right:1px solid red;
+}
+
+.v1 {
+  width:20px;
+  margin-left:6px;
+}
+
+.v2 {
+  width:90px;
+}
+
+.v3 {
+  width:20px;
+}
+
+.v4 {
+  width:60px;
+}
+
+.v5 {
+  width:200px;
+}
+
+.v6 {
+  width:355px;
+}
+
+/*-------------------------
+  HEADER
+--------------------------*/
+
+header {
+  display: flex;
+  position:fixed;
+  top:0;
+  left:0;
+  /* background:#e3e2e2; */
+}
+
+.hc {
+  font-family: 'helvetica', sans-serif;
+  position: relative;
+  height: 20px;
+}
+
+.hc::before {
+  display: inline-block;
+  height: 100%;
+  content: '';
+}
+
+.hb {
+  font-size: 12px;
+  margin-left:20px;
+  vertical-align: baseline;
+}
+
+.name {
+  margin-right:35px;
+}
+
+.bio {
+  margin-right:343px;
+}
+
+.btn {
+  cursor:pointer;
+}
+
+.btn::selection {
+  background:transparent;
+}
+
+
+/*-------------------------
+  CONTENT
+--------------------------*/
+
+#content-wrap {
+  display:flex;
+  flex-direction:column;
+  /* background:#c6e7c2; */
+  height:100vh;
+  overflow:hidden;
+}
+
+.h-space {
+  min-height:80px;
+  /* background:#e9e6bc; */
+}
+
+.content-collection {
+  height:100%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  align-content:flex-start;
+  overflow: hidden;
+}
+
+.spacer {
+  width:135px;
+  /* background:#cde9e9; */
+  /* height:30%; */
+}
+
+.content-collection img {
+  height:33.3333%;
+  margin:0;
+  display:block;
+}
+
+.zoom {
+  /* transform:scale(2); */
+  /* transform-origin:bottom right; */
+}
+
+.random img:first-child {
+  margin-left:135px;
+}
