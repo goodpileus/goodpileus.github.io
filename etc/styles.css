@@ -216,7 +216,7 @@ header {
   max-height:33.3333%;
   margin:0;
   display:block;
-  /* max-width: 100%; */
+  max-width: 100%;
   background:black;
 }
 

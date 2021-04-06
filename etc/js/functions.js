@@ -85,7 +85,7 @@ $( document ).ready(function() {
   }
 });
 
-var interval = setInterval(timer, 500);
+var interval = setInterval(timer, 1500);
 
 function timer() {
   $('.content-collection').css({
