@@ -4,6 +4,13 @@
 
 body {
   margin:0;
+  font-size: 12px;
+  font-family: 'helvetica', sans-serif;
+}
+
+.lights {
+  background:black;
+  color:white;
 }
 
 /*-------------------------
@@ -50,6 +57,7 @@ body {
 }
 
 .vert-guides {
+  width:100%;
   display: flex;
   position: absolute;
   top:0;
@@ -61,29 +69,38 @@ body {
   border-right:1px solid red;
 }
 
+.border-color {
+  border-bottom-color:#baa9fa;
+  border-right-color: #baa9fa;
+}
+
 .v1 {
   width:20px;
   margin-left:6px;
+  flex-shrink: 0;
 }
 
 .v2 {
   width:90px;
+  flex-shrink: 0;
 }
 
 .v3 {
   width:20px;
+  flex-shrink: 0;
 }
 
 .v4 {
-  width:60px;
+  width:5%;
 }
 
 .v5 {
   width:200px;
+  flex-shrink: 0;
 }
 
 .v6 {
-  width:355px;
+  width:25%;
 }
 
 /*-------------------------
@@ -92,6 +109,8 @@ body {
 
 header {
   display: flex;
+  width:100%;
+  flex-wrap:wrap;
   position:fixed;
   top:0;
   left:0;
@@ -99,7 +118,6 @@ header {
 }
 
 .hc {
-  font-family: 'helvetica', sans-serif;
   position: relative;
   height: 20px;
 }
@@ -111,17 +129,45 @@ header {
 }
 
 .hb {
-  font-size: 12px;
-  margin-left:20px;
+  /* margin-left:20px; */
   vertical-align: baseline;
+  display:inline-block;
 }
 
 .name {
-  margin-right:35px;
+  padding-left:21px;
+  /* background:lightgreen; */
+  width:136px;
+  margin-right:5%;
 }
 
 .bio {
-  margin-right:343px;
+  /* margin-right:30%; */
+  width:200px;
+  /* background:lightblue; */
+}
+
+.bio .hb {
+  transform:translateX(-4px);
+}
+
+.year {
+  /* background:lightgreen; */
+  width:25%;
+}
+
+.toolkit {
+  /* background:lightblue; */
+  width:30%;
+}
+
+.toolkit .hb {
+  transform:translateX(-4px);
+  padding-right:10px;
+}
+
+.toolkit::selection {
+  background:transparent;
 }
 
 .btn {
@@ -154,7 +200,7 @@ header {
   height:100%;
   display:flex;
   flex-wrap:wrap;
-  align-items:flex-start;
+  align-items:baseline;
   align-content:flex-start;
   overflow: hidden;
 }
@@ -166,9 +212,10 @@ header {
 }
 
 .content-collection img {
-  height:33.3333%;
+  max-height:33.3333%;
   margin:0;
   display:block;
+  /* max-width: 100%; */
 }
 
 .zoom {
@@ -178,4 +225,29 @@ header {
 
 .random img:first-child {
   margin-left:135px;
+}
+
+@media screen and (max-width: 900px) {
+  .name {
+    width:100%;
+    padding-left:21px;
+    margin-right:0;
+  }
+
+  .bio {
+    width:100%;
+    padding-left:21px;
+  }
+
+  .bio .hb {
+    transform:translateX(0);
+  }
+
+  .toolkit, .v4, .v5, .v6 {
+    display:none;
+  }
+
+  .content-collection img {
+    max-height:20%;
+  }
 }

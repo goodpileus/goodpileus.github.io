@@ -1,10 +1,13 @@
+
+// SHOW GRID
 function gridShow() {
   $( ".grid-overlay" ).toggleClass( "active" );
 }
 
+// 10% ZOOM
 function tenP() {
   $( "img" ).css({
-    'height': '10%'
+    'max-height': '10%'
   });
   $( ".hor" ).css({
     'height': '10%'
@@ -12,9 +15,10 @@ function tenP() {
   console.log("10%");
 }
 
+// 20% ZOOM
 function twentyP() {
   $( "img" ).css({
-    'height': '20%'
+    'max-height': '20%'
   });
   $( ".hor" ).css({
     'height': '20%'
@@ -22,9 +26,10 @@ function twentyP() {
   console.log("20%");
 }
 
+// 33.3333% ZOOM
 function thirtyP() {
   $( "img" ).css({
-    'height': '33.3333%'
+    'max-height': '33.3333%'
   });
   $( ".hor" ).css({
     'height': '33.3333%'
@@ -32,9 +37,10 @@ function thirtyP() {
   console.log("33.3333%");
 }
 
+// 50% ZOOM
 function fiftyP() {
   $( "img" ).css({
-    'height': '50%'
+    'max-height': '50%'
   });
   $( ".hor" ).css({
     'height': '50%'
@@ -42,9 +48,10 @@ function fiftyP() {
   console.log("50%");
 }
 
+// 100% ZOOM
 function hundredP() {
   $( "img" ).css({
-    'height': '100%'
+    'max-height': '100%'
   });
   $( ".hor" ).css({
     'height': '100%'
@@ -52,6 +59,7 @@ function hundredP() {
   console.log("100%");
 }
 
+// RE-ROLL IMAGE ORDER
 function nu() {
   var random = document.querySelector('.random');
   for (var i = random.children.length; i >= 0; i--) {
@@ -59,124 +67,40 @@ function nu() {
   }
 }
 
+// TOGGLE LIGHTS
+function lights() {
+  $( "body" ).toggleClass( "lights" );
+  $( ".vert" ).toggleClass( "border-color" );
+  $( ".hor" ).toggleClass( "border-color" );
+  $( ".h-base" ).toggleClass( "border-color" );
+}
+
+// RANDOMIZE CONTAINER CHILDREN
+$( document ).ready(function() {
+  var random = document.querySelector('.random');
+  for (var i = random.children.length; i >= 0; i--) {
+    random.appendChild(random.children[Math.random() * i | 0]);
+  }
+});
+
+// ENLARGE IMAGE
 // $( "img" ).click(function() {
-//   $( 'img' ).removeClass( "zoom" );
-//   $( this ).addClass( "zoom" );
+//   $( "img" ).css({
+//     'max-height': '33.3333%'
+//   });
+//   $( this ).css({
+//     'max-height': '66.6666%'
+//   });
 // });
 
-// window.onload = function() {
-//     baseliner = new Baseliner(20);
-// }
-
-
-// function getCoords(elem) { // crossbrowser version
-//   var box = elem.getBoundingClientRect();
-//
-//   var body = document.body;
-//   var docEl = document.documentElement;
-//
-//   var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
-//   var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
-//
-//   var clientTop = docEl.clientTop || body.clientTop || 0;
-//   var clientLeft = docEl.clientLeft || body.clientLeft || 0;
-//
-//   var top  = box.top +  scrollTop - clientTop;
-//   var left = box.left + scrollLeft - clientLeft;
-//
-//   return { top: Math.round(top), left: Math.round(left) };
-// }
-
-// const getCoords = (element, position) => {
-//   const { top, left, width, height } = element.getBoundingClientRect();
-//   let point;
-//   switch (position) {
-//     case "top left":
-//       point = {
-//         x: left + window.pageXOffset,
-//         y: top + window.pageYOffset
-//       };
-//       break;
-//     case "top center":
-//       point = {
-//         x: left + width / 2 + window.pageXOffset,
-//         y: top + window.pageYOffset
-//       };
-//       break;
-//     case "top right":
-//       point = {
-//         x: left + width + window.pageXOffset,
-//         y: top + window.pageYOffset
-//       };
-//       break;
-//     case "center left":
-//       point = {
-//         x: left + window.pageXOffset,
-//         y: top + height / 2 + window.pageYOffset
-//       };
-//       break;
-//     case "center":
-//       point = {
-//         x: left + width / 2 + window.pageXOffset,
-//         y: top + height / 2 + window.pageYOffset
-//       };
-//       break;
-//     case "center right":
-//       point = {
-//         x: left + width + window.pageXOffset,
-//         y: top + height / 2 + window.pageYOffset
-//       };
-//       break;
-//     case "bottom left":
-//       point = {
-//         x: left + window.pageXOffset,
-//         y: top + height + window.pageYOffset
-//       };
-//       break;
-//     case "bottom center":
-//       point = {
-//         x: left + width / 2 + window.pageXOffset,
-//         y: top + height + window.pageYOffset
-//       };
-//       break;
-//     case "bottom right":
-//       point = {
-//         x: left + width + window.pageXOffset,
-//         y: top + height + window.pageYOffset
-//       };
-//       break;
-//   }
-//   return point;
-// };
-
-// jQuery.fn.getCoord = function()
-// {
-//   var elem = $(this);
-//   var x = elem.offset().left;
-//   var y = elem.offset().top;
-//   console.log('x: ' + x + ' y: ' + y);
-//   //output: x: 70 y: 40
-//
-//   return {
-//       "x" : x,
-//       "y" : y
-//   };
-//
-//   //note that it is not efficient as it breaks the jQuery chain
-//   //return elem;
-// };
-
+// ELEMENT SCREEN LOCATION CHECK
+// checks location of element on screen to determine what the origin point for the transform scale should be
 function offset(el) {
     var rect = el.getBoundingClientRect(),
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 }
-
-// example use
-// var div = document.querySelector('div');
-// var divOffset = offset(div);
-// console.log(divOffset.left, divOffset.top);
 
 $('img').click(function(){
 	var pos = offset(this);
@@ -201,13 +125,5 @@ $('img').click(function(){
   	$(this).css({
     	'transform-origin': 'center'
     });
-  }
-});
-
-
-$( document ).ready(function() {
-  var random = document.querySelector('.random');
-  for (var i = random.children.length; i >= 0; i--) {
-    random.appendChild(random.children[Math.random() * i | 0]);
   }
 });
