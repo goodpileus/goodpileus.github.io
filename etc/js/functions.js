@@ -6,9 +6,10 @@ function gridShow() {
 
 // 10% ZOOM
 function tenP() {
-  $( "img" ).css({
-    'max-height': '10%'
+  $( ".img-wrap" ).css({
+    'height': '10%'
   });
+  $( "img" ).toggleClass('test');
   $( ".hor" ).css({
     'height': '10%'
   });
@@ -17,8 +18,8 @@ function tenP() {
 
 // 20% ZOOM
 function twentyP() {
-  $( "img" ).css({
-    'max-height': '20%'
+  $( ".img-wrap" ).css({
+    'height': '20%'
   });
   $( ".hor" ).css({
     'height': '20%'
@@ -28,8 +29,8 @@ function twentyP() {
 
 // 33.3333% ZOOM
 function thirtyP() {
-  $( "img" ).css({
-    'max-height': '33.3333%'
+  $( ".img-wrap" ).css({
+    'height': '33.3333%'
   });
   $( ".hor" ).css({
     'height': '33.3333%'
@@ -39,8 +40,8 @@ function thirtyP() {
 
 // 50% ZOOM
 function fiftyP() {
-  $( "img" ).css({
-    'max-height': '50%'
+  $( ".img-wrap" ).css({
+    'height': '50%'
   });
   $( ".hor" ).css({
     'height': '50%'
@@ -50,8 +51,8 @@ function fiftyP() {
 
 // 100% ZOOM
 function hundredP() {
-  $( "img" ).css({
-    'max-height': '100%'
+  $( ".img-wrap" ).css({
+    'height': '100%'
   });
   $( ".hor" ).css({
     'height': '100%'
@@ -138,6 +139,7 @@ $('img').click(function(){
   }
 });
 
+// LAZY LOAD
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages;
 
@@ -187,3 +189,19 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("orientationChange", lazyload);
   }
 })
+
+
+// SAFARI FIX - FLEX BOX IMAGE SIZING
+// unable to align images along bottom of flex
+var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+               navigator.userAgent &&
+               navigator.userAgent.indexOf('CriOS') == -1 &&
+               navigator.userAgent.indexOf('FxiOS') == -1;
+
+
+if (isSafari == true) {
+  console.log('safari...');
+  $('.img-wrap').addClass( "img-wrap-safari" );
+} else {
+  console.log('not safari...');
+}
