@@ -203,6 +203,7 @@ header {
   align-items:baseline;
   align-content:flex-start;
   overflow: hidden;
+  opacity:0;
 }
 
 .spacer {
@@ -216,7 +217,9 @@ header {
   margin:0;
   display:block;
   /* max-width: 100%; */
+  background:black;
 }
+
 
 .zoom {
   /* transform:scale(2); */
