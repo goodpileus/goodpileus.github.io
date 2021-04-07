@@ -6,8 +6,8 @@ function gridShow() {
 
 // 10% ZOOM
 function tenP() {
-  $( ".img-wrap" ).css({
-    'height': '10%'
+  $( ".grid-img" ).css({
+    'max-height': '10%'
   });
   $( "img" ).toggleClass('test');
   $( ".hor" ).css({
@@ -18,8 +18,8 @@ function tenP() {
 
 // 20% ZOOM
 function twentyP() {
-  $( ".img-wrap" ).css({
-    'height': '20%'
+  $( ".grid-img" ).css({
+    'max-height': '20%'
   });
   $( ".hor" ).css({
     'height': '20%'
@@ -29,8 +29,8 @@ function twentyP() {
 
 // 33.3333% ZOOM
 function thirtyP() {
-  $( ".img-wrap" ).css({
-    'height': '33.3333%'
+  $( ".grid-img" ).css({
+    'max-height': '33.3333%'
   });
   $( ".hor" ).css({
     'height': '33.3333%'
@@ -40,8 +40,8 @@ function thirtyP() {
 
 // 50% ZOOM
 function fiftyP() {
-  $( ".img-wrap" ).css({
-    'height': '50%'
+  $( ".grid-img" ).css({
+    'max-height': '50%'
   });
   $( ".hor" ).css({
     'height': '50%'
@@ -51,8 +51,8 @@ function fiftyP() {
 
 // 100% ZOOM
 function hundredP() {
-  $( ".img-wrap" ).css({
-    'height': '100%'
+  $( ".grid-img" ).css({
+    'max-height': '100%'
   });
   $( ".hor" ).css({
     'height': '100%'

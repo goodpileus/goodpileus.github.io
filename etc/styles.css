@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 body {
@@ -224,16 +225,16 @@ header {
   display:block;
 }
 
-.img-wrap img {
-  /* max-height:33.3333%; */
-  max-height:100%;
+.grid-img {
+  max-height:33.3333%;
+  /* max-height:100%; */
   margin:0;
   display:block;
-  max-width: 100%;
+  /* max-width: 100%; */
   background:black;
   align-self:flex-end;
-  width:auto;
-  height:auto;
+  /* width:auto;
+  height:auto; */
 }
 
 
@@ -242,7 +243,7 @@ header {
   /* transform-origin:bottom right; */
 }
 
-.random div:first-child {
+.random img:first-child {
   margin-left:135px;
 }
 
