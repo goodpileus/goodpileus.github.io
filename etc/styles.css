@@ -267,7 +267,11 @@ header {
     display:none;
   }
 
-  .img-wrap {
-    height:20%;
+  /* .grid-img {
+    height:33.3333%;
+  } */
+
+  .random img:first-child {
+    margin-left:0;
   }
 }
