@@ -89,6 +89,11 @@ $('.magnify').click(function() {
   $('.slide-img').toggleClass( "grow" );
   $('.embed-wrap').toggleClass( "video-grow" );
   // $('.slide img').css( "max-height", "80vh" );
-
   }
 );
+
+$('.open-window').click(function() {
+  $('.window').toggleClass('open');
+  $('.open-window').toggleClass('open');
+  $('.wrapper').toggleClass('open');
+});
