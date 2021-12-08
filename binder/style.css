@@ -1,0 +1,219 @@
+/*
+Binder
+Author: Clement Valla
+Version: 1.0
+*/
+
+*{
+ 	margin: 0;
+	padding: 0;
+ }
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#background-site {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index:1;
+}
+
+#background-site iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	overflow: scroll;
+}
+
+#menu {
+	position: fixed;
+	left: 10px;
+	top: 40%;
+	color: white;
+	letter-spacing: .01em;
+	z-index:10;
+	padding: 13px;
+	padding-right: 15px;
+	font: 15px/20px monospace;
+    letter-spacing: -0.3px;
+	cursor: move;
+	    box-shadow: #fefb00 3px 3px 0, 6px 6px 0px #ff0000;
+	border-style: solid;
+	border-color: blue;
+	background-color: #eee;
+}
+
+#logo {
+	z-index: 20;
+	position: fixed;
+	right: 70px;
+	top: 60px;
+	width: 300px;
+}
+    #logo-touch {
+        display: none;
+		position: absolute;
+		left:50%;
+		top:4px;
+		margin-left: -80px;
+		width:160px;
+		margin: left:10%;
+    }
+
+#binder-clip{
+	margin-top: -38px;
+    position: fixed;
+    margin-left: 80px;
+    z-index: 20;
+    -ms-transform: rotate(-27deg);
+    -webkit-transform: rotate(-27deg);
+    transform: rotate(-27deg);
+}
+
+#navigation {
+	margin: 0;
+	padding:0;
+	list-style-type: none;
+}
+
+#navigation li{
+	padding:0;
+	margin:0;
+	width:auto;
+}
+
+#navigation a, div.about{
+	color: #717171;
+	padding: 0;
+	text-decoration: none;
+	padding: 1px;
+}
+#navigation a.active{
+	color: #000;
+}
+#navigation a:hover{
+	color: #000;
+}
+#navigation .current_page_item a {
+	color: red;
+}
+
+.about{
+	position: fixed;
+	font-family: courier;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    line-height: 19px;
+    z-index: 100;
+    color: rgba(0, 0.8);
+	z-index: 90;
+	max-width: 277px;
+	right: 145px;
+	top: 155px;
+}
+
+/* Psuedo mobile styles for wide touch devices */
+    .touch-device #menu {
+        position: fixed;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px;
+        z-index:10;
+        left: 2px;
+        right: 2px;
+        top: 2px;
+    }
+
+	.touch-device #logo{
+        display: none;
+	}
+	.touch-device #logo-touch{
+        display: block;
+    }
+	.touch-device #navigation{
+		display: none;
+		text-indent: -1.5em;
+		margin-left:1.5em;
+		margin-top: 20px;
+	}
+	.touch-device #menu-open{
+		width: 30px;
+		height: 35px;
+		cursor: pointer;
+	}
+	.touch-device #menu-open div {
+	    background-color: black;
+	    border: 1px solid black;
+	    border-radius: 2px 2px 2px 2px;
+	    height: 15%;
+	    margin-bottom: 15%;
+	    width: 90%;
+	}
+	.touch-device .about{
+		width: auto;
+		display: none;
+	}
+/* Real mobile styles for smaller screens */
+@media only screen and (max-width: 768px) {
+	body, html{
+	position: relative;
+		width: 100%;
+	}
+	#background-site{
+		-webkit-overflow-scrolling:touch; 
+		overflow:auto;
+	}
+	#background-site iframe{
+		width: 100%;
+		height: 5500px;
+		overflow: hidden;
+	}
+	#menu {
+		position: fixed;
+		font-size: 16px;
+		line-height: 22px;
+		padding: 10px;
+		z-index:10;
+		left: 2px;
+        right: 2px;
+		top: 2px;
+	}
+	#logo{
+        display: none;
+	}
+    #logo-touch {
+        display: block;
+    }
+	#navigation{
+		display: none;
+		text-indent: -1.5em;
+		margin-left:1.5em; 
+		margin-top: 20px;
+	}
+	#menu-open{
+		width: 30px;
+		height: 35px;
+		cursor: pointer;
+	}
+	#menu-open div {
+	    background-color: black;
+	    border: 1px solid black;
+	    border-radius: 2px 2px 2px 2px;
+	    height: 15%;
+	    margin-bottom: 15%;
+	    width: 90%;
+	}
+	.about{
+		width: auto;
+		display: none;
+	}
+}
+/* @end */
