@@ -1,73 +1,223 @@
 <!doctype html>
 <html>
+
 <head>
   <title>folding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html {
-      background:#c4d1e3;
+      background: #cdc7aa;
+      color:#4a4434;
+      /* font-size: 1rem; */
+      font-family: sans-serif;
     }
 
     p {
-      margin:0;
+      margin: 0;
+    }
+
+    a {
+      color:#aa6a50;
     }
 
     summary:hover {
-      background:rgba(255, 255, 255, 0.5);
-      cursor:pointer;
+      background: rgba(129, 117, 99, 0.3);
+      cursor: pointer;
+      /* color:white; */
     }
+
+    ::selection {
+      background: transparent;
+    }
+
+    details {
+      /* margin:5px 0; */
+    }
+
+    details > summary {
+      list-style: none;
+    }
+
+    details > summary:first-of-type::before {
+    content:' + ';
+    width:15px;
+    display: inline-block;
+    /* text-align:center; */
+    margin-right:2px;
+    /* color:white; */
+    }
+
+    details[open] > summary:first-of-type::before {
+      /* list-style-type: ' - '; */
+      content:' - ';
+      position: relative;
+      bottom:1px;
+      /* list-style-position: outside; */
+    }
+
+    details div {
+      margin-left: 17px
+    }
+
+    summary {
+      margin: 3px 0;
+      /* padding:5px; */
+      /* border-radius:10px; */
+    }
+
   </style>
 </head>
 
 <body>
   <details>
     <summary>folding</summary>
-    <p>i suppose i am a <em>folder</em></p>
-    <details>
-      <summary>one who folds</summary>
-      <img style="max-width:300px;" src="img/fold-on-the-river.jpeg" alt="fold on the river">
-      <p>this was me folding on the river</p>
-
+    <div>
       <details>
-        <summary>i was 21 then...</summary>
-        <p>youth and energy folding into myself. memories tucked and packed away in some attic of me.</p>
-      </details>
+        <summary>i suppose i am a <u>folder</u></summary>
+        <div>
 
-      <details>
-        <summary>is it a fold or roll?</summary>
-        <img style="max-width:300px;" src="img/brent.png" alt="the classic AQ sleeve roll">
-        <p>brent seemed to think of it as a roll 6 years ago
-      </details>
+          <details>
+            <summary>one who folds</summary>
+            <div>
+              <img style="max-width:300px;" src="img/fold-on-the-river.jpeg" alt="fold on the river">
+              <p>this was me folding on the river</p>
 
-      <details>
-        <summary>i fold every day, even today...</summary>
-        <img style="max-width:300px;" src="img/today.jpg" alt="today's fold">
-      </details>
+              <details>
+                <summary>i was 21 then...</summary>
+                <div>
+                  <p>youth and energy folding into myself as i get older and older. memories tucked and packed away in some attic of me.</p>
 
-      <details>
-        <summary>i once folded the sun</summary>
-        <p>
-          and someone tripped over it...
-          <br>
-          i tried to apologize for leaving the sun there...<br>
-          but it was them who almost crushed my poor sun<br>
-          lying there, folded<br>
-          trying to guard itself against falling feet
-        </p>
-        <details>
-          <summary>feet seeking to fold the sun and the earth beneath their soles</summary>
-          <p>
-            globetrotters trotting for the sake of trotting
-          </p>
+                  <details>
+                    <summary>what part of me is the folder?</summary>
+                    <div>
+
+                    <details>
+                      <summary>is it my body?</summary>
+                      <div>
+
+                      <details>
+                        <summary>is it my mind?</summary>
+                        <div>
+                          <p>is there a file type that i use?</p>
+
+                          <details>
+                            <summary>is it proprietary?</summary>
+                            <div>
+                              <p>laying-in-the-sun-maybe-by-a-pool-i-think-i-am-4-years-old.aidan</p>
+                            </div>
+                          </details>
+
+                          <details>
+                            <summary>is it open?</summary>
+                            <div>
+                              <p>can it be transferred and shared between folders?</p>
+                            </div>
+                          </details>
+
+                        </div>
+                      </details>
+
+                      </div>
+                    </details>
+
+                    </div>
+                  </details>
+
+                </div>
+              </details>
+
+              <details>
+                <summary>is it a fold or roll?</summary>
+                <div>
+                  <img style="max-width:300px;" src="img/brent.png" alt="the classic AQ sleeve roll">
+                  <p>brent seemed to think of it as a roll 6 years ago</p>
+                </div>
+              </details>
+
+              <details>
+                <summary>i fold every day, even today...</summary>
+                <div>
+                  <img style="max-width:300px;" src="img/today.jpg" alt="today's fold">
+
+                  <details>
+                    <summary>why do i fold?</summary>
+                    <div>
+                      <p>i do not know...</p>
+                    </div>
+                  </details>
+
+                </div>
+              </details>
+
+              <details>
+                <summary>i once folded the sun</summary>
+                <div>
+                  <p>
+                    and someone tripped over it...
+                    <br>
+                    i tried to apologize for leaving the sun there...<br>
+                    but it was them who almost crushed my poor sun<br>
+                    lying there, folded<br>
+                    trying to guard itself against falling feet
+                  </p>
+
+                  <details>
+                    <summary>feet seeking to fold the sun and the earth beneath their soles</summary>
+                    <div>
+                      <p>globetrotters trotting for the sake of trotting</p>
+                    </div>
+                  </details>
+
+                </div>
+              </details>
+
+            </div>
           </details>
-        </details>
 
+        </div>
       </details>
 
       <details>
-        <summary>nooks...</summary>
-        <img style="max-width:600px;" src="img/nook.png" alt="nook">
+        <summary>thoughts on nooks...</summary>
+        <div>
+          <img style="max-width:600px;" src="img/nook.png" alt="nook">
+        </div>
       </details>
-    </details>
+
+      <details>
+        <summary>if we look closely at this folder</summary>
+        <div>
+          <details>
+            <summary>we can see that it is housed in the garden folder of my personal website</summary>
+            <div>
+
+              <details>
+                <summary>and my personal site is a folder itself</summary>
+                <div>
+                  <p>contained in a folder that is always online thanks to another, much bigger, folder called github</p>
+                </div>
+              </details>
+
+              <details>
+                <summary>and?</summary>
+                <div>
+                  <p>it is simply a place to think about folding...</p>
+
+                  <details>
+                    <summary>and?</summary>
+                    <div>
+                      <p>i started working on it during an <a href="http://html.energy">html.energy</a> freewrite on january 15, 2022</p>
+                    </div>
+                  </details>
+                </div>
+              </details>
+            </div>
+          </details>
+        </div>
+      </details>
+    </div>
+  </details>
+
 </body>
+
 </html>
