@@ -1,0 +1,159 @@
+body {
+	background-color: #292938;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-image: url(img/cartoon.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-attachment: scroll;
+	color: #FFF;
+}
+#all {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1240px;
+}
+#left {
+	float: left;
+	width: 600px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#logo {
+	text-align: right;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+#main {
+	background-image: url(img/tranbg.png);
+	background-repeat: repeat;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+#main li {
+
+}
+#right {
+	float: right;
+	width: 600px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-top: 20px;
+}
+#home {
+	height: 192px;
+	width: 550px;
+	padding-top: 10px;
+}
+#web {
+	height: 192px;
+	width: 550px;
+	padding-top: 10px;
+}
+#gfx {
+	height: 192px;
+	width: 550px;
+	padding-top: 10px;
+}
+#contact {
+	height: 192px;
+	width: 550px;
+	padding-top: 10px;
+}
+#footer {
+	clear: both;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	color: #FFF;
+	text-align: center;
+	padding-top: 8px;
+	font-style: oblique;
+	font-weight: normal;
+	font-variant: small-caps;
+}
+#form table th {
+	text-align: right;
+	vertical-align: top;
+}
+#form table td {
+	text-align: left;
+	vertical-align: top;
+}
+a:link, a:visited {
+	color: #DDD788;
+	display: inline;
+}
+#home a {
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	text-decoration: none;
+	height: 172px;
+	width: 550px;
+}
+#home a:link, #home a:visited {
+	color: #FFF;
+	display: block;
+	background-image: url(img/home.png);
+}
+#home a:hover {
+	color: #FFF;
+	background:  url(img/homeho.png);
+}
+#web a {
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	text-decoration: none;
+	height: 172px;
+	width: 550px;
+}
+#web a:link, #web a:visited {
+	color: #FFF;
+	display: block;
+	background-image: url(img/web.png);
+}
+#web a:hover {
+	color: #FFF;
+	background:  url(img/webho.png);
+}
+#gfx a {
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	text-decoration: none;
+	height: 172px;
+	width: 550px;
+}
+#gfx a:link, #gfx a:visited {
+	color: #FFF;
+	display: block;
+	background-image: url(img/gfx.png);
+}
+#gfx a:hover {
+	color: #FFF;
+	background:  url(img/gfxho.png);
+}
+#contact a {
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	text-decoration: none;
+	height: 172px;
+	width: 550px;
+}
+#contact a:link, #contact a:visited {
+	color: #FFF;
+	display: block;
+	background-image: url(img/contact.png);
+}
+#contact a:hover {
+	color: #FFF;
+	background:  url(img/contactho.png);
+}
+table {
+	text-align: center;
+	vertical-align: text-top;
+}
+table td {
+	padding: 5px;
+}
