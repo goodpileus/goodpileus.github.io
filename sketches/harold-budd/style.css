@@ -4,7 +4,7 @@ html {
 }
 
 .bg-animate {
-    animation: bg 40s infinite alternate ease-in-out;
+    /* animation: bg 40s infinite alternate ease-in-out; */
 }
 
 body {
