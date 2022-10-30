@@ -49,12 +49,15 @@ img::selection {
 
 button {
     cursor:pointer;
-    background:#3e4244;
+    background:black;
     color:#639bff;
+    border: 1px solid;
+    /* border:0; */
+    border-radius: 3px;
 }
 
 button:hover {
-    background:#5c6265;
+    background:#303435;
 }
 
 button:active {
@@ -63,16 +66,15 @@ button:active {
 
 .sleep {
     position: fixed;
-    bottom:0;
+    bottom:20px;
     left:50%;
     transform:translateX(-50%);
     z-index: 99;
-    height: 30px;
-    padding:0 20px;
+    /* height: 30px; */
+    padding:5px;
     /* color:#ffffff; */
-    border:0;
-    border-right:1px solid black;
-    transition: opacity 1s;
+    /* border-right:1px solid black; */
+    transition: opacity .5s;
 }
 
 .sleep.hide {
