@@ -1,0 +1,67 @@
+<nav class="menu" id="nav">
+  <span class="name-wrap">
+    <img class="icon" src="{{ site.baseurl }}/assets/favicon.png" title="patience">
+    <span class="name" title="aidan quinlan">aidan</span>
+  </span>
+  {% if page.layout == 'photos' %}
+  <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+
+    {% assign groups = site.pages | group_by: "category" | sort: "order" %}
+    {% for group in groups %}
+      
+      {% if group.name == 'main' %}
+        {% for item in group.items %}
+          <option class="menu-item" {% if item.title == 'photo' %}selected="selected"{% endif %} value="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title }}
+          </option>
+        {%endfor%}
+      {%endif%}
+    {%endfor%}
+    
+  </select>
+
+  <select name="years" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    {% assign groups = site.photo | group_by: "category" %}
+      {% for group in groups %}
+        
+        {% if group.name == 'year' %}
+          {% for item in group.items reversed %}
+            <option class="menu-item" {% if page.url == item.url %}selected="selected"{% endif %} value="{{ site.baseurl }}{{ item.url }}">
+              {{ item.title }}
+            </option>
+          {%endfor%}
+        {%endif%}
+      {%endfor%}
+  
+  </select>
+
+  {% else %}
+
+  <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+
+    {% assign groups = site.pages | group_by: "category" | sort: "order" %}
+    {% for group in groups %}
+      
+      {% if group.name == 'main' %}
+        {% for item in group.items %}
+          <option class="menu-item" {% if page.url == item.url %}selected="selected"{% endif %} value="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title }}
+          </option>
+        {%endfor%}
+      {%endif%}
+    {%endfor%}
+
+    {% if page.nav == 'ignore' %}
+    <option class="menu-item" selected="selected" value="{{ site.baseurl }}{{ item.url }}">
+      ???
+    </option>
+    {%endif%}
+    
+  </select>
+
+  {% endif %}
+
+
+
+  <div class="ground"></div>
+</nav>

@@ -1,0 +1,36 @@
+<head>
+  {% capture resource_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
+  {% capture directory_url %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+  <link rel="canonical" href="{{ resource_url }}" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+
+  <title>
+    {% if page.title == "directory" %}
+      {{ site.title }}
+    {% else %}
+      {{ site.title }} / {{ page.title }}
+    {% endif %}
+  </title>
+
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="Aidan, Quinlan, Design, Graphic, Writing, Teaching">
+  <meta name="author" content="Aidan Quinlan">
+  <meta name="google-site-verification" content="jeU2ai_0IF5pJXT762j7oH7WIvQ4vRU-V5uJZXhPWQw" />
+  <meta name="google-site-verification" content="jeU2ai_0IF5pJXT762j7oH7WIvQ4vRU-V5uJZXhPWQw" />
+
+  {% if page.layout == 'custom' %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{page.css}}.css" />
+  {% else %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+  {% endif %}
+
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.png" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ directory_url }}/atom.xml" />
+
+  <style>
+    img {
+      max-width:100%;
+    }
+  </style>
+</head>

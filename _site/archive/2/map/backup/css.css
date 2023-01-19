@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  padding:0;
+  margin:0;
+  cursor: url('cursor2.png')5 5, auto;
+}
+
+body {
+  width:100vw;
+  height:100vh;
+  background:rgb(161, 164, 219);
+  /* cursor: none; */
+  /* cursor: help; */
+  /* background: linear-gradient(to bottom, rgba(230,115,39,1) 0%, rgba(230,115,39,1) 5%, rgba(151,123,227,1) 45%, rgba(151,123,227,1) 55%, rgba(230,115,39,1) 95%, rgba(230,115,39,1) 100%); */
+  /* background-repeat: repeat; */
+  /* background-size:100% 400%; */
+}
+
+a {
+  outline:none;
+}
+
+#container {
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.bib {
+  background-image: url(map7.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width:7000px;
+  height:5000px;
+  white-space: normal;
+  position: relative;
+  animation:none;
+  pointer-events: none;
+}
+
+.world {
+  width:8000px;
+  height:3500px;
+  background:#f7efe8;
+  z-index: -1;
+  position: absolute;
+  bottom:0;
+  left:-1000px;
+  /* border-radius: 20% 20% 0 0; */
+  filter: blur(100px);
+}
+
+.fade {
+  position: fixed;
+  bottom:0;
+  left:-50vw;
+  width:200vw;
+  height:50vh;
+  z-index: -2;
+  /* opacity: .2; */
+  animation: bg-window 150s infinite alternate ease;
+  filter: blur(100px);
+
+}
+
+.sun {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index: -3;
+  animation: down 300s infinite linear;
+  background: radial-gradient(ellipse at center, rgb(230,115,39) 0%, rgb(230,115,39) 15%, rgb(161, 164, 219) 21%, rgb(161, 164, 219) 100%);
+  background-size:300% 400%;
+}
+
+.dither {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 2;
+  background-image: url(dither5.gif);
+  opacity: .2;
+}
+
+.frame {
+  /* background:red; */
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  border: 80px solid #f7efe8;
+  border-radius: 150px;
+  filter: blur(10px);
+}
+
+.frame2 {
+  border-radius: 0;
+  filter: blur(0);
+  border-width: 60px;
+}
+
+
+@keyframes down {
+  0% {background-position: 49% 0%;}
+  100% {background-position: 49% -400%}
+}
+
+@keyframes bg-window {
+  0% {  background-color: rgb(254, 226, 156);}
+
+  50% { background-color: rgb(255, 136, 50);}
+}

@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<article class="studio">
+
+{% assign projects = site.studio | sort: "sort-date" | reverse %}
+{% for project in projects %}
+
+  <details id="{{ project.slug }}">
+    <summary>
+      <span class="proj-year">{{ project.year }}</span>
+      <span class="proj-title">
+        {% if project.link %}
+          <a class=" proj-link" href="{{ project.link }}" onclick="history.replaceState(true, '', '#{{ project.slug }}');">{{ project.title }}</a>
+        {% else %}
+          {{ project.title }}
+        {% endif %}
+      </span>
+      
+      {% if project.more %}
+        <span class="handle" onclick="history.replaceState(true, '', '#{{ project.slug }}');"></span>
+      {% endif %}
+    </summary>
+    <div class="drawer">
+
+      {% if project.content %}
+        {{ project.content }}
+      {% endif %}
+      
+      {% if project.images %}
+      <div class="images">
+        {% for image in project.images %}
+          <img src="{{ image.path | prepend: site.baseurl }}">
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if project.video %}
+      <div class="video-container">
+        <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/{{project.video}}" title="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      {% endif %}
+
+      <!-- {% for tag in project.tags %}
+        {{tag}}{% unless forloop.last %},
+        {% endunless %}
+      {% endfor %} -->
+    </div>
+  </details>
+
+{% endfor %}
+</article>
+
+

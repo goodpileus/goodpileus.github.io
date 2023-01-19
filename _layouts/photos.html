@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article class="photos">
+  <!-- {{ content | remove: '<p>' | remove: '</p>' }} -->
+
+  {% for image in site.static_files %}
+    {% if image.path contains page.image-path %}
+      {% if image.path contains "!" %}
+        <!-- hides images that have ! in the file name -->
+      {% else %}
+        <div class="item">
+          <img class="lazy" id="{{ image.basename }}" data-src="{{ site.baseurl }}{{ image.path }}" src="" title="{{ image.basename }}">
+          <span class="caption">
+            <a href="{{ site.baseurl }}{{ image.path }}" target="_blank">{{ image.basename }}</a>
+          </span>
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="img-nav">
+    <button id="prev" class="img-btn"><</button>
+    <button id="next" class="img-btn">></button>
+  </div>
+
+  <span class="lightbox-bg"></span>
+</article>
+
+
