@@ -86,7 +86,8 @@ body {
       -ms-text-size-adjust: 100%;
   width:100%;
   color:inherit;
-  padding:4.5rem 1rem .5rem 1rem;
+  // padding:4.5rem 1rem .5rem 1rem;
+  padding:.5rem 1rem .5rem 1rem;
 }
 
 
@@ -199,6 +200,9 @@ select {
   border:1px solid;
   border-radius:2px;
   margin-right: .5rem;
+  font-size: inherit;
+  border-color: $text;
+  border-width:1px;
 }
 
 button {
@@ -237,21 +241,23 @@ u {
 // ----------
 nav {
   padding-top:.5rem;
-  position: fixed;
-  border-bottom:1px solid;
+  // position: fixed;
+  // border-bottom:1px solid;
   top:0;
   left:0;
   width:100%;
   background: $bg;
   display: flex;
   flex-wrap:wrap;
+
+  margin-bottom:1.5rem;
 }
 
 nav .name-wrap {
   width:85px;
   display: flex;
   align-items: baseline;
-  margin-left:1rem;
+  // margin-left:1rem;
 }
 
 nav .icon {
@@ -344,7 +350,7 @@ nav .icon {
 
 .photos .item .caption {
   display:none;
-  position:absolute;
+  position:fixed;
   bottom:1rem;
   left:50%;
   transform: translateX(-50%);
