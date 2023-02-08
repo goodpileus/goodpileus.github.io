@@ -16,4 +16,4 @@ images:
   - path: /studio/img/dust-remover/dust.gif
 ---
 
-<p>album art for <a href="https://foil-music.bandcamp.com/album/regulating-and-accompanying-movement">Regulating and Accompanying Movement</a> by Dust Remover </p>
+<p>art for <a href="https://foil-music.bandcamp.com/album/regulating-and-accompanying-movement">Regulating and Accompanying Movement</a> by Dust Remover </p>

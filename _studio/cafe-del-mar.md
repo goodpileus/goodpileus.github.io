@@ -23,6 +23,6 @@ images:
 </p>
 
 <p>
-  digital environment for listening to panphilia's <em>floating in the pool at café del mar</em> mix. 
+  software for listening to panphilia's <em>floating in the pool at café del mar</em> mix. 
   listen to the mix <a href="https://soundcloud.com/panphilia/e-w-environment-by-aidan-q">here</a>
 </p>
