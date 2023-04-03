@@ -16,6 +16,7 @@ images:
   - path: /studio/img/calendar/jan.png
   - path: /studio/img/calendar/feb.png
   - path: /studio/img/calendar/mar.png
+  - path: /studio/img/calendar/apr.png
 ---
 
 <p>small print-at-home calendar that i started making for personal use but thought i could share in case anyone else wanted to use...</p>
@@ -25,4 +26,5 @@ images:
   <a target="_blank" href="/studio/img/calendar/jan.pdf">jan</a>, 
   <a target="_blank" href="/studio/img/calendar/feb.pdf">feb</a>, 
   <a target="_blank" href="/studio/img/calendar/mar.pdf">mar</a>
+  <a target="_blank" href="/studio/img/calendar/apr.pdf">apr</a>
 </p>
