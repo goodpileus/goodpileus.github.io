@@ -30,3 +30,15 @@ to do:
 - filters for studio
 - more photos
 
+<!-- <br> -->
+
+<!-- <button id="rest-btn">rest</button>
+
+<div class="buffer"></div>
+<div class="rest-wrap">
+  <div class="top"></div>
+  <img src="/assets/img/april.gif" alt="" title="">
+  <div class="bottom"></div>
+  <button id="awake-btn">go</button>
+</div> -->
+

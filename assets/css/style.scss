@@ -213,6 +213,11 @@ button {
   border: 1px solid;
 }
 
+button:hover {
+  background: $text;
+  color: $bg;
+}
+
 
 // Footnotes
 // ----------
@@ -303,6 +308,62 @@ nav .icon {
 
 .text p {
   max-width: $max-width;
+}
+
+
+// Directory
+// ----------
+.buffer {
+  position: fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100%;
+  background: $text;
+  opacity:0;
+  transition: opacity .2s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.buffer.active {
+  opacity:1;
+}
+
+.rest-wrap {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100%;
+  background: $bg;
+  opacity:0;
+  transition: opacity .2s;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.rest-wrap.active {
+  opacity:1;
+  pointer-events: initial;
+}
+
+.rest-wrap .top {
+  background: $text;
+  height:100%;
+}
+
+.rest-wrap .bottom {
+  background: $bg;
+  height:100%;
+}
+
+#awake-btn {
+  position: absolute;
+  bottom:1rem;
+  left:1rem;
 }
 
 
