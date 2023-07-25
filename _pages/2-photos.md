@@ -4,5 +4,5 @@ title:  "photo"
 order: 2
 category: main
 slug: photo
-permalink: /:slug/2022
+permalink: /:slug/2023
 ---
