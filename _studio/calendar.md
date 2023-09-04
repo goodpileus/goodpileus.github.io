@@ -36,5 +36,5 @@ images:
   <a target="_blank" href="/studio/img/calendar/jun.pdf">jun</a>,
   <a target="_blank" href="/studio/img/calendar/jul.pdf">jul</a>,
   <a target="_blank" href="/studio/img/calendar/aug.pdf">aug</a>,
-  <a target="_blank" href="/studio/img/calendar/sep.pdf">aug</a>
+  <a target="_blank" href="/studio/img/calendar/sep.pdf">sep</a>
 </p>
