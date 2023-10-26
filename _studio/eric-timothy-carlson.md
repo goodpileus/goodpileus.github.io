@@ -7,8 +7,8 @@ slug: "eric-timothy-carlson"
 permalink: /studio/:slug
 link: 'https://www.erictimothycarlson.com/'
 
-year: '2020'
-sort-date: '20-08'
+year: '2023'
+sort-date: '23-08'
 tags: website commission
 
 more: true
@@ -16,5 +16,5 @@ more: true
 ---
 
 <p>
-  temporary site for eric, while a more robust one is being built
+  portfolio site for eric
 </p>
