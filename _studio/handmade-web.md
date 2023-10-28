@@ -13,8 +13,8 @@ tags: teaching website personal
 
 more: true
 
-# images:
-#   - path: /studio/img/hw/hw-screen1.png
+images:
+  - path: /studio/img/hw/zoom-lobby2.png
 #   - path: /studio/img/hw/hw-screen2.png
 ---
 
