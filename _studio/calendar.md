@@ -23,10 +23,11 @@ images:
   - path: /studio/img/calendar/aug.png
   - path: /studio/img/calendar/sep.png
   - path: /studio/img/calendar/oct.png
+  - path: /studio/img/calendar/nov.png
 ---
 
 <p>small print-at-home calendar that i started making for personal use but thought i would share in case anyone else wanted to use...</p>
-<p>requires a ruler and knife/scissors to cut it out</p>
+<p>needs a ruler and knife/scissors to cut it out</p>
 <p>i'm working on them one month at a time, so i'll upload the future months as we near them</p>
 <p>pdfs: 
   <a target="_blank" href="/studio/img/calendar/jan.pdf">jan</a>, 
@@ -38,5 +39,6 @@ images:
   <a target="_blank" href="/studio/img/calendar/jul.pdf">jul</a>,
   <a target="_blank" href="/studio/img/calendar/aug.pdf">aug</a>,
   <a target="_blank" href="/studio/img/calendar/sep.pdf">sep</a>,
-  <a target="_blank" href="/studio/img/calendar/oct.pdf">oct</a>
+  <a target="_blank" href="/studio/img/calendar/oct.pdf">oct</a>,
+  <a target="_blank" href="/studio/img/calendar/nov.pdf">nov</a>
 </p>
