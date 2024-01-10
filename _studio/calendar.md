@@ -6,8 +6,8 @@ title:  "calendar"
 slug: "calendar"
 permalink: /studio/:slug
 
-year: '2023'
-sort-date: '23-99'
+year: '2023+'
+sort-date: '24-99'
 tags: personal other print
 
 more: true
@@ -27,8 +27,7 @@ images:
   - path: /studio/img/calendar/dec.png
 ---
 
-<p>small print-at-home calendar that i started making for personal use but thought i would share in case anyone else wanted to use...</p>
-<p>needs a ruler and knife/scissors to trim it</p>
+<p>small print-at-home calendar</p>
 <p>pdfs: 
   <a target="_blank" href="/studio/img/calendar/jan.pdf">jan</a>, 
   <a target="_blank" href="/studio/img/calendar/feb.pdf">feb</a>, 

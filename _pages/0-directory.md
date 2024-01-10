@@ -7,7 +7,7 @@ slug: directory
 permalink: /
 ---
 
-<img src="/assets/img/april.gif" alt="" title="">
+<img src="/assets/img/fallingstars.gif" alt="" title="">
 
 hello, welcome to my website
 
