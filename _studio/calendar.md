@@ -33,6 +33,6 @@ images:
   <a target="_blank" href="/studio/img/calendar/24jan.pdf">jan</a>
 </p>
 <p>2023: 
-  [currently compiling into blank collection]
+    <a target="_blank" href="/studio/img/calendar/23_blank.pdf">blank slate collection</a>
 </p>
 
