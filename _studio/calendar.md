@@ -13,6 +13,7 @@ tags: personal other print
 more: true
 
 images:
+  - path: /studio/img/calendar/24feb.png
   - path: /studio/img/calendar/24jan.png
   - path: /studio/img/calendar/dec.png
   - path: /studio/img/calendar/nov.png
@@ -30,7 +31,8 @@ images:
 
 <p>small print-at-home calendar</p>
 <p>2024: 
-  <a target="_blank" href="/studio/img/calendar/24jan.pdf">jan</a>
+  <a target="_blank" href="/studio/img/calendar/24jan.pdf">jan</a>,
+  <a target="_blank" href="/studio/img/calendar/24feb.pdf">feb</a>
 </p>
 <p>2023: 
     <a target="_blank" href="/studio/img/calendar/23_blank.pdf">blank slate collection</a>
