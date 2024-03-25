@@ -8,7 +8,7 @@ permalink: /studio/:slug
 
 year: '2023+'
 sort-date: '24-99'
-tags: personal other print
+tags: personal
 
 more: true
 

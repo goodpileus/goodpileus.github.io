@@ -141,3 +141,9 @@ openTarget();
 
 
 
+$(function() {
+  $('#tagSelector').change(function(){
+      $('.all').hide();
+      $('.' + $(this).val()).show();
+  });
+});

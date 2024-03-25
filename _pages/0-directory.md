@@ -18,16 +18,13 @@ this is a place to browse the files that i'd like to share with others, as well 
 at the moment:
 - teaching [Handmade Web](https://handmade-web.net/) at VCU
 - working on some websites
-- translating Fool's Rest into a website
 
 > &mdash;&mdash;
 
-this version of the site is still young. \
 i'm working on getting all the rooms together...
 
 to do:
 - blog/writing space
-- filters for studio
 - more photos
 
 <!-- <br> -->

@@ -9,7 +9,7 @@ link: 'https://aidanquinlan.net/simplelivin/'
 
 year: '2019'
 sort-date: '19-10'
-tags: website sound school group
+tags: website school group
 
 more: true
 

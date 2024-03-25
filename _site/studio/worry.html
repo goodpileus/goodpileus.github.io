@@ -55,11 +55,11 @@
             directory
           </option>
         
-          <option class="menu-item"  value="/studio">
+          <option class="menu-item" selected="selected" value="/studio">
             studio
           </option>
         
-          <option class="menu-item"  value="/photo/2023">
+          <option class="menu-item"  value="/photo/2024">
             photo
           </option>
         
@@ -74,8 +74,60 @@
     
 
     
-    
   </select>
+
+  <select name="tags" onchange="" id="tagSelector">
+    <option class="menu-item">all</option>
+    
+    
+      <option class="menu-item" value="video">
+        video
+      </option>
+    
+      <option class="menu-item" value="school">
+        school
+      </option>
+    
+      <option class="menu-item" value="teaching">
+        teaching
+      </option>
+    
+      <option class="menu-item" value="website">
+        website
+      </option>
+    
+      <option class="menu-item" value="commission">
+        commission
+      </option>
+    
+      <option class="menu-item" value="installation">
+        installation
+      </option>
+    
+      <option class="menu-item" value="personal">
+        personal
+      </option>
+    
+      <option class="menu-item" value="software">
+        software
+      </option>
+    
+      <option class="menu-item" value="group">
+        group
+      </option>
+    
+      <option class="menu-item" value="book">
+        book
+      </option>
+    
+      <option class="menu-item" value="poster">
+        poster
+      </option>
+    
+  
+  </select>
+
+  
 
   
 
@@ -90,7 +142,10 @@
 
 
 
-  <details id="handmade-web">
+  <details id="handmade-web" class="all 
+teaching 
+website 
+personal ">
     <summary>
       <span class="proj-year">2018+</span>
       <span class="proj-title">
@@ -137,7 +192,8 @@
 
 
 
-  <details id="calendar">
+  <details id="calendar" class="all 
+personal ">
     <summary>
       <span class="proj-year">2023+</span>
       <span class="proj-title">
@@ -155,7 +211,9 @@
       
         <p>small print-at-home calendar</p>
 <p>2024: 
-  <a target="_blank" href="/studio/img/calendar/24jan.pdf">jan</a>
+  <a target="_blank" href="/studio/img/calendar/24jan.pdf">jan</a>,
+  <a target="_blank" href="/studio/img/calendar/24feb.pdf">feb</a>,
+  <a target="_blank" href="/studio/img/calendar/24mar.pdf">mar</a>
 </p>
 <p>2023: 
     <a target="_blank" href="/studio/img/calendar/23_blank.pdf">blank slate collection</a>
@@ -166,6 +224,10 @@
       
       
       <div class="images">
+        
+          <img src="/studio/img/calendar/24mar.png">
+        
+          <img src="/studio/img/calendar/24feb.png">
         
           <img src="/studio/img/calendar/24jan.png">
         
@@ -199,20 +261,58 @@
       
 
       <!-- 
-        personal,
-        
-      
-        other,
-        
-      
-        print
+        personal
        -->
     </div>
   </details>
 
 
 
-  <details id="eric-timothy-carlson">
+  <details id="ritual-of-forgetting" class="all 
+personal 
+website 
+commission ">
+    <summary>
+      <span class="proj-year">2024</span>
+      <span class="proj-title">
+        
+          <a class=" proj-link" href="http://clique-----books.com/works/ritual-of-forgetting/index.html" onclick="history.replaceState(true, '', '#ritual-of-forgetting');">ritual of forgetting</a>
+        
+      </span>
+
+      
+        <span class="handle" onclick="history.replaceState(true, '', '#ritual-of-forgetting');"></span>
+      
+    </summary>
+    <div class="drawer">
+
+      
+        <p>a small website/clock for forgetting (or remembering). published by <a href="http://clique-----books.com/">clique books</a>. thank you mariah</p>
+
+
+      
+      
+      
+
+      
+
+      <!-- 
+        personal,
+        
+      
+        website,
+        
+      
+        commission
+       -->
+    </div>
+  </details>
+
+
+
+  <details id="eric-timothy-carlson" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2023</span>
       <span class="proj-title">
@@ -249,7 +349,9 @@
 
 
 
-  <details id="wisconsin2">
+  <details id="wisconsin2" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2020-22</span>
       <span class="proj-title">
@@ -296,7 +398,10 @@
 
 
 
-  <details id="22-pecha-kucha">
+  <details id="22-pecha-kucha" class="all 
+video 
+school 
+teaching ">
     <summary>
       <span class="proj-year">2022</span>
       <span class="proj-title">
@@ -334,7 +439,9 @@
 
 
 
-  <details id="lee">
+  <details id="lee" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2022</span>
       <span class="proj-title">
@@ -370,7 +477,9 @@
 
 
 
-  <details id="anonima">
+  <details id="anonima" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2022</span>
       <span class="proj-title">
@@ -407,7 +516,9 @@
 
 
 
-  <details id="lee">
+  <details id="lee" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2022</span>
       <span class="proj-title">
@@ -443,7 +554,9 @@
 
 
 
-  <details id="abc-artbookfair">
+  <details id="abc-artbookfair" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2021</span>
       <span class="proj-title">
@@ -499,7 +612,9 @@
 
 
 
-  <details id="traven-t-croves">
+  <details id="traven-t-croves" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2021</span>
       <span class="proj-title">
@@ -534,7 +649,9 @@
 
 
 
-  <details id="petal-cam">
+  <details id="petal-cam" class="all 
+commission 
+poster ">
     <summary>
       <span class="proj-year">2021</span>
       <span class="proj-title">
@@ -577,7 +694,9 @@
 
 
 
-  <details id="tied-to-an-audience">
+  <details id="tied-to-an-audience" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2021</span>
       <span class="proj-title">
@@ -614,7 +733,9 @@
 
 
 
-  <details id="miracle-seltzer">
+  <details id="miracle-seltzer" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2020-21</span>
       <span class="proj-title">
@@ -661,7 +782,10 @@
 
 
 
-  <details id="cafe-del-mar">
+  <details id="cafe-del-mar" class="all 
+software 
+commission 
+personal ">
     <summary>
       <span class="proj-year">2020</span>
       <span class="proj-title">
@@ -712,7 +836,9 @@
 
 
 
-  <details id="be-with">
+  <details id="be-with" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2020</span>
       <span class="proj-title">
@@ -749,7 +875,9 @@
 
 
 
-  <details id="distant-garden">
+  <details id="distant-garden" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2020</span>
       <span class="proj-title">
@@ -790,7 +918,10 @@
 
 
 
-  <details id="worry">
+  <details id="worry" class="all 
+book 
+personal 
+school ">
     <summary>
       <span class="proj-year">2020</span>
       <span class="proj-title">
@@ -838,7 +969,10 @@
 
 
 
-  <details id="map">
+  <details id="map" class="all 
+website 
+personal 
+school ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -876,7 +1010,10 @@
 
 
 
-  <details id="psychosphere">
+  <details id="psychosphere" class="all 
+website 
+school 
+group ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -917,7 +1054,10 @@
 
 
 
-  <details id="simple-livin">
+  <details id="simple-livin" class="all 
+website 
+school 
+group ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -951,9 +1091,6 @@
         website,
         
       
-        sound,
-        
-      
         school,
         
       
@@ -964,7 +1101,10 @@
 
 
 
-  <details id="pump-house">
+  <details id="pump-house" class="all 
+installation 
+personal 
+school ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1020,7 +1160,12 @@
 
 
 
-  <details id="eddies">
+  <details id="eddies" class="all 
+book 
+installation 
+video 
+personal 
+school ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1085,7 +1230,10 @@
 
 
 
-  <details id="river">
+  <details id="river" class="all 
+software 
+personal 
+school ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1135,7 +1283,8 @@
 
 
 
-  <details id="regulating-and-accompanying-movement">
+  <details id="regulating-and-accompanying-movement" class="all 
+commission ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1166,17 +1315,16 @@
       
 
       <!-- 
-        commission,
-        
-      
-        album-art
+        commission
        -->
     </div>
   </details>
 
 
 
-  <details id="marechera">
+  <details id="marechera" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1213,7 +1361,10 @@
 
 
 
-  <details id="perennial">
+  <details id="perennial" class="all 
+software 
+personal 
+school ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1245,9 +1396,6 @@
       
 
       <!-- 
-        typeface,
-        
-      
         software,
         
       
@@ -1261,7 +1409,10 @@
 
 
 
-  <details id="dronosphere">
+  <details id="dronosphere" class="all 
+website 
+school 
+group ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1301,7 +1452,10 @@
 
 
 
-  <details id="web-hub">
+  <details id="web-hub" class="all 
+website 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018-19</span>
       <span class="proj-title">
@@ -1339,7 +1493,11 @@
 
 
 
-  <details id="guide">
+  <details id="guide" class="all 
+software 
+book 
+personal 
+school ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1399,7 +1557,9 @@
 
 
 
-  <details id="useless-web">
+  <details id="useless-web" class="all 
+teaching 
+personal ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1440,7 +1600,10 @@
 
 
 
-  <details id="refrain">
+  <details id="refrain" class="all 
+software 
+personal 
+school ">
     <summary>
       <span class="proj-year">2019</span>
       <span class="proj-title">
@@ -1490,7 +1653,11 @@
 
 
 
-  <details id="at-the-door">
+  <details id="at-the-door" class="all 
+installation 
+website 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1539,7 +1706,10 @@
 
 
 
-  <details id="lonely-rancher">
+  <details id="lonely-rancher" class="all 
+website 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1575,7 +1745,10 @@
 
 
 
-  <details id="blind-sunset">
+  <details id="blind-sunset" class="all 
+website 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1611,7 +1784,10 @@
 
 
 
-  <details id="shifting-window">
+  <details id="shifting-window" class="all 
+website 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1647,7 +1823,10 @@
 
 
 
-  <details id="rhubarb">
+  <details id="rhubarb" class="all 
+book 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1695,7 +1874,10 @@
 
 
 
-  <details id="windfall">
+  <details id="windfall" class="all 
+book 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1741,7 +1923,10 @@
 
 
 
-  <details id="residue">
+  <details id="residue" class="all 
+website 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1779,7 +1964,9 @@
 
 
 
-  <details id="cevahir">
+  <details id="cevahir" class="all 
+website 
+commission ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1814,7 +2001,10 @@
 
 
 
-  <details id="good-morning-empire">
+  <details id="good-morning-empire" class="all 
+website 
+personal 
+school ">
     <summary>
       <span class="proj-year">2018</span>
       <span class="proj-title">
@@ -1860,7 +2050,10 @@
 
 
 
-  <details id="temple-of-the-internet">
+  <details id="temple-of-the-internet" class="all 
+book 
+personal 
+school ">
     <summary>
       <span class="proj-year">2017</span>
       <span class="proj-title">
@@ -1908,7 +2101,10 @@
 
 
 
-  <details id="under-the-shade-of-the-bungalow">
+  <details id="under-the-shade-of-the-bungalow" class="all 
+book 
+personal 
+school ">
     <summary>
       <span class="proj-year">2014</span>
       <span class="proj-title">

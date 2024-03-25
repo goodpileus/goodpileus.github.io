@@ -8,7 +8,7 @@ permalink: /studio/:slug
 
 year: '2019'
 sort-date: '19-06'
-tags: typeface software personal school
+tags: software personal school
 
 more: true
 

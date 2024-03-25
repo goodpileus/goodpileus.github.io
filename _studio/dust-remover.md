@@ -8,7 +8,7 @@ permalink: /studio/:slug
 
 year: '2019'
 sort-date: '19-09'
-tags: commission album-art
+tags: commission
 
 more: true
 

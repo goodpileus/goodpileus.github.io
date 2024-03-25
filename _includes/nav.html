@@ -36,6 +36,38 @@
   
   </select>
 
+  {% elsif page.layout == 'studio' %}
+
+  <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+
+    {% assign groups = site.pages | group_by: "category" | sort: "order" %}
+    {% for group in groups %}
+      
+      {% if group.name == 'main' %}
+        {% for item in group.items %}
+          <option class="menu-item" {% if item.title == 'studio' %}selected="selected"{% endif %} value="{{ site.baseurl }}{{ item.url }}">
+            {{ item.title }}
+          </option>
+        {%endfor%}
+      {%endif%}
+    {%endfor%}
+
+    
+  </select>
+
+  <select name="tags" onchange="" id="tagSelector">
+    <option class="menu-item">all</option>
+    {% assign tags =  site.studio | map: 'tags' | join: ','  | split: ',' | uniq %}
+    {% for tag in tags %}
+      <option class="menu-item" value="{{ tag }}">
+        {{ tag }}
+      </option>
+    {% endfor %}
+  
+  </select>
+
+  
+
   {% else %}
 
   <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">

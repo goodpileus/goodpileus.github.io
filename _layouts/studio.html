@@ -6,7 +6,8 @@ layout: default
 {% assign projects = site.studio | sort: "sort-date" | reverse %}
 {% for project in projects %}
 
-  <details id="{{ project.slug }}">
+  <details id="{{ project.slug }}" class="all {% for tags in project.tags %}
+{{ tags }} {% endfor %}">
     <summary>
       <span class="proj-year">{{ project.year }}</span>
       <span class="proj-title">

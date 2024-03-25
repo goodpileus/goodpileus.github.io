@@ -16,7 +16,7 @@ aidan quinlan
 
 > port angeles, wa
 
-> updated: jan 21, 2024
+> updated: mar 24, 2024
 
 > &mdash;&mdash;
 
@@ -24,11 +24,14 @@ my friends and inspirations:
 
 > [cc](https://cevahirozdogan.net/)\
 > [Ged]({{ site.baseurl }}/ged.html) (my cat)\
-> [Lihua Yu](https://lihuayu.xyz/)\
+> Lihua Yu\
 > [Chad Greenberg](https://chadgreenberg.net/)\
-> [Julia Dann](https://juliadann.com/)\
+> Julia Dann\
 > [Mariah Barden Jones](http://firstknives.club/)\
+> [Huiyu Yang](https://huiyuu.net/)\
+> Kai Chuang\
 > [nicole killian](http://nylondip.com/)\
+> [Eric Couture](https://ecouture.net/)\
 > [Yutong Liu](https://machine-art-girl.net/)\
 > [Feixue Mei](https://feixuemei.info/index.html)\
 > [Jason S. Wright](http://www.jswrightstudio.net/)\
@@ -42,11 +45,12 @@ my friends and inspirations:
 > Lap Le\
 > Sam Mullany\
 > [Laurel Schwulst](https://www.laurel.world/)\
+> [Elliott Cost](https://elliott.computer/)\
 > Meb Byrne\
 > Sylvia Li\
 > Elise Neroutsos\
-> [Zeke Jones](https://zekejones.rodeo/)\
-> [Ursula K. Le Guin](http://ursulakleguinarchive.com/UKL_info.html)
+> Zeke Jones\
+> [Ursula K. Le Guin](https://web.archive.org/web/20180105043737/http://www.ursulakleguin.com/)
 
 > &mdash;&mdash;
 
