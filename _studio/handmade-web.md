@@ -15,7 +15,7 @@ more: true
 
 images:
   - path: /studio/img/hw/zoom-lobby2.png
-  - path: /studio/img/hw/hw-screen3.png
+  # - path: /studio/img/hw/hw-screen3.png
 ---
 
 <p>
