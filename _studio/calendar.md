@@ -13,6 +13,7 @@ tags: personal
 more: true
 
 images:
+  - path: /studio/img/calendar/24dec.png
   - path: /studio/img/calendar/24nov.png
   - path: /studio/img/calendar/24oct.png
   - path: /studio/img/calendar/24sep.png
@@ -50,7 +51,8 @@ images:
   <a target="_blank" href="/studio/img/calendar/24aug.pdf">aug</a>,
   <a target="_blank" href="/studio/img/calendar/24sep.pdf">sep</a>,
   <a target="_blank" href="/studio/img/calendar/24oct.pdf">oct</a>,
-  <a target="_blank" href="/studio/img/calendar/24nov.pdf">nov</a>
+  <a target="_blank" href="/studio/img/calendar/24nov.pdf">nov</a>,
+  <a target="_blank" href="/studio/img/calendar/24dec.pdf">dec</a>
 </p>
 <p>2023: 
     <a target="_blank" href="/studio/img/calendar/23_blank.pdf">blank slate collection</a>
