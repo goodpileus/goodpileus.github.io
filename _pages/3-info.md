@@ -11,12 +11,12 @@ aidan quinlan
 
 > aidankquinlan@gmail.com\
 > [are.na](https://www.are.na/aidan-quinlan)\
-> [instagram](https://www.instagram.com/goodpileus/)\
-> [twitter](https://twitter.com/goodpileus)
+> [bluesky](https://bsky.app/profile/goodpileus.bsky.social)\
+> [instagram](https://www.instagram.com/goodpileus/) (no longer active)
 
 > port angeles, wa
 
-> updated: mar 24, 2024
+> updated: jan 26, 2025
 
 > &mdash;&mdash;
 
@@ -24,9 +24,10 @@ my friends and inspirations:
 
 > [cc](https://cevahirozdogan.net/)\
 > [Ged]({{ site.baseurl }}/ged.html) (my cat)\
-> Lihua Yu\
+> [Lihua Yu](http://imageservice.org/)\
 > [Chad Greenberg](https://chadgreenberg.net/)\
-> Julia Dann\
+> [Zeke Jones](https://zekejones.cargo.site/)\
+> [Julia Dann](https://www.juliadann.com/)\
 > [Mariah Barden Jones](http://firstknives.club/)\
 > [Huiyu Yang](https://huiyuu.net/)\
 > Kai Chuang\
@@ -49,7 +50,6 @@ my friends and inspirations:
 > Meb Byrne\
 > Sylvia Li\
 > Elise Neroutsos\
-> Zeke Jones\
 > [Ursula K. Le Guin](https://web.archive.org/web/20180105043737/http://www.ursulakleguin.com/)
 
 > &mdash;&mdash;
