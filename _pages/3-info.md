@@ -12,11 +12,16 @@ aidan quinlan
 > aidankquinlan@gmail.com\
 > [are.na](https://www.are.na/aidan-quinlan)\
 > [bluesky](https://bsky.app/profile/goodpileus.bsky.social)\
-> [instagram](https://www.instagram.com/goodpileus/) (no longer active)
+> [mastodon](https://mastodon.social/@goodpileus)
+> \
+> archived socials:\
+> [instagram](https://www.instagram.com/goodpileus/)\
+> [twitter](https://x.com/goodpileus)\
+> [flickr](https://www.flickr.com/photos/jollyoldaidan/)
 
 > port angeles, wa
 
-> updated: jan 26, 2025
+> updated: jan 29, 2025
 
 > &mdash;&mdash;
 
