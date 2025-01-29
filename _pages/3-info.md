@@ -10,9 +10,10 @@ permalink: /info
 aidan quinlan
 
 > aidankquinlan@gmail.com\
+> \
 > [are.na](https://www.are.na/aidan-quinlan)\
 > [bluesky](https://bsky.app/profile/goodpileus.bsky.social)\
-> [mastodon](https://mastodon.social/@goodpileus)
+> [mastodon](https://mastodon.social/@goodpileus)\
 > \
 > archived socials:\
 > [instagram](https://www.instagram.com/goodpileus/)\
