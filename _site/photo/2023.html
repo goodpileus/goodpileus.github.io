@@ -37,75 +37,75 @@
 
 <body>
 
-  <nav class="menu" id="nav">
+  <nav class="menu active" id="nav">
   <span class="name-wrap">
-    <img class="icon" src="/assets/favicon.png" title="patience">
+    <!-- <img class="icon" src="/assets/favicon.png" title="patience"> -->
+     <span class="icon" title="patience">☘</span>
     <span class="name" title="aidan quinlan">aidan</span>
   </span>
-  
-  <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+  <div class="dropdowns">
+    
+    <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
 
-    
-    
       
-      
-        
-          <option class="menu-item"  value="/">
-            directory
-          </option>
-        
-          <option class="menu-item"  value="/studio">
-            studio
-          </option>
-        
-          <option class="menu-item" selected="selected" value="/photo/2024">
-            photo
-          </option>
-        
-          <option class="menu-item"  value="/info">
-            info
-          </option>
-        
-      
-    
-      
-      
-    
-
-    
-  </select>
-
-  <select name="years" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-    
       
         
         
           
-            <option class="menu-item"  value="/photo/2024">
-              2024
+            <option class="menu-item"  value="/">
+              directory
             </option>
           
-            <option class="menu-item" selected="selected" value="/photo/2023">
-              2023
+            <option class="menu-item"  value="/studio">
+              studio
             </option>
           
-            <option class="menu-item"  value="/photo/2022">
-              2022
+            <option class="menu-item" selected="selected" value="/photo/2024">
+              photo
             </option>
           
-            <option class="menu-item"  value="/photo/2021">
-              2021
+            <option class="menu-item"  value="/info">
+              info
             </option>
           
         
       
-  
-  </select>
+        
+        
+      
 
-  
+      
+    </select>
 
+    <select name="years" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+      
+        
+          
+          
+            
+              <option class="menu-item"  value="/photo/2024">
+                2024
+              </option>
+            
+              <option class="menu-item" selected="selected" value="/photo/2023">
+                2023
+              </option>
+            
+              <option class="menu-item"  value="/photo/2022">
+                2022
+              </option>
+            
+              <option class="menu-item"  value="/photo/2021">
+                2021
+              </option>
+            
+          
+        
+    
+    </select>
 
-  <!-- <div class="ground"></div> -->
+    
+  </div>
 </nav>
 
 

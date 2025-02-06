@@ -37,102 +37,102 @@
 
 <body>
 
-  <nav class="menu" id="nav">
+  <nav class="menu active" id="nav">
   <span class="name-wrap">
-    <img class="icon" src="/assets/favicon.png" title="patience">
+    <!-- <img class="icon" src="/assets/favicon.png" title="patience"> -->
+     <span class="icon" title="patience">☘</span>
     <span class="name" title="aidan quinlan">aidan</span>
   </span>
-  
-
-  <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-
+  <div class="dropdowns">
     
-    
+
+    <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+
       
       
         
-          <option class="menu-item"  value="/">
-            directory
-          </option>
         
-          <option class="menu-item" selected="selected" value="/studio">
-            studio
-          </option>
-        
-          <option class="menu-item"  value="/photo/2024">
-            photo
-          </option>
-        
-          <option class="menu-item"  value="/info">
-            info
-          </option>
+          
+            <option class="menu-item"  value="/">
+              directory
+            </option>
+          
+            <option class="menu-item" selected="selected" value="/studio">
+              studio
+            </option>
+          
+            <option class="menu-item"  value="/photo/2024">
+              photo
+            </option>
+          
+            <option class="menu-item"  value="/info">
+              info
+            </option>
+          
         
       
-    
+        
+        
+      
+
+      
+    </select>
+
+    <select name="tags" onchange="" id="tagSelector">
+      <option class="menu-item">all</option>
       
       
+        <option class="menu-item" value="video">
+          video
+        </option>
+      
+        <option class="menu-item" value="school">
+          school
+        </option>
+      
+        <option class="menu-item" value="teaching">
+          teaching
+        </option>
+      
+        <option class="menu-item" value="website">
+          website
+        </option>
+      
+        <option class="menu-item" value="commission">
+          commission
+        </option>
+      
+        <option class="menu-item" value="installation">
+          installation
+        </option>
+      
+        <option class="menu-item" value="personal">
+          personal
+        </option>
+      
+        <option class="menu-item" value="software">
+          software
+        </option>
+      
+        <option class="menu-item" value="group">
+          group
+        </option>
+      
+        <option class="menu-item" value="book">
+          book
+        </option>
+      
+        <option class="menu-item" value="poster">
+          poster
+        </option>
+      
+    
+    </select>
+
     
 
     
-  </select>
-
-  <select name="tags" onchange="" id="tagSelector">
-    <option class="menu-item">all</option>
-    
-    
-      <option class="menu-item" value="video">
-        video
-      </option>
-    
-      <option class="menu-item" value="school">
-        school
-      </option>
-    
-      <option class="menu-item" value="teaching">
-        teaching
-      </option>
-    
-      <option class="menu-item" value="website">
-        website
-      </option>
-    
-      <option class="menu-item" value="commission">
-        commission
-      </option>
-    
-      <option class="menu-item" value="installation">
-        installation
-      </option>
-    
-      <option class="menu-item" value="personal">
-        personal
-      </option>
-    
-      <option class="menu-item" value="software">
-        software
-      </option>
-    
-      <option class="menu-item" value="group">
-        group
-      </option>
-    
-      <option class="menu-item" value="book">
-        book
-      </option>
-    
-      <option class="menu-item" value="poster">
-        poster
-      </option>
-    
-  
-  </select>
-
-  
-
-  
-
-
-  <!-- <div class="ground"></div> -->
+  </div>
 </nav>
 
 
@@ -317,6 +317,48 @@ commission ">
 </p>
 <p>
   a strange, shifting map for Brendan Principato's music project, Saapato
+</p>
+      
+      
+      
+
+      
+
+      <!-- 
+        website,
+        
+      
+        commission
+       -->
+    </div>
+  </details>
+
+
+
+  <details id="iko" class="all 
+website 
+commission ">
+    <summary>
+      <span class="proj-year">2024</span>
+      <span class="proj-title">
+        
+          <a class=" proj-link" href="https://ikoniche.com/" onclick="history.replaceState(true, '', '#iko');">ikoniche.com</a>
+        
+      </span>
+
+      
+        <span class="handle" onclick="history.replaceState(true, '', '#iko');"></span>
+      
+    </summary>
+    <div class="drawer">
+
+      
+        <p>
+  with <a href="https://www.erictimothycarlson.com/">Eric Timothy Carlson</a>
+</p>
+
+<p>
+  site for iko niche
 </p>
       
       

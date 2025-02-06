@@ -5,13 +5,20 @@ window.onload = function() {
 // --- lightbox
 $(".item img").click(function() {
   if ($(this).parent().hasClass("active")) {
+    // hide lightbox bg
     $(".lightbox-bg").removeClass('active');
+
+    // show main nav
+    $("nav").addClass('active');
 
     $(".item").removeClass( 'hide');
     $(".img-nav").removeClass( 'active');
     $( this ).parent().removeClass( 'active');
   } else {
     $(".lightbox-bg").addClass('active');
+
+    // hide main nav
+    $("nav").removeClass('active');
 
     $(".item").addClass( 'hide');
     $(".img-nav").addClass( 'active');
@@ -24,6 +31,7 @@ $(".lightbox-bg").click(function() {
   $(".lightbox-bg").removeClass('active');
   $(".item").removeClass( 'hide');
   $(".item").removeClass('active');
+  $("nav").addClass('active');
 });
 
 
@@ -147,3 +155,27 @@ $(function() {
       $('.' + $(this).val()).show();
   });
 });
+
+
+// --- checking the time
+// var checkTimeInterval = 300000;
+var checkTimeInterval = 3000;
+var timeCheck;
+
+function checkTime() {
+  var d = new Date();
+  var currentHour = d.getHours(); //note 0-23
+  console.log('the current hour is ' + currentHour);
+  
+  if (currentHour >= 18 || currentHour <= 4) {
+    $('body').removeClass('day');
+    $('body').addClass('night');
+  }
+  else {
+    $('body').removeClass('night');
+    $('body').addClass('day');
+  }
+}
+
+checkTime();
+timeCheck = setInterval(checkTime, checkTimeInterval);

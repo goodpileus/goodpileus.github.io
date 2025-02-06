@@ -37,54 +37,54 @@
 
 <body>
 
-  <nav class="menu" id="nav">
+  <nav class="menu active" id="nav">
   <span class="name-wrap">
-    <img class="icon" src="/assets/favicon.png" title="patience">
+    <!-- <img class="icon" src="/assets/favicon.png" title="patience"> -->
+     <span class="icon" title="patience">☘</span>
     <span class="name" title="aidan quinlan">aidan</span>
   </span>
-  
-
-  <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-
+  <div class="dropdowns">
     
-    
+
+    <select name="rooms" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+
       
       
         
-          <option class="menu-item"  value="/">
-            directory
-          </option>
         
-          <option class="menu-item"  value="/studio">
-            studio
-          </option>
-        
-          <option class="menu-item"  value="/photo/2024">
-            photo
-          </option>
-        
-          <option class="menu-item"  value="/info">
-            info
-          </option>
+          
+            <option class="menu-item"  value="/">
+              directory
+            </option>
+          
+            <option class="menu-item"  value="/studio">
+              studio
+            </option>
+          
+            <option class="menu-item"  value="/photo/2024">
+              photo
+            </option>
+          
+            <option class="menu-item"  value="/info">
+              info
+            </option>
+          
         
       
-    
+        
+        
+      
+
+      
+      <option class="menu-item" selected="selected" value="">
+        ???
+      </option>
       
       
-    
+    </select>
 
     
-    <option class="menu-item" selected="selected" value="">
-      ???
-    </option>
-    
-    
-  </select>
-
-  
-
-
-  <!-- <div class="ground"></div> -->
+  </div>
 </nav>
 
 

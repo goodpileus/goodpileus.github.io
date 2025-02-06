@@ -6,21 +6,23 @@ sitemap: false
 $main-font: 'qt letter goth', monospace;
 $heading-font: 'qt letter goth', monospace;
 
-// $bg: #e7e0d4;
-$bg: #d6e5e0;
+//day
+$day-bg: #d6e5e0;
+$day-text: #4c4247;
+$day-acc: rgba(255, 255, 255, 0.5);
 
-$acc: rgba(255, 255, 255, 0.5);
+$day-link: #375397;
+$day-visited: #1e8459;
 
-$web:rgba(163, 173, 102, 0.15);
-$teach:rgba(159, 130, 78, 0.15);
-$software:rgba(152, 152, 152, 0.15);
-$pub:rgba(152, 152, 152, 0.15);
+//night
+$night-bg: #343034;
+$night-text: #a1aaa5;
+$night-acc: rgba(255, 255, 255, 0.1);
 
-$text: #4c4247;
-$text-invert: #b3bdb8;
-$link: #375397;
-$visited: #1e8459;
-$link-hover: rgba(222, 115, 93, 0.4);
+$night-link: #5b73b1;
+$night-visited: #3c9b73;
+
+$lightbox-bg: #2a2627;
 
 $max-width: 800px;
 
@@ -73,12 +75,8 @@ body {
 
 html {
   font-family: $main-font;
-  color: $text;
-  font-size: .9rem;
-  // line-height: 1.5;
-  background: $bg;
+  font-size: .95rem;
 }
-
 body {
   font-weight: lighter;
   // font-weight:bold;
@@ -88,23 +86,52 @@ body {
   color:inherit;
   // padding:4.5rem 1rem .5rem 1rem;
   padding:.5rem 1rem .5rem 1rem;
+  background: $night-bg;
+  color: $night-text;
 }
+
+body.day {
+  background: $day-bg;
+  color: $day-text;
+}
+
+body.night {
+  background: $night-bg;
+  color: $night-text;
+}
+
 
 
 // Typography
 // ----------
-a {
-  color: $link;
-  // text-decoration: none;
+body.day {
+  a {
+    color: $day-link;
+  }
+  
+  a:visited {
+    color: $day-visited;
+  }
+
+  a:hover,
+  a:focus {
+    background: $day-acc;
+  }
 }
 
-a:visited {
-  color: $visited;
-}
+body.night {
+  a {
+    color: $night-link;
+  }
+  
+  a:visited {
+    color: $night-visited;
+  }
 
-a:hover,
-a:focus {
-  background: $acc;
+  a:hover,
+  a:focus {
+    background: $night-acc;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,15 +168,24 @@ p {
   margin-bottom: 1rem;
 }
 
-ul {
-  list-style-type: '- ';
-}
-
 ul, ol {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   padding-left:2rem;
   padding-right:2rem;
+}
+
+ul {
+  list-style-type: '- ';
+}
+
+ul ul {
+  margin-top: .2rem;
+  list-style-type: '◦ ';
+}
+
+li {
+  margin-bottom:.2rem;
 }
 
 blockquote {
@@ -195,13 +231,12 @@ th {
 select {
   color:inherit;
   font-family: inherit;
-  // background: rgba(126, 126, 126, 0.1);
   background: transparent;
   border:1px solid;
   border-radius:2px;
   margin-right: .5rem;
   font-size: inherit;
-  border-color: $text;
+  border-color: inherit;
   border-width:1px;
 }
 
@@ -214,8 +249,8 @@ button {
 }
 
 button:hover {
-  background: $text;
-  color: $bg;
+  background: $day-text;
+  color: $day-bg;
 }
 
 
@@ -251,11 +286,19 @@ nav {
   top:0;
   left:0;
   width:100%;
-  background: $bg;
+  // background: $bg;
+
+  opacity:0;
+
   display: flex;
   flex-wrap:wrap;
+  align-items: baseline;
 
-  margin-bottom:1rem;
+  margin-bottom:.5rem;
+}
+
+nav.active {
+  opacity:1;
 }
 
 nav .name-wrap {
@@ -263,37 +306,26 @@ nav .name-wrap {
   display: flex;
   align-items: baseline;
   // margin-left:1rem;
+  margin-bottom:.5rem;
 }
 
 nav .icon {
   // padding-left:1rem;
   height:16px;
   position: relative;
-  top:2px;
+  // top:2px;
   margin-right: 13px;
+  font-size: 1.2rem;
+  cursor:default;
 }
 
-.ground {
-  height:14px;
-  border-top:1px solid;
-  // border-bottom:1px solid;
-
-  margin-top:.5rem;
-
-  background-image: url('../border2.gif');
-  background-size: 12px;
-  background-repeat: repeat-x;
-  background-position: center;
-  width:100%;
+.dropdowns {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.ground.bottom {
-  background: $bg;
-  position: fixed;
-  bottom:0;
-  left:0;
-  background-image: none;
-  width:100%;
+.dropdowns select {
+  margin-bottom: .5rem;
 }
 
 
@@ -313,58 +345,7 @@ nav .icon {
 
 // Directory
 // ----------
-.buffer {
-  position: fixed;
-  top:0;
-  left:0;
-  height:100vh;
-  width:100%;
-  background: $text;
-  opacity:0;
-  transition: opacity .2s;
-  pointer-events: none;
-  z-index: 9;
-}
-
-.buffer.active {
-  opacity:1;
-}
-
-.rest-wrap {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top:0;
-  left:0;
-  height:100vh;
-  width:100%;
-  background: $bg;
-  opacity:0;
-  transition: opacity .2s;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.rest-wrap.active {
-  opacity:1;
-  pointer-events: initial;
-}
-
-.rest-wrap .top {
-  background: $text;
-  height:100%;
-}
-
-.rest-wrap .bottom {
-  background: $bg;
-  height:100%;
-}
-
-#awake-btn {
-  position: absolute;
-  bottom:1rem;
-  left:1rem;
-}
+// empty
 
 
 // Photos
@@ -406,13 +387,13 @@ nav .icon {
   left:0;
   z-index: 2;
   pointer-events: none;
-  padding: 5.5rem .5rem 4rem .5rem;
+  padding: 4.2rem .5rem 4rem .5rem;
 }
 
 .photos .item .caption {
   display:none;
   position:fixed;
-  bottom:1rem;
+  top:1.4rem;
   left:50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -425,7 +406,7 @@ nav .icon {
 }
 
 .photos .item .caption a {
-  color: $text-invert;
+  color: $night-text;
   text-decoration: none;
   border-bottom:1px solid;
 }
@@ -450,8 +431,9 @@ nav .icon {
 }
 
 .lightbox-bg {
-  background:rgb(255, 255, 255);
-  mix-blend-mode: exclusion;
+  // background:rgb(255, 255, 255);
+  // mix-blend-mode: exclusion;
+  background: $night-bg;
   position: fixed;
   top:0;
   left:0;
@@ -469,13 +451,13 @@ nav .icon {
   display: none;
   position: fixed;
   z-index: 2;
-  bottom: 1rem;
+  top: 1.4rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   max-width: 400px; 
   justify-content: space-between;
-  color: $text-invert;
+  color: $night-text;
   padding:0 .5rem;
   pointer-events: none;
 }
@@ -534,8 +516,16 @@ details[open] summary .handle::before {
   content: '[-]'
 }
 
-summary .handle:hover{
-  background: $acc;
+body.day {
+  summary .handle:hover{
+    background: $day-acc;
+  }
+}
+
+body.night {
+  summary .handle:hover{
+    background: $night-acc;
+  }
 }
 
 details[open] {
@@ -554,7 +544,6 @@ summary .proj-year {
 
 summary span::selection {
   background: transparent;
-  color: var(--color);
 }
 
 details .drawer {
@@ -627,6 +616,10 @@ details .drawer .images {
     // padding: 4.5rem 1rem .5rem .5rem;
   }
 
+  nav {
+    flex-direction: column;
+  }
+
   .photos .item {
     // width:33.333%;
   }
@@ -647,7 +640,7 @@ details .drawer .images {
 
   summary .proj-year {
     order: 9;
-    width: 50px;
+    width: 60px;
   }
 
   summary .proj-title {
@@ -660,6 +653,16 @@ details .drawer .images {
 
   .studio img {
     height: 80px;
+  }
+  
+  .img-nav {
+    top: auto;
+    bottom: 1rem;
+  }
+  
+  .photos .item .caption {
+    top:auto;
+    bottom:1rem;
   }
 
 }

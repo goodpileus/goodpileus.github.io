@@ -21,21 +21,18 @@ at the moment:
 
 > &mdash;&mdash;
 
-i'm working on getting all the rooms together...
+(2.5.25)\
+recent site updates:
+- day and night mode -- will change depending on the time of day you visit the site
+- updated [friends and inspirations](info.html#friends) list
+- added projects:
+  - [saapato.com](https://www.saapato.com/)
+  - [ikoniche.com](https://ikoniche.com/)
+  - [theopening.info](https://theopening.info/)
+  - [catlit](https://aidanquinlan.net/catlit/)
 
-to do:
+site to do:
 - blog/writing space
-- more photos
+- more photos from past years
 
-<!-- <br> -->
-
-<!-- <button id="rest-btn">rest</button>
-
-<div class="buffer"></div>
-<div class="rest-wrap">
-  <div class="top"></div>
-  <img src="/assets/img/april.gif" alt="" title="">
-  <div class="bottom"></div>
-  <button id="awake-btn">go</button>
-</div> -->
 

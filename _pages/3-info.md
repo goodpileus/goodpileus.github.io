@@ -22,32 +22,33 @@ aidan quinlan
 
 > port angeles, wa
 
-> updated: jan 29, 2025
+> updated: feb 5, 2025
 
 > &mdash;&mdash;
 
-my friends and inspirations:
+<span id="friends"></span>my friends and inspirations:
 
 > [cc](https://cevahirozdogan.net/)\
 > [Ged]({{ site.baseurl }}/ged.html) (my cat)\
 > [Lihua Yu](http://imageservice.org/)\
 > [Chad Greenberg](https://chadgreenberg.net/)\
 > [Zeke Jones](https://zekejones.cargo.site/)\
-> [Julia Dann](https://www.juliadann.com/)\
+> [Kai Chuang](https://tsng-khai.com/index.html)\
 > [Mariah Barden Jones](http://firstknives.club/)\
+> [lee rae walsh](https://leeraewalsh.com/)\
+> [garrit lichtenberg](https://garrit.net/)\
+> [Julia Dann](https://www.juliadann.com/)\
 > [Huiyu Yang](https://huiyuu.net/)\
-> Kai Chuang\
 > [nicole killian](http://nylondip.com/)\
 > [Eric Couture](https://ecouture.net/)\
-> [Yutong Liu](https://machine-art-girl.net/)\
+> Taylor Simone\
+> [Yutong Liu](http://yutongs-portfolio.webflow.io/)\
 > [Feixue Mei](https://feixuemei.info/index.html)\
 > [Jason S. Wright](http://www.jswrightstudio.net/)\
-> [Taylor Simone](https://taylorsimone.one/)\
-> [Chino Amobi](http://www.paradiso.world/)\
+> Chino Amobi\
 > [Bushra Alsughayer](https://bushrasghyr.myportfolio.com/)\
 > Roy McKelvey\
-> [Nontsikelelo Mutiti](http://nontsikelelomutiti.com/#)\
-> [lee rae walsh](https://leeraewalsh.com/)\
+> [Nontsikelelo Mutiti](http://nontsikelelomutiti.com/)\
 > [Andrew Walsh Lister](https://andrew-lister.info/)\
 > Lap Le\
 > Sam Mullany\
