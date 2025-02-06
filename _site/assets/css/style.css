@@ -790,7 +790,7 @@ body.night .studio .img {
     bottom: 1rem; }
 
   .photos .item.active {
-    padding: 2rem .5rem 4rem .5rem; }
+    padding: 0 .5rem 4rem .5rem; }
 
   .photos .item .caption {
     top: auto;
