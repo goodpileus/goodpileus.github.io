@@ -21,8 +21,7 @@ aidan quinlan
 > [flickr](https://www.flickr.com/photos/jollyoldaidan/)
 {: .fade }
 
-
-> port angeles, wa
+> port angeles, wa, usa
 
 > updated: feb 5, 2025
 
