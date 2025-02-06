@@ -39,6 +39,7 @@ $(".lightbox-bg").click(function() {
   $(".lightbox-bg").removeClass('active');
   $(".item").removeClass( 'hide');
   $(".item").removeClass('active');
+  $(".img-nav").removeClass( 'active');
   $("nav").addClass('active');
   
   $("html").css("overflow-y","auto");

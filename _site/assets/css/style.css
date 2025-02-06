@@ -353,7 +353,7 @@ body {
   width: 100%;
   color: inherit;
   padding: .5rem 1.2rem .5rem 1.2rem;
-  background: #343034;
+  background: #373337;
   color: #a1aaa5; }
 
 body.day {
@@ -361,7 +361,7 @@ body.day {
   color: #4c4247; }
 
 body.night {
-  background: #343034;
+  background: #373337;
   color: #a1aaa5; }
 
 body.day a {
@@ -460,7 +460,8 @@ select {
   margin-right: .5rem;
   font-size: inherit;
   border-color: inherit;
-  border-width: 1px; }
+  border-width: 1px;
+  cursor: pointer; }
 
 button {
   cursor: pointer;
@@ -497,7 +498,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: baseline;
-  margin-bottom: .6rem; }
+  margin-bottom: 1rem; }
 
 nav .name-wrap {
   width: 85px;
@@ -521,14 +522,15 @@ nav .icon {
   width: 100%; }
 
 .time-of-day {
-  flex-shrink: 0; }
+  flex-shrink: 0;
+  opacity: .5; }
 
 body.day .time-of-day::after {
   color: #837dc8;
   content: '[day-time]'; }
 
 body.night .time-of-day::after {
-  color: #e4b1e1;
+  color: #cea4cb;
   content: '[night-time]'; }
 
 .text p {
@@ -596,7 +598,7 @@ body.night .time-of-day::after {
   cursor: zoom-out; }
 
 .lightbox-bg {
-  background: #343034;
+  background: #373337;
   position: fixed;
   top: 0;
   left: 0;

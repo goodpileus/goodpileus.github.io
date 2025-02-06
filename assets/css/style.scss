@@ -15,7 +15,7 @@ $day-link: #375397;
 $day-visited: #1e8459;
 
 //night
-$night-bg: #343034;
+$night-bg: #373337;
 $night-text: #a1aaa5;
 $night-acc: rgba(255, 255, 255, 0.1);
 
@@ -238,6 +238,7 @@ select {
   font-size: inherit;
   border-color: inherit;
   border-width:1px;
+  cursor:pointer;
 }
 
 button {
@@ -295,7 +296,7 @@ nav {
   // flex-wrap:wrap;
   align-items: baseline;
 
-  margin-bottom:.6rem;
+  margin-bottom:1rem;
 }
 
 nav.active {
@@ -338,6 +339,7 @@ nav .icon {
 
 .time-of-day {
   flex-shrink: 0;
+  opacity:.5;
 }
 
 body.day .time-of-day::after {
@@ -346,7 +348,7 @@ body.day .time-of-day::after {
 }
 
 body.night .time-of-day::after {
-  color: #e4b1e1;
+  color: #cea4cb;
   content: '[night-time]';
 }
 
