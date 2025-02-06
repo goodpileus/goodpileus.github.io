@@ -642,9 +642,10 @@ details summary::-webkit-details-marker {
 
 summary {
   padding-bottom: .5rem;
-  display: flex;
   cursor: pointer;
   align-items: baseline;
+  display: flex;
+  list-style: none;
   pointer-events: none; }
 
 summary .handle {
@@ -727,6 +728,9 @@ body.night .studio .img {
   width: 100%;
   height: 100%; }
 
+.fade {
+  opacity: 0.65; }
+
 @media screen and (max-width: 800px) {
   nav {
     flex-direction: column;
@@ -742,21 +746,22 @@ body.night .studio .img {
 
   .dropdowns {
     width: 100%;
-    justify-content: center;
-    margin: .8rem 0 .3rem 0; }
+    margin: .6rem 0 .3rem 0; }
 
   select {
     padding: .3rem; }
 
-  body.day details {
+  body.day .studio details {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
 
-  body.night details {
+  body.night .studio details {
     border-bottom: 1px solid rgba(156, 156, 156, 0.362); }
 
   summary {
     padding-top: .5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem; }
+
+  .studio summary {
     justify-content: space-between; }
 
   details:first-of-type summary {
@@ -780,7 +785,8 @@ body.night .studio .img {
     content: "[ - ]"; }
 
   details .drawer .mobile-year {
-    display: block; }
+    display: block;
+    font-size: 90%; }
 
   .studio img {
     height: 80px; }

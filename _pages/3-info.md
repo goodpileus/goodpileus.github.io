@@ -13,12 +13,14 @@ aidan quinlan
 > \
 > [are.na](https://www.are.na/aidan-quinlan)\
 > [bluesky](https://bsky.app/profile/goodpileus.bsky.social)\
-> [mastodon](https://mastodon.social/@goodpileus)\
-> \
+> [mastodon](https://mastodon.social/@goodpileus)
+
 > archived socials:\
 > [instagram](https://www.instagram.com/goodpileus/)\
 > [twitter](https://x.com/goodpileus)\
 > [flickr](https://www.flickr.com/photos/jollyoldaidan/)
+{: .fade }
+
 
 > port angeles, wa
 
@@ -60,6 +62,14 @@ aidan quinlan
 > [Ursula K. Le Guin](https://web.archive.org/web/20180105043737/http://www.ursulakleguin.com/)
 
 > &mdash;&mdash;
+
+<details>
+  <summary>
+    my face 
+    <span class="handle"></span>
+  </summary>
+  <img src="/assets/img/face2.jpg" alt="" title="visage" style="max-width:300px;">
+</details>
 
 previous versions of this site:
 - [2017-2018]({{ site.baseurl }}/archive/1/index.html)

@@ -529,10 +529,11 @@ details summary::-webkit-details-marker {
 summary {
   // padding:.5rem 0;
   padding-bottom: .5rem;
-  display: flex;
   cursor:pointer;
   // justify-content: space-between;
   align-items: baseline;
+  display: flex;
+  list-style: none;
   pointer-events: none;
 }
 
@@ -559,15 +560,6 @@ body.night {
   summary .handle:hover{
     background: $night-acc;
   }
-}
-
-details[open] {
-  // background:rgba(255, 255, 255, 0.25);
-}
-
-details[open] summary {
-  // background: $acc;
-  // border-top:1px solid;
 }
 
 summary .proj-year {
@@ -650,13 +642,14 @@ body.night .studio .img {
   height: 100%;
 }
 
+.fade {
+  opacity:0.65;
+}
+
 
 // Media Queries
 // -------------
 @media screen and (max-width:800px) {
-  body {
-    // padding: 4.5rem 1rem .5rem .5rem;
-  }
 
   nav {
     flex-direction: column;
@@ -675,8 +668,8 @@ body.night .studio .img {
 
   .dropdowns {
     width:100%;
-    justify-content: center;
-    margin: .8rem 0 .3rem 0;
+    // justify-content: center;
+    margin: .6rem 0 .3rem 0;
   }
 
   select {
@@ -687,17 +680,20 @@ body.night .studio .img {
     // width:33.333%;
   }
   
-  body.day details{
+  body.day .studio details{
     border-bottom:1px solid rgba(0, 0, 0, 0.12);
   }
 
-  body.night details{
+  body.night .studio details{
     border-bottom:1px solid rgba(156, 156, 156, 0.362);
   }
 
   summary {
     padding-top: .5rem;
     padding-bottom: 1rem;
+  }
+
+  .studio summary {
     justify-content: space-between;
   }
 
@@ -729,6 +725,7 @@ body.night .studio .img {
 
   details .drawer .mobile-year {
     display:block;
+    font-size: 90%;
   }
 
   .studio img {
