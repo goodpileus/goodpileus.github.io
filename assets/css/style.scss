@@ -89,6 +89,10 @@ body {
   padding:.5rem 1.2rem .5rem 1.2rem;
   background: $night-bg;
   color: $night-text;
+
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 }
 
 body.day {
@@ -100,6 +104,11 @@ body.night {
   background: $night-bg;
   color: $night-text;
 }
+
+// nav, main {
+//   width: 800px !important;
+// }
+
 
 
 // Typography
@@ -729,6 +738,10 @@ body.night .studio .img {
   .img-nav {
     top: auto;
     bottom: 1rem;
+  }
+
+  .photos .item.active {
+    padding: 2rem .5rem 4rem .5rem;
   }
   
   .photos .item .caption {

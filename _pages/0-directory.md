@@ -23,13 +23,17 @@ at the moment:
 
 (2.5.25)\
 recent site updates:
-- day and night mode -- will change depending on the time of day you visit the site
+- day and night mode -- changes based on local time
 - updated [friends and inspirations](info.html#friends) list
+- updated mobile style
+  - i am finally acknowledging the existence of thumbs
 - added projects:
   - [saapato.com](https://www.saapato.com/)
   - [ikoniche.com](https://ikoniche.com/)
   - [theopening.info](https://theopening.info/)
   - [catlit](https://aidanquinlan.net/catlit/)
+
+> &mdash;&mdash;
 
 site to do:
 - blog/writing space
