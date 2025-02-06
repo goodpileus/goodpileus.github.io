@@ -352,7 +352,7 @@ body {
   -ms-text-size-adjust: 100%;
   width: 100%;
   color: inherit;
-  padding: .5rem 1rem .5rem 1rem;
+  padding: .5rem 1.2rem .5rem 1.2rem;
   background: #343034;
   color: #a1aaa5; }
 
@@ -491,37 +491,45 @@ u {
 
 nav {
   padding-top: .5rem;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  opacity: 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
-  margin-bottom: .5rem; }
-
-nav.active {
-  opacity: 1; }
+  margin-bottom: .6rem; }
 
 nav .name-wrap {
   width: 85px;
   display: flex;
   align-items: baseline;
-  margin-bottom: .5rem; }
+  flex-shrink: 0; }
 
 nav .icon {
-  height: 16px;
   position: relative;
   margin-right: 13px;
   font-size: 1.2rem;
-  cursor: default; }
+  cursor: default;
+  flex-shrink: 0; }
 
 .dropdowns {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex-shrink: 0; }
 
-.dropdowns select {
-  margin-bottom: .5rem; }
+.nav-spacer {
+  width: 100%; }
+
+.time-of-day {
+  flex-shrink: 0; }
+
+body.day .time-of-day::after {
+  color: #837dc8;
+  content: '[day-time]'; }
+
+body.night .time-of-day::after {
+  color: #e4b1e1;
+  content: '[night-time]'; }
 
 .text p {
   max-width: 800px; }
@@ -668,6 +676,9 @@ details .drawer p {
   padding-bottom: 1rem;
   max-width: 720px; }
 
+details .drawer .mobile-year {
+  display: none; }
+
 details .drawer div {
   padding-bottom: 1rem; }
 
@@ -682,6 +693,9 @@ details .drawer .images {
   height: 120px;
   cursor: zoom-in;
   background-color: rgba(140, 155, 156, 0.2); }
+
+body.night .studio .img {
+  filter: brightness(0.8); }
 
 .studio img.active {
   width: auto;
@@ -713,10 +727,30 @@ details .drawer .images {
 
 @media screen and (max-width: 800px) {
   nav {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 1rem; }
 
-  details {
+  nav .name-wrap {
+    margin-bottom: .5rem; }
+
+  .time-of-day {
+    position: absolute;
+    top: .8rem;
+    right: 0; }
+
+  .dropdowns {
+    width: 100%;
+    justify-content: center;
+    margin: .8rem 0 .3rem 0; }
+
+  select {
+    padding: .3rem; }
+
+  body.day details {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+
+  body.night details {
+    border-bottom: 1px solid rgba(156, 156, 156, 0.362); }
 
   summary {
     padding-top: .5rem;
@@ -728,13 +762,23 @@ details .drawer .images {
 
   summary .proj-year {
     order: 9;
-    width: 60px; }
+    width: 60px;
+    display: none; }
 
   summary .proj-title {
     width: 60%; }
 
   details .drawer {
     padding: .5rem 0 0 0; }
+
+  summary .handle::before {
+    content: "[ + ]"; }
+
+  details[open] summary .handle::before {
+    content: "[ - ]"; }
+
+  details .drawer .mobile-year {
+    display: block; }
 
   .studio img {
     height: 80px; }

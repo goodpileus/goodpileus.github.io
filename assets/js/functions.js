@@ -5,6 +5,7 @@ window.onload = function() {
 // --- lightbox
 $(".item img").click(function() {
   if ($(this).parent().hasClass("active")) {
+    // -- closing lightbox
     // hide lightbox bg
     $(".lightbox-bg").removeClass('active');
 
@@ -14,7 +15,11 @@ $(".item img").click(function() {
     $(".item").removeClass( 'hide');
     $(".img-nav").removeClass( 'active');
     $( this ).parent().removeClass( 'active');
+  
+    // resume scrolling
+    $("html").css("overflow-y","auto");
   } else {
+    // -- opening lightbox
     $(".lightbox-bg").addClass('active');
 
     // hide main nav
@@ -24,6 +29,9 @@ $(".item img").click(function() {
     $(".img-nav").addClass( 'active');
     $( this ).parent().removeClass( 'hide');
     $( this ).parent().addClass( 'active');
+
+    // stop scrolling
+    $("html").css("overflow-y","hidden");
   }
 });
 
@@ -32,7 +40,11 @@ $(".lightbox-bg").click(function() {
   $(".item").removeClass( 'hide');
   $(".item").removeClass('active');
   $("nav").addClass('active');
+  
+  $("html").css("overflow-y","auto");
 });
+
+
 
 
 // --- lightbox navigation
@@ -72,7 +84,6 @@ $(document).keydown(function(e) {
   e.preventDefault();
   
 });
-
 
 // --- studio image functions
 $(".studio img").click(function() {
@@ -158,8 +169,8 @@ $(function() {
 
 
 // --- checking the time
-// var checkTimeInterval = 300000;
-var checkTimeInterval = 3000;
+var checkTimeInterval = 30000;
+// var checkTimeInterval = 3000;
 var timeCheck;
 
 function checkTime() {
