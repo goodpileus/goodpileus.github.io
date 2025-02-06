@@ -9,7 +9,7 @@ css: ged
 nav: ignore
 ---
 
-<div class="name">Ged <span>-- (<a href="info.html">back to aidan</a>)</span></div>
+<div class="name">Ged <span>-- ( <a href="info.html">back to aidan</a> )</span></div>
 
 <div class="ged-wrap random">
   <img src="{{ site.baseurl }}/assets/img/ged/ged-1.jpg" alt="" title="">

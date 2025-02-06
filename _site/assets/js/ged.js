@@ -3,7 +3,7 @@ for (var i = random.children.length; i >= 0; i--) {
   random.appendChild(random.children[Math.random() * i | 0]);
 }
 
-var imgDuration = 2000;
+var imgDuration = 5000;
 var fadeSpeed = 0;
 var container = $('.ged-wrap');
 var curIndex = -1;
