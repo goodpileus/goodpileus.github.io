@@ -21,14 +21,15 @@ at the moment:
 
 > &mdash;&mdash;
 
+recent site updates:
+
 > (2.5.25)
 {: .fade }
 
-recent site updates:
 - day and night mode -- changes based on local time
 - updated [friends and inspirations](info.html#friends)
 - updated mobile style
-  - i am finally acknowledging the existence of thumbs
+  - i formally acknowledge thumbs
 - added projects to studio:
   - [saapato.com](https://www.saapato.com/)
   - [ikoniche.com](https://ikoniche.com/)

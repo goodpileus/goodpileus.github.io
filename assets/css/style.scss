@@ -14,6 +14,10 @@ $day-acc: rgba(255, 255, 255, 0.5);
 $day-link: #375397;
 $day-visited: #1e8459;
 
+//interim
+$interim-tone: #78827d;
+$interim-text: #3a3e3c;
+
 //night
 $night-bg: #373337;
 $night-text: #a1aaa5;
@@ -87,8 +91,12 @@ body {
   color:inherit;
   // padding:4.5rem 1rem .5rem 1rem;
   padding:.5rem 1.2rem .5rem 1.2rem;
-  background: $night-bg;
-  color: $night-text;
+  background: $interim-tone;
+  color: $interim-text;
+
+  // transition:
+  //   background .15s steps(1),
+  //   color .15s steps(1);
 
   // display: flex;
   // flex-direction: column;
@@ -113,11 +121,26 @@ body.night {
 
 // Typography
 // ----------
+
+a {
+  color: $interim-text;
+  // transition: color .15s steps(1);
+}
+
+a:visited {
+  color: $interim-text;
+}
+
+a:hover,
+a:focus {
+  background: $interim-text;
+}
+
 body.day {
   a {
     color: $day-link;
   }
-  
+
   a:visited {
     color: $day-visited;
   }
@@ -179,18 +202,18 @@ p {
 
 ul, ol {
   margin-top: -.5rem;
-  margin-bottom: 1rem;
-  padding-left:2rem;
+  // margin-bottom: 1rem;
+  padding-left:1.21rem;
   padding-right:2rem;
 }
 
 ul {
-  list-style-type: '- ';
+  list-style-type: '‧ ';
 }
 
 ul ul {
   margin-top: .2rem;
-  list-style-type: '◦ ';
+  list-style-type: '‧ ';
 }
 
 li {
@@ -198,7 +221,7 @@ li {
 }
 
 blockquote {
-  margin-left:2rem;
+  margin-left:1.21rem;
   margin-right:2rem;
 }
 
@@ -256,6 +279,7 @@ button {
   color:inherit;
   font-family: inherit;
   border: 1px solid;
+  border:none;
 }
 
 button:hover {
@@ -349,6 +373,7 @@ nav .icon {
 .time-of-day {
   flex-shrink: 0;
   opacity:.5;
+  display: none;
 }
 
 body.day .time-of-day::after {
@@ -484,7 +509,7 @@ body.night .time-of-day::after {
   display: none;
   position: fixed;
   z-index: 2;
-  top: 1.4rem;
+  top: 1.15rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -502,6 +527,7 @@ body.night .time-of-day::after {
 .img-btn {
   pointer-events: auto;
   border:none;
+  padding: .3rem .6rem;
 }
 
 .img-btn:hover {
@@ -670,6 +696,10 @@ body.night .studio .img {
     width:100%;
     // justify-content: center;
     margin: .6rem 0 .3rem 0;
+  }
+
+  .studio-nav {
+    margin-top:1rem;
   }
 
   select {

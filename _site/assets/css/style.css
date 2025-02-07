@@ -353,8 +353,8 @@ body {
   width: 100%;
   color: inherit;
   padding: .5rem 1.2rem .5rem 1.2rem;
-  background: #373337;
-  color: #a1aaa5; }
+  background: #78827d;
+  color: #3a3e3c; }
 
 body.day {
   background: #d6e5e0;
@@ -363,6 +363,16 @@ body.day {
 body.night {
   background: #373337;
   color: #a1aaa5; }
+
+a {
+  color: #3a3e3c; }
+
+a:visited {
+  color: #3a3e3c; }
+
+a:hover,
+a:focus {
+  background: #3a3e3c; }
 
 body.day a {
   color: #375397; }
@@ -410,22 +420,21 @@ p {
 
 ul, ol {
   margin-top: -.5rem;
-  margin-bottom: 1rem;
-  padding-left: 2rem;
+  padding-left: 1.21rem;
   padding-right: 2rem; }
 
 ul {
-  list-style-type: '- '; }
+  list-style-type: '‧ '; }
 
 ul ul {
   margin-top: .2rem;
-  list-style-type: '◦ '; }
+  list-style-type: '‧ '; }
 
 li {
   margin-bottom: .2rem; }
 
 blockquote {
-  margin-left: 2rem;
+  margin-left: 1.21rem;
   margin-right: 2rem; }
 
 hr {
@@ -468,7 +477,8 @@ button {
   background: transparent;
   color: inherit;
   font-family: inherit;
-  border: 1px solid; }
+  border: 1px solid;
+  border: none; }
 
 button:hover {
   background: #4c4247;
@@ -523,7 +533,8 @@ nav .icon {
 
 .time-of-day {
   flex-shrink: 0;
-  opacity: .5; }
+  opacity: .5;
+  display: none; }
 
 body.day .time-of-day::after {
   color: #837dc8;
@@ -614,7 +625,7 @@ body.night .time-of-day::after {
   display: none;
   position: fixed;
   z-index: 2;
-  top: 1.4rem;
+  top: 1.15rem;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -629,7 +640,8 @@ body.night .time-of-day::after {
 
 .img-btn {
   pointer-events: auto;
-  border: none; }
+  border: none;
+  padding: .3rem .6rem; }
 
 .img-btn:hover {
   background: rgba(0, 0, 0, 0.5); }
@@ -747,6 +759,9 @@ body.night .studio .img {
   .dropdowns {
     width: 100%;
     margin: .6rem 0 .3rem 0; }
+
+  .studio-nav {
+    margin-top: 1rem; }
 
   select {
     padding: .3rem; }

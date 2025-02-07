@@ -64,7 +64,7 @@ aidan quinlan
 
 <details>
   <summary>
-    my face 
+    shell
     <span class="handle"></span>
   </summary>
   <img src="/assets/img/face2.jpg" alt="" title="visage" style="max-width:300px;">

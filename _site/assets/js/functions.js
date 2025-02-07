@@ -190,4 +190,14 @@ function checkTime() {
 }
 
 checkTime();
+
 timeCheck = setInterval(checkTime, checkTimeInterval);
+
+
+$(".open-all").click(function() {
+  $('details').attr('open', true);
+});
+
+$(".close-all").click(function() {
+  $('details').removeAttr('open');
+});

@@ -3,6 +3,11 @@ layout: default
 ---
 <article class="studio">
 
+  <!-- <div class="studio-nav">
+    <button class="open-all">[open all]</button>
+    <button class="close-all">[close all]</button>
+  </div> -->
+
 {% assign projects = site.studio | sort: "sort-date" | reverse %}
 {% for project in projects %}
 
