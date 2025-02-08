@@ -22,5 +22,5 @@ images:
   with <a href="https://chadgreenberg.net/">Chad Greenberg</a>
 </p>
 <p>
-  a strange, shifting map for Brendan Principato's music project, Saapato
+  a strange, shifting map for Brendan Principato (Saapato)
 </p>

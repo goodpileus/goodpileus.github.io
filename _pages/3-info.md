@@ -21,7 +21,7 @@ aidan quinlan
 > [flickr](https://www.flickr.com/photos/jollyoldaidan/)
 {: .fade }
 
-> olympic peninsula, wa, usa
+> port angeles, wa, usa
 
 > updated: feb 7, 2025
 

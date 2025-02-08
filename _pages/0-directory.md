@@ -26,15 +26,15 @@ recent site updates:
 > (2.7.25)
 {: .fade }
 
-- day and night mode -- changes based on local time
 - updated [friends and inspirations](info.html#friends)
-- updated mobile style
-  - i formally acknowledge thumbs
 - added projects to studio:
   - [saapato.com](https://www.saapato.com/)
   - [ikoniche.com](https://ikoniche.com/)
   - [theopening.info](https://theopening.info/)
   - [catlit](https://aidanquinlan.net/catlit/)
+- day and night mode -- 6pm local time is lights out
+- updated mobile style
+  - i formally acknowledge thumbs
 - added buttons to open or close all studio items
 
 > &mdash;&mdash;
