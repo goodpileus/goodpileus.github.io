@@ -8,3 +8,8 @@ book
 school
 installation
 commission
+poster
+video
+teaching
+software
+group

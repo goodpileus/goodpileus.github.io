@@ -13,6 +13,9 @@ tags: website commission
 
 more: true
 
+images:
+  - path: /studio/img/iko/iko1.png
+
 ---
 
 <p>

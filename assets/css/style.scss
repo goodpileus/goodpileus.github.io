@@ -127,6 +127,10 @@ a {
   // transition: color .15s steps(1);
 }
 
+a:active {
+  opacity:0.5;
+}
+
 a:visited {
   color: $interim-text;
 }
@@ -135,6 +139,19 @@ a:hover,
 a:focus {
   background: $interim-text;
 }
+
+// a[target="_blank"] {
+//   position: relative;
+//   padding-right: 20px;
+// }
+
+// a[target="_blank"]:after {
+//   content: '◞';
+//   position: absolute;
+//   right: 10px;
+//   bottom:5px;
+//   font-size: 80%;
+// }
 
 body.day {
   a {
@@ -282,9 +299,25 @@ button {
   border:none;
 }
 
+button:active {
+  opacity:0.5;
+}
+
 button:hover {
-  background: $day-text;
-  color: $day-bg;
+  // background: $day-text;
+  // color: $day-bg;
+}
+
+body.day {
+  button:hover {
+    background: $day-acc;
+  }
+}
+
+body.night {
+  button:hover {
+    background: $night-acc;
+  }
 }
 
 
@@ -566,6 +599,10 @@ summary {
 summary .handle {
   pointer-events: auto;
   margin-left:.65rem;
+}
+
+summary .handle:active {
+  opacity:0.5;
 }
 
 summary .handle::before {

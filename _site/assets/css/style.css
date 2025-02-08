@@ -367,6 +367,9 @@ body.night {
 a {
   color: #3a3e3c; }
 
+a:active {
+  opacity: 0.5; }
+
 a:visited {
   color: #3a3e3c; }
 
@@ -480,9 +483,14 @@ button {
   border: 1px solid;
   border: none; }
 
-button:hover {
-  background: #4c4247;
-  color: #d6e5e0; }
+button:active {
+  opacity: 0.5; }
+
+body.day button:hover {
+  background: rgba(255, 255, 255, 0.5); }
+
+body.night button:hover {
+  background: rgba(255, 255, 255, 0.1); }
 
 sub,
 sup {
@@ -663,6 +671,9 @@ summary {
 summary .handle {
   pointer-events: auto;
   margin-left: .65rem; }
+
+summary .handle:active {
+  opacity: 0.5; }
 
 summary .handle::before {
   content: "[+]"; }

@@ -59,7 +59,7 @@
 
     <select name="tags" onchange="" id="tagSelector">
       <option class="menu-item">all</option>
-      {% assign tags =  site.studio | map: 'tags' | join: ','  | split: ',' | uniq %}
+      {% assign tags =  site.studio | map: 'tags' | join: ','  | split: ',' | uniq | sort %}
       {% for tag in tags %}
         <option class="menu-item" value="{{ tag }}">
           {{ tag }}

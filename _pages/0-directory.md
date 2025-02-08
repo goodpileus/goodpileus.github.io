@@ -23,7 +23,7 @@ at the moment:
 
 recent site updates:
 
-> (2.5.25)
+> (2.7.25)
 {: .fade }
 
 - day and night mode -- changes based on local time
@@ -35,6 +35,7 @@ recent site updates:
   - [ikoniche.com](https://ikoniche.com/)
   - [theopening.info](https://theopening.info/)
   - [catlit](https://aidanquinlan.net/catlit/)
+- added buttons to open or close all studio items
 
 > &mdash;&mdash;
 

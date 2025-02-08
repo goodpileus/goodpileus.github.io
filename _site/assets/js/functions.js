@@ -201,3 +201,22 @@ $(".open-all").click(function() {
 $(".close-all").click(function() {
   $('details').removeAttr('open');
 });
+
+function linkopener(a) {
+  var b = a ? "_blank" : "_self";
+  var c = document.links;
+  for (var i = 0; i < c.length; i++) {
+      if (c[i].href.search("aidanquinlan.net") == -1) {
+          /*
+          c[i].addEventListener("click", function () {
+                  this.target = b;
+          });
+          */
+          c[i].target = b;
+          c[i].className += ' external-link' 
+       }
+  }
+};
+$(document).ready(function(){
+  linkopener(true);
+});

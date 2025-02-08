@@ -8,7 +8,7 @@ permalink: /studio/:slug
 
 year: '2019'
 sort-date: '19-03'
-tags: teaching personal
+tags: teaching personal poster
 
 more: true
 

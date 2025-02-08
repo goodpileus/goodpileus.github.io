@@ -15,5 +15,6 @@ more: true
 
 ---
 
-<p>a small website/clock for forgetting (or remembering). published by <a href="http://clique-----books.com/">clique books</a>. thank you mariah</p>
+<p>a small website/clock for forgetting (or remembering).<br>
+published by <a href="http://clique-----books.com/">clique books</a>. thank you mariah</p>
 
