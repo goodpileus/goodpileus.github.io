@@ -23,7 +23,7 @@ aidan quinlan
 
 > port angeles, wa, usa
 
-> updated: feb 7, 2025
+> updated: feb 8, 2025
 
 > &mdash;&mdash;
 
@@ -48,29 +48,33 @@ aidan quinlan
 > [Rasim Bayramov](https://rasim.run/)\
 > [august neuscheler](http://aneuscheler.info/)\
 > [Mia Navarro](https://www.mianavarro.com/)\
+> [Lauren Thorsen](https://laurenthorson.com/)\
+> [Emily Sara](https://emily-sara.com/)\
 > [Sam Mullany](https://www.instagram.com/purple_event_park/)\
 > [Matthew Dowdy](https://mattdowdy.online/)\
 > [Liza Pittard](https://lizapittard.com/)\
 > [Eric Couture](https://ecouture.net/)\
 > [Laurel Schwulst](https://www.laurel.world/)\
 > [Elliott Cost](https://elliott.computer/)\
-> [agustine zegers](https://agustinezegers.com/)\
-> [Daniel Diasgranados](https://danieldiasgranados.com/)\
-> [Bradley Sinanan](https://bradleysinanan.com/)\
-> [Nix Ni](https://nix-ni.com/index.html)\
 > [Taylor Simone](https://www.instagram.com/tay_simones/)\
-> Corin Hewitt\
-> [Courtney Odell](https://courtneyiodell.com/)\
-> [Aamina Palmer](https://www.amipalm.com/)\
-> [Hayden Right](https://haydenright.bandcamp.com/)\
 > [Yutong Liu](http://yutongs-portfolio.webflow.io/)\
 > [Feixue Mei](https://feixuemei.info/index.html)\
 > [Chino Amobi](https://www.instagram.com/chinoamobi/)\
 > [Jason S. Wright](http://www.jswrightstudio.net/)\
 > [Bushra Alsughayer](https://bushrasghyr.myportfolio.com/)\
-> Roy McKelvey\
+> [Courtney Odell](https://courtneyiodell.com/)\
+> [agustine zegers](https://agustinezegers.com/)\
+> [Daniel Diasgranados](https://danieldiasgranados.com/)\
+> [Bradley Sinanan](https://bradleysinanan.com/)\
+> [Nix Ni](https://nix-ni.com/index.html)\
+> [Aamina Palmer](https://www.amipalm.com/)\
+> [Hayden Right](https://haydenright.bandcamp.com/)\
+> [Emilia Duno](https://themenialcollection.org/)\
+> [Can Yağız](https://cyagiz.com/)\
 > [Nontsikelelo Mutiti](http://nontsikelelomutiti.com/)\
 > [Andrew Walsh Lister](https://andrew-lister.info/)\
+> Corin Hewitt\
+> Roy McKelvey\
 > Lap Le\
 > Meb Byrne\
 > Sylvia Li\

@@ -3,8 +3,8 @@ sitemap: false
 ---
 
 /* Fonts */
-$main-font: 'qt letter goth', monospace;
-$heading-font: 'qt letter goth', monospace;
+$main-font: 'qt letter goth', 'Gothic A1', monospace;
+$heading-font: 'qt letter goth', 'Gothic A1', monospace;
 
 //day
 $day-bg: #d6e5e0;
@@ -93,6 +93,7 @@ body {
   padding:.5rem 1.2rem .5rem 1.2rem;
   background: $interim-tone;
   color: $interim-text;
+  font-weight:200;
 
   // transition:
   //   background .15s steps(1),

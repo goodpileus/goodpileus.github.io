@@ -343,7 +343,7 @@ body {
   overflow-x: hidden; }
 
 html {
-  font-family: "qt letter goth", monospace;
+  font-family: "qt letter goth", "Gothic A1", monospace;
   font-size: .95rem; }
 
 body {
@@ -354,7 +354,8 @@ body {
   color: inherit;
   padding: .5rem 1.2rem .5rem 1.2rem;
   background: #78827d;
-  color: #3a3e3c; }
+  color: #3a3e3c;
+  font-weight: 200; }
 
 body.day {
   background: #d6e5e0;
@@ -394,7 +395,7 @@ body.night a:focus {
   background: rgba(255, 255, 255, 0.1); }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "qt letter goth", monospace;
+  font-family: "qt letter goth", "Gothic A1", monospace;
   font-weight: normal;
   letter-spacing: -.025rem;
   line-height: 1.25;
