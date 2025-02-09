@@ -31,7 +31,7 @@ aidan quinlan
 
 > [cc](https://cevahirozdogan.net/)\
 > [Ged]({{ site.baseurl }}/ged.html) (my cat)\
-> [Lihua Yu](http://imageservice.org/)\
+> [June Lihua Yu](http://imageservice.org/)\
 > [Chad Greenberg](https://chadgreenberg.net/)\
 > [Zeke Jones](https://zekejones.cargo.site/)\
 > [Kai Chuang](https://tsng-khai.com/index.html)\

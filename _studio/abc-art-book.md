@@ -21,7 +21,7 @@ images:
 ---
 
 <p>
-  with <a href="https://lihuayu.xyz/">Lihua Yu</a>
+  with <a href="http://imageservice.org/">June Lihua Yu</a>
 </p>
 
 <p>
