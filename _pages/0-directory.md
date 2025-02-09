@@ -43,5 +43,6 @@ recent site updates:
 site to do:
 - blog/writing space
 - more photos from past years
+- a space to toss process materials?
 
 
