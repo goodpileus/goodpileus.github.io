@@ -39,7 +39,7 @@ aidan quinlan
 > [Mariah Barden Jones](http://firstknives.club/)\
 > [nicole killian](http://nylondip.com/)\
 > [Cymru Roberts](https://www.samsonandpress.com/)\
-> [Sam Taylor](https://tohumankind.com/)
+> [Sam Taylor](https://tohumankind.com/)\
 > [lee rae walsh](https://leeraewalsh.com/)\
 > [garrit lichtenberg](https://garrit.net/)\
 > [Julia Dann](https://www.juliadann.com/)\
@@ -48,9 +48,9 @@ aidan quinlan
 > [Rasim Bayramov](https://rasim.run/)\
 > [august neuscheler](http://aneuscheler.info/)\
 > [Mia Navarro](https://www.mianavarro.com/)\
-> [Sam Mullany](https://www.instagram.com/purple_event_park/)
+> [Sam Mullany](https://www.instagram.com/purple_event_park/)\
 > [Matthew Dowdy](https://mattdowdy.online/)\
-> [Liza Pittard](https://lizapittard.com/)
+> [Liza Pittard](https://lizapittard.com/)\
 > [Eric Couture](https://ecouture.net/)\
 > [Laurel Schwulst](https://www.laurel.world/)\
 > [Elliott Cost](https://elliott.computer/)\
