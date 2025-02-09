@@ -32,7 +32,7 @@ recent site updates:
   - [ikoniche.com](https://ikoniche.com/)
   - [theopening.info](https://theopening.info/)
   - [catlit](https://aidanquinlan.net/catlit/)
-  - [we meet, we part poster](studio/#meet-part) (from 2023)
+  - [we meet, we part poster](studio#meet-part) (from 2023)
 - day and night mode -- 6pm local time is lights out
 - updated mobile style
   - i formally acknowledge thumbs
