@@ -34,7 +34,7 @@ aidan quinlan
 > [June Lihua Yu](http://imageservice.org/)\
 > [Chad Greenberg](https://chadgreenberg.net/)\
 > [Zeke Jones](https://zekejones.cargo.site/)\
-> [Kai Chuang](https://tsng-khai.com/index.html)\
+> [Khai Tsng](https://tsng-khai.com/index.html)\
 > [Eric Timothy Carlson](https://www.erictimothycarlson.com/)\
 > [Mariah Barden Jones](http://firstknives.club/)\
 > [nicole killian](http://nylondip.com/)\
