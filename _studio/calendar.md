@@ -7,7 +7,7 @@ slug: "calendar"
 permalink: /studio/:slug
 
 year: '2023+'
-sort-date: '24-99'
+sort-date: '25-99'
 tags: personal
 
 more: true

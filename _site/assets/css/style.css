@@ -362,8 +362,8 @@ body.day {
   color: #4c4247; }
 
 body.night {
-  background: #373337;
-  color: #a1aaa5; }
+  background: #36393a;
+  color: #e1e0d5; }
 
 a {
   color: #3a3e3c; }
@@ -599,7 +599,7 @@ body.night .time-of-day::after {
   padding: 0 2rem; }
 
 .photos .item .caption a {
-  color: #a1aaa5;
+  color: #e1e0d5;
   text-decoration: none;
   border-bottom: 1px solid; }
 
@@ -618,7 +618,7 @@ body.night .time-of-day::after {
   cursor: zoom-out; }
 
 .lightbox-bg {
-  background: #373337;
+  background: #36393a;
   position: fixed;
   top: 0;
   left: 0;
@@ -640,7 +640,7 @@ body.night .time-of-day::after {
   width: 100%;
   max-width: 400px;
   justify-content: space-between;
-  color: #a1aaa5;
+  color: #e1e0d5;
   padding: 0 .5rem;
   pointer-events: none; }
 

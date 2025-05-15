@@ -45,9 +45,6 @@ $(".lightbox-bg").click(function() {
   $("html").css("overflow-y","auto");
 });
 
-
-
-
 // --- lightbox navigation
 $(".img-btn").on('click',function(){
   var id = $(this).attr('id');
