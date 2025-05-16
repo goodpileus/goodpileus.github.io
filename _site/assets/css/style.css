@@ -532,6 +532,15 @@ nav .icon {
   cursor: default;
   flex-shrink: 0; }
 
+.icon svg {
+  width: 13px; }
+
+body.day .sham-svg {
+  fill: #4c4247; }
+
+body.night .sham-svg {
+  fill: #e1e0d5; }
+
 .dropdowns {
   display: flex;
   flex-wrap: wrap;

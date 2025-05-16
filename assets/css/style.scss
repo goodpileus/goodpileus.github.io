@@ -392,6 +392,18 @@ nav .icon {
   flex-shrink: 0;
 }
 
+.icon svg {
+  width:13px;
+}
+
+body.day .sham-svg {
+  fill: $day-text;
+}
+
+body.night .sham-svg {
+  fill: $night-text;
+}
+
 .dropdowns {
   display: flex;
   flex-wrap: wrap;
