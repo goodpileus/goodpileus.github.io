@@ -7,7 +7,8 @@ slug: directory
 permalink: /
 ---
 
-<img src="/assets/img/fallingstars.gif" alt="" title="">
+<img class="header-day" src="/assets/img/knots.gif" alt="" title="">
+<img class="header-night" src="/assets/img/stars-night.gif" alt="" title="">
 
 hello, welcome to my website
 
@@ -22,6 +23,15 @@ at the moment:
 > &mdash;&mdash;
 
 recent site updates:
+
+> (10.22.25)
+{: .fade }
+
+- added projects to [studio](studio):
+  - [delphinenovel.net](https://delphinenovel.net/)
+  - [mound.info](https://mound.info/)
+
+<br>
 
 > (2.7.25)
 {: .fade }

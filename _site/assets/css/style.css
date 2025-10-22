@@ -365,6 +365,18 @@ body.night {
   background: #36393a;
   color: #e1e0d5; }
 
+body.day .header-day,
+body.night .header-night {
+  display: block; }
+
+body.day .header-night,
+body.night .header-day {
+  display: none; }
+
+::selection {
+  background: #f5efa1;
+  color: #4c4247; }
+
 a {
   color: #3a3e3c; }
 

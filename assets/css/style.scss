@@ -116,6 +116,21 @@ body.night {
   color: $night-text;
 }
 
+body.day .header-day,
+body.night .header-night {
+  display: block;
+}
+
+body.day .header-night,
+body.night .header-day {
+  display: none;
+}
+
+::selection {
+  background:#f5efa1;
+  color: $day-text;
+}
+
 // nav, main {
 //   width: 800px !important;
 // }

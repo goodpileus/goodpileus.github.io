@@ -8,7 +8,7 @@ permalink: /studio/:slug
 link: 'https://vynehall.com/'
 
 year: '2025'
-sort-date: '99-02'
+sort-date: '25-02'
 tags: website commission
 
 more: true
