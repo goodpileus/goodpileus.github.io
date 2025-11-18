@@ -33,18 +33,18 @@ aidan quinlan
 > [Ged]({{ site.baseurl }}/ged.html) (my cat)\
 > [June Lihua Yu](http://imageservice.org/)\
 > [Chad Greenberg](https://chadgreenberg.net/)\
-> [Zeke Jones](https://zekejones.cargo.site/)\
+> [Zeke Jones](https://draboffice.com/)\
 > [Khai Tsng](https://tsng-khai.com/index.html)\
 > [Eric Timothy Carlson](https://www.erictimothycarlson.com/)\
-> [Mariah Barden Jones](http://firstknives.club/)\
+> [Mariah Barden Jones](https://seahorsegirl.world/)\
 > [nicole killian](http://nylondip.com/)\
 > [Cymru Roberts](https://www.samsonandpress.com/)\
-> [Sam Taylor](https://tohumankind.com/)\
+> [Sam Taylor](https://eachother.co/#contact)\
 > [lee rae walsh](https://leeraewalsh.com/)\
 > [garrit lichtenberg](https://garrit.net/)\
 > [Julia Dann](https://www.juliadann.com/)\
 > [Huiyu Yang](https://huiyuu.net/)\
-> [Taehee](https://www.taehee.xyz/)\
+> [Taehee](https://index.taehee.xyz/)\
 > [Rasim Bayramov](https://rasim.run/)\
 > [august neuscheler](http://aneuscheler.info/)\
 > [Mia Navarro](https://www.mianavarro.com/)\
@@ -56,13 +56,12 @@ aidan quinlan
 > [Eric Couture](https://ecouture.net/)\
 > [Laurel Schwulst](https://www.laurel.world/)\
 > [Elliott Cost](https://elliott.computer/)\
-> [Taylor Simone](https://www.instagram.com/tay_simones/)\
+> [Taylor Simone](https://taylorsimone.one/)\
 > [Yutong Liu](http://yutongs-portfolio.webflow.io/)\
 > [Feixue Mei](https://feixuemei.info/index.html)\
 > [Chino Amobi](https://www.instagram.com/chinoamobi/)\
 > [Jason S. Wright](http://www.jswrightstudio.net/)\
 > [Bushra Alsughayer](https://bushrasghyr.myportfolio.com/)\
-> [Courtney Odell](https://courtneyiodell.com/)\
 > [agustine zegers](https://agustinezegers.com/)\
 > [Daniel Diasgranados](https://danieldiasgranados.com/)\
 > [Bradley Sinanan](https://bradleysinanan.com/)\
@@ -73,6 +72,7 @@ aidan quinlan
 > [Can Yağız](https://cyagiz.com/)\
 > [Nontsikelelo Mutiti](http://nontsikelelomutiti.com/)\
 > [Andrew Walsh Lister](https://andrew-lister.info/)\
+> Courtney Odell\
 > Corin Hewitt\
 > Roy McKelvey\
 > Lap Le\
