@@ -13,7 +13,6 @@ aidan quinlan
 > \
 > [are.na](https://www.are.na/aidan-quinlan)\
 > [bluesky](https://bsky.app/profile/goodpileus.bsky.social)\
-> [mastodon](https://mastodon.social/@goodpileus)
 
 > archived socials:\
 > [instagram](https://www.instagram.com/goodpileus/)\
@@ -21,9 +20,9 @@ aidan quinlan
 > [flickr](https://www.flickr.com/photos/jollyoldaidan/)
 {: .fade }
 
-> port angeles, wa, usa
+> seattle, wa, usa
 
-> updated: feb 8, 2025
+> updated: feb 25, 2026
 
 > &mdash;&mdash;
 
