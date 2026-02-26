@@ -27,7 +27,7 @@ recent site updates:
 > (02.25.26)
 {: .fade }
 
-- added project to [studio](studio):
+- added project to [studio](studio): 
   - [draboffice.com](https://draboffice.com/)
 
 <br>

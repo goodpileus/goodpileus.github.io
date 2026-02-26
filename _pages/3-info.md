@@ -12,7 +12,7 @@ aidan quinlan
 > aidankquinlan@gmail.com\
 > \
 > [are.na](https://www.are.na/aidan-quinlan)\
-> [bluesky](https://bsky.app/profile/goodpileus.bsky.social)\
+> [bluesky](https://bsky.app/profile/goodpileus.bsky.social)
 
 > archived socials:\
 > [instagram](https://www.instagram.com/goodpileus/)\
