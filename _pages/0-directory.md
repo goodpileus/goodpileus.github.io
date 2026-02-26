@@ -24,10 +24,10 @@ at the moment:
 
 recent site updates:
 
-> (02.25.25)
+> (02.25.26)
 {: .fade }
 
-- added projects to [studio](studio):
+- added project to [studio](studio):
   - [draboffice.com](https://draboffice.com/)
 
 <br>
