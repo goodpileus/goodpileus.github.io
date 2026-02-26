@@ -6,11 +6,11 @@
 
 // welcome messages
 var loadMssg = [
- "hello!",
- "1 sec...",
- "hmmmm...",
- "getting things together...",
- "oh!"
+ ". . .",
+ ". . .",
+ ". . .",
+ ". . .",
+ ". . ."
 ];
 // randomize
 document.getElementById("loading-obj").innerHTML = loadMssg[
@@ -105,9 +105,9 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // ABOUT PANEL ACCORDION
-var about = document.querySelector(".about-button");
+var about = document.querySelector('.about-button');
 var gradient = document.querySelector('.gradient');
-var panel = about.nextElementSibling;
+var panel = document.querySelector('.about-panel');
 
 function openAbout() {
     about.classList.toggle("active");
@@ -171,6 +171,18 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+var topBtn = document.querySelector('.topBtn');
+var footer = document.querySelector('.footer');
+
+topBtn.onmouseover = function(){
+  footer.style.background =  'rgb(251,238,168)';
+};
+
+topBtn.onmouseout = function(){
+  footer.style.background = 'rgb(214,211,207)';
+}
 
 //maintains accessibility when using tabs but hides focus outlines in browsers that always display outlines on click
 $("button").keypress(function() {

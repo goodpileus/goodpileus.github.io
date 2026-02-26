@@ -24,6 +24,14 @@ at the moment:
 
 recent site updates:
 
+> (02.25.25)
+{: .fade }
+
+- added projects to [studio](studio):
+  - [draboffice.com](https://draboffice.com/)
+
+<br>
+
 > (10.22.25)
 {: .fade }
 
@@ -54,5 +62,3 @@ site to do:
 - blog/writing space
 - more photos from past years
 - a space to toss process materials?
-
-

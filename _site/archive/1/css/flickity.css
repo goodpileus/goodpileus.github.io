@@ -59,8 +59,8 @@ https://flickity.metafizzy.co
 .flickity-button:hover {
   /* background: none; */
   cursor: pointer;
-  border-radius: 30%;
-  background: rgb(242, 220, 165);
+  border-radius: 8px;
+  background: white;
 }
 
 .flickity-button:focus {
@@ -80,24 +80,19 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button-icon {
-  fill: rgba(60,60,60,.7);
+  fill: rgba(20,20,20,.7);
 }
 
 .flickity-button:hover .flickity-button-icon{
-  fill: rgba(60, 60, 60, .7);
+  fill: rgba(20, 20, 20, .7);
 }
 
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  /* top: 50%; */
   bottom: -2.5rem;
   width: 1.5rem;
   height: 1.5rem;
-  /* background:red; */
-  /* border-radius: 50%; */
-  /* vertically center */
-  /* transform: translateY(-50%); */
   visibility: hidden;
   z-index: 1;
 }

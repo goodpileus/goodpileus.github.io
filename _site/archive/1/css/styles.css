@@ -3,27 +3,31 @@
 }
 
 :root {
-  --textcolor: rgb(60, 60, 60);
+  --textcolor: rgb(20,20,20);
   --bg: rgb(231, 231, 231);
   --hover: rgb(18, 160, 136);
   --tan: rgb(201, 210, 206);
   --green: rgb(132, 206, 155);
   --yellow: rgb(242, 220, 165);
+  --border: rgba(20,20,20,.6);
 }
 
 ::selection {
   background: rgb(242, 220, 165);
 }
+
 ::-moz-selection {
-  background: rgb(242, 220, 165);
+  /* background: rgb(242, 220, 165); */
+  background:white;
 }
 
 html {
   font-size: 1em;
+  overflow-y: scroll;
 }
 
 body {
-  font-family: 'work sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   line-height: 1.5rem;
   background: var(--bg);
   color: var(--textcolor);
@@ -42,16 +46,17 @@ img {
 a {
   color: var(--textcolor);
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--border);
 }
 
 a:hover {
-  background: var(--yellow);
+  border-bottom: 1px dashed var(--border);
+  /* background: white; */
 }
 
 a:focus {
   outline:none;
-  background: var(--yellow);
+  /* background: white; */
 }
 
 p {
@@ -89,7 +94,7 @@ button {
   font-size:1.13rem;
 }
 
-/* ---------------------------------------------------- */
+/* --- LOADING & WRAPPER ---------------------------------------------------- */
 
 #loading {
   background-color: var(--bg);
@@ -129,35 +134,33 @@ button {
   }
 }
 
-/* .......................HEADER....................... */
+/* --- HEADER --------------------------------------------------------------- */
 
 .head {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 0 1rem .75rem 1rem;
+  padding: 0 1rem 0 1rem;
   background: var(--bg);
   align-items: baseline;
 }
 
 .identity {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.4rem;
-}
-
-.identity a {
-  font-size: 1.4rem;
-  color: var(--textcolor);
-  border-bottom: none;
-}
-
-.identity a:hover {
-  border-bottom: 1px solid black;
+  width:100%;
+  text-align: center;
 }
 
 .description {
-  margin-bottom: 1rem;
+  display: inline;
+  width:100%;
+  text-align: center;
+}
+
+.description p {
+  margin-bottom: 1.75rem;
 }
 
 @media (min-width:800px) {
@@ -170,25 +173,28 @@ button {
   }
   .identity {
     width: 35%;
+    text-align: left;
+    margin-bottom: .75rem;
   }
   .description {
+    text-align: left;
     width: 65%;
     max-width:37rem;
   }
+
+  .description p {
+    display: inline;
+  }
 }
 
-/* .....................END HEADER..................... */
-
-/* ---------------------------------------------------- */
-
-/* ....................MAIN CONTENT.................... */
+/* --- MAIN CONTENT --------------------------------------------------------- */
 
 .main-content {
-  border-bottom: 1px solid var(--textcolor);
+  border-bottom: 1px solid rgba(200,200,200);
   z-index: 1;
 }
 
-/* ..........ACCORDION.......... */
+/* --- ACCORDION ------------------------------------------------------------ */
 
 .accordion {
   position: relative;
@@ -197,11 +203,11 @@ button {
   align-items: baseline;
   color: var(--textcolor);
   background: var(--bg);
-  cursor: crosshair;
-  padding: 1rem;
+  cursor: pointer;
+  padding: 1.5rem 1rem;
   line-height: 1.5rem;
   width: 100%;
-  border-top: 1px solid var(--textcolor);
+  border-top: 1px solid rgba(200,200,200);
   text-align: left;
   transition: background 0.2s;
   -webkit-transition: background 0.2s;
@@ -214,37 +220,27 @@ button {
 }
 
 .accordion:hover {
-  background: rgb(60, 60, 60);
-  background: rgba(60, 60, 60, .2);
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, .3);
 }
 
 .active {
   background: none;
 }
 
-/* plus and minus sign */
-.accordion:after {
-  position: absolute;
-  right: 2rem;
-  font-size: 1.2rem;
-  content: '+';
-}
-
-.active:after {
-  content: "\2013";
-}
-
 .accordion-title {
-  font-family: 'work sans', sans-serif;
-  padding-right: 2rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.13rem;
+  text-align:center;
+  width:100%;
 }
 
 .active .accordion-title span {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--border);
 }
 
 .accordion-date {
-  font-family: 'PT Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: .88rem;
   display: none;
   transition: color 0.2s;
@@ -255,15 +251,15 @@ button {
 
 .active .accordion-date {
   color: rgb(60, 60, 60);
-  color: rgba(60, 60, 60, .3);
+  color: rgba(60, 60, 60, .4);
 }
 
 .accordion-detail {
-  font-family: 'PT Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: .88rem;
   display: none;
   padding-right: .5rem;
-  transition: color 0.3s;
+  transition: color 0.2s;
   -webkit-transition: color 0.2s;
   -moz-transition:  color 0.2s;
   -o-transition:  color 0.2s;
@@ -271,7 +267,7 @@ button {
 
 .active .accordion-detail {
   color: rgb(60, 60, 60);
-  color: rgba(60, 60, 60, .3);
+  color: rgba(60, 60, 60, .4);
 }
 
 /* for the different panel backgrounds */
@@ -296,13 +292,22 @@ button {
   display: block;
 }
 
+/* --- ABOUT BUTTON --------------------------------------------------------- */
+
 .about-button {
-  font-size: 1rem;
+  font-size: .88rem;
+  line-height: .88rem;
+  font-family: "IBM Plex Mono", monospace;
   position: relative;
-  margin: -.5rem;
-  padding: .3rem .5rem .5rem .5rem;
-  border-radius: 40%;
+  /* margin: -.5rem; */
+  margin-bottom:.5rem;
+  padding: .2rem .4rem .3rem .4rem;
+  /* width:100%; */
+  border-radius: 10px;
   background: none;
+  display:inline;
+  background:rgba(255,255,255,.6);
+  /* border:1px solid var(--border); */
   transition: background 0.2s;
   -webkit-transition: background 0.2s;
   -moz-transition:  background 0.2s;
@@ -314,22 +319,23 @@ button {
 }
 
 .about-button:hover {
-  background: var(--yellow);
+  background: rgba(150,150,150,.6);
+  /* border:1px dashed var(--textcolor); */
   cursor: pointer;
 }
 
 .about-button:after {
-  content: 'more';
+  content: '(more)';
   position: relative;
   width: 100%;
   line-height: 1.5rem;
   color: var(--textcolor);
-  border-bottom: 1px solid var(--textcolor);
+  /* border-bottom: 1px solid var(--textcolor); */
   z-index: 1;
 }
 
 .about-button.active:after {
-  content: 'less';
+  content: '(less)';
 }
 
 /* RESPONSIVE ACCORDION */
@@ -337,32 +343,39 @@ button {
   .accordion {
     padding: 1rem 5rem;
   }
+
   .accordion:after {
     right: 5rem;
   }
+
   .accordion-title {
     width: 35%;
+    text-align: left;
   }
+
   .accordion-date {
     display: block;
     width: 10%;
   }
+
   .accordion-detail {
     display: block;
     width: 55%;
   }
+
   .about-button {
-    left: -.5rem;
-    margin-left: 35%;
-  }
-  .about-button::after {
-    line-height: 1.5rem;
+    width:auto;
+    display:inline;
+    border:none;
+    background: none;
+    /* left: -.5rem; */
+    /* margin-left: 35%; */
   }
 }
 
-/* ..........END ACCORDION.......... */
 
-/* ..........PANEL.......... */
+/* --- PANEL ---------------------------------------------------------------- */
+
 .panel {
   display:flex;
   flex-flow: column;
@@ -371,21 +384,17 @@ button {
   max-height: 0;
   overflow: hidden;
   background: var(--tan);
-  transition: max-height 0.5s ease;
-  -webkit-transition: max-height 0.5s ease;
-  -moz-transition:  max-height 0.5s ease;
-  -o-transition:  max-height 0.5s ease;
+  transition: max-height 0.2s;
+  -webkit-transition: max-height 0.2s;
+  -moz-transition:  max-height 0.2s;
+  -o-transition:  max-height 0.2s;
 }
-
-/* .accordion:hover + .panel {
-  max-height: 5rem;
-} */
 
 .no-js .panel {
   max-height: none;
 }
 
-/* large image/ carousel */
+/* large image/carousel */
 .panel-fullImg {
   margin: 1rem 0 0 0;
   width:100%;
@@ -404,25 +413,31 @@ button {
   text-align: center;
   align-self: center;
 }
+
 /* for text in the icon space */
 .panel-inner1 span {
-  border: 1px solid black;
-  padding: .88rem;
-  border-radius: 50%;
+  /* border: 1px solid rgba(20,20,20); */
+  background:rgba(150,150,150,.15);
+  /* color:white; */
+  /* opacity:.7; */
+  padding: .6rem;
+  border-radius: 8px;
 }
+
 /* for larger images in the icon space */
 .panel-inner1 img {
   max-height: 500px;
 }
+
 /* for the icons in the left panel */
 .icon {
   display: none;
 }
+
 .icon img {
   position: relative;
   max-height: 140px;
 }
-
 
 /* right panel */
 .panel-inner2 {
@@ -433,7 +448,6 @@ button {
   align-self: flex-start;
 }
 
-
 /* line break */
 .lineBr {
   margin-top: 1rem;
@@ -442,7 +456,7 @@ button {
   width: 100%;
   height: 2rem;
   text-align: center;
-  font-family: 'PT Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   align-items: center;
 }
 
@@ -456,14 +470,15 @@ button {
   width: 100%;
   height: 1px;
   background: var(--textcolor);
-  opacity: .6;
+  opacity: .2;
 }
 
 .mobile-details {
   text-align: center;
-  font-family: 'PT Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   opacity: .7;
-  margin-bottom: .75rem;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
 }
 
 .panel-spacer {
@@ -477,7 +492,9 @@ button {
   width: 100%;
 }
 
-/* ABOUT */
+
+/* --- ABOUT PANEL ---------------------------------------------------------- */
+
 .about-panel {
   margin-top:1rem;
   padding: 0;
@@ -489,6 +506,9 @@ button {
   flex-flow: row wrap;
   width: 100%;
   order: 2;
+  padding-top: 1.75rem;
+  text-align: center;
+  border-top: 1px solid rgb(200,200,200);
 }
 
 .folio-top {
@@ -503,13 +523,12 @@ button {
 
 .folio-bottom p {
   line-height: 1.3rem;
-  font-family: 'PT Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   opacity: .5;
-  /* margin-bottom: .75rem; */
 }
 
 .about-inner2 {
-  margin-bottom:.75rem;
+  margin-bottom:1.75rem;
   width: 100%;
   order: 1;
 }
@@ -536,11 +555,13 @@ button {
   min-height: 0;
   width: 100%;
   opacity:0;
-  background: linear-gradient(0deg, rgb(255,229,179) 0%, rgb(231,231,231) 90%);
-  transition: opacity .5s ease-in-out, min-height .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out, min-height .5s ease-in-out;
-  -moz-transition:  opacity .5s ease-in-out, min-height .5s ease-in-out;
-  -o-transition:  opacity .5s ease-in-out, min-height .5s ease-in-out;
+  /* background: linear-gradient(0deg, rgb(255,229,179) 0%, rgb(231,231,231) 90%); */
+  background: linear-gradient(0deg, rgb(250,250,250) 0%, rgb(231,231,231) 90%);
+
+  transition: opacity .2s, min-height .2s;
+  -webkit-transition: opacity .2s, min-height .2s;
+  -moz-transition:  opacity .2s, min-height .2s;
+  -o-transition:  opacity .2s, min-height .2s;
 }
 
 .gradient-active {
@@ -548,14 +569,7 @@ button {
   min-height:1.75rem;
 }
 
-.gradient-bottom {
-  min-height: 1.75rem;
-  width: 100%;
-  margin-bottom: 5rem;
-}
-
 /* RESPONSIVE PANEL */
-
 @media (min-width:800px) {
   .panel {
     flex-flow: row;
@@ -588,7 +602,7 @@ button {
   }
 
   .panel-inner2 {
-    max-width: 39rem;
+    max-width: 40rem;
     width: 65%;
   }
 
@@ -599,15 +613,19 @@ button {
   }
 
   .about-inner1 {
+    border-top: none;
     width: 35%;
+    padding-top: 0;
     padding-right: 1rem;
+    text-align: left;
     order: 1;
   }
 
   .about-inner2 {
+    padding-top: 0;
     margin-bottom: 0;
     padding-right: 1rem;
-    max-width: 37rem;
+    max-width: 40rem;
     width: 65%;
     order: 1;
   }
@@ -615,13 +633,14 @@ button {
   .mobile-details {
     display: none;
   }
-  
+
   .panel-spacer {
     display:block;
   }
 }
 
-/* ..........END PANEL.......... */
+
+/* --- JS CHECK ------------------------------------------------------------- */
 
 /* placeholder images if js is disabled */
 .js-checkImg {
@@ -633,7 +652,8 @@ button {
   display:none;
 }
 
-/* ..........CAROUSEL.......... */
+
+/* --- CAROUSEL ------------------------------------------------------------- */
 
 .carousel {
   width: 100%;
@@ -658,7 +678,7 @@ button {
 }
 
 .carousel-status {
-  font-family: 'PT Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   text-align: center;
   margin: 0;
   font-size: .88rem;
@@ -701,58 +721,119 @@ button {
   }
 }
 
-/* ..........END CAROUSEL.......... */
+/* --- FOOTER --------------------------------------------------------------- */
 
-/* ...................END MAIN CONTENT................. */
-
-/* .......................FOOTER....................... */
+.gradient-bottom {
+  min-height: 1.75rem;
+  width: 100%;
+  margin-bottom: 6.5rem;
+}
 
 .footer {
   position: fixed;
   display: flex;
+  /* flex-wrap: wrap; */
   width: 100%;
   bottom: 0;
   padding-left: 1rem;
-  padding-right: 6rem;
+  padding-right: 1rem;
   padding-bottom:.5rem;
   height: 50%;
   background: rgb(214,211,207);
   z-index: -999;
+  transition: background .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition:  background .3s ease-in-out;
+  -o-transition:  background .3s ease-in-out;
 }
 
 .footer ul {
   align-self: flex-end;
+  display:flex;
+  flex-wrap: wrap;
   padding-left: 0;
+  padding-right:0;
+  justify-content: space-between;
+  width:100%;
+  /* border-top:1px solid red; */
 }
 
 .footer li {
-  display: inline-block;
+  /* display: inline-block; */
+  text-align: center;
+  margin-top: 1rem;
+  width:48%;
+}
+
+.footer li .link-out {
+  display:block;
+}
+
+.link-out {
+  line-height: 1.5rem;
+  font-size: .88rem;
+  font-family: "IBM Plex Mono", monospace;
+  padding: .38rem .5rem;
+  border-radius: 10px;
+  background:rgba(255, 255, 255, .6);
+  /* border:1px solid rgba(20,20,20); */
+  border:none;
+  /* opacity:.6; */
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+  -moz-transition:  background 0.2s;
+  -o-transition:  background 0.2s;
+}
+
+.link-out:hover {
+  background:rgba(150, 150, 150, .6);
+  border:none;
 }
 
 .topBtn {
   position: absolute;
-  width:20px;
-  height: 20px;
-  bottom: 1.3rem;
+  width:28px;
+  height: 28px;
+  bottom: 1.1rem;
   right: 1.7rem;
+  display:none;
 
-  animation:spin 7s linear infinite;
+  /* animation:spin 7s linear infinite;
   -webkit-animation:spin 7s linear infinite;
-  -moz-animation:spin 7s linear infinite;
+  -moz-animation:spin 7s linear infinite; */
 }
 
 #topBtn-img {
   position: absolute;
   top:0;
-  background: url('../img/flower.svg');
-  width:20px;
-  height:20px;
+  background: url('../img/lamp.svg');
+  width:28px;
+  transition: opacity .3s ease-in-out;
+  height:28px;
 }
 
 #topBtn-img:hover {
-  background: url('../img/flower_hover.svg');
-  width: 20px;
-  height: 20px;
+  opacity:.8;
+}
+
+.top-text {
+  position: absolute;
+  text-align: center;
+  width:28px;
+  opacity:0;
+  pointer-events: none;
+  /* top:-1.6rem; */
+  /* top:0; */
+  transform:translateY(-1.6rem);
+  transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition:  opacity .3s ease-in-out;
+  -o-transition:  opacity .3s ease-in-out;
+}
+
+.topBtn:hover .top-text{
+  opacity:.8;
+  /* transform: translateY(-1.5rem); */
 }
 
 .topBtn a {
@@ -771,15 +852,30 @@ button {
 @media (min-width:800px) {
   .footer {
     padding-left: 5rem;
+    padding-right: 5rem;
   }
+
   .topBtn {
+    display:block;
     right: 4.7rem;
+  }
+
+  .footer ul {
+    justify-content: flex-start;
+  }
+
+  .footer li {
+    text-align: left;
+    width:auto;
+    padding-right:.5rem;
+  }
+
+  .footer li .link-out {
+    display:inline;
   }
 }
 
-/* .....................END FOOTER..................... */
-
-/* .....................BG COLORS...................... */
+/* --- BG COLORS ------------------------------------------------------------ */
 
 .bgEmpire {
   background: rgb(221, 221, 211);
@@ -822,7 +918,7 @@ button {
 }
 
 .bgAuden {
-  background: rgb(255, 252, 229);
+  background: rgb(235,232,210);
 }
 
 .bgBungalow {
