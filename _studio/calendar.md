@@ -6,8 +6,8 @@ title:  "calendar"
 slug: "calendar"
 permalink: /studio/:slug
 
-year: '2023+'
-sort-date: '25-99'
+year: '2023-24'
+sort-date: '25'
 tags: personal
 
 more: true
@@ -40,7 +40,7 @@ images:
 ---
 
 <p>small print-at-home calendar</p>
-<p>taking a brief break... i intend to resume soon.</p>
+<p>taking a brief break... i intend to resume in the future.</p>
 <p>in the meantime, i have blank-slate collections of the past years below. these are intentionally smaller than 8.5x11 and intended to be cut out with ruler and knife, but can work fine if left as is. so long as you don't mind crop marks!</p>
 <p>2024: 
     <a target="_blank" href="/studio/img/calendar/24_blank.pdf">blank-slate</a>

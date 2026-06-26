@@ -24,6 +24,13 @@ at the moment:
 
 recent site updates:
 
+> (06.25.26)
+{: .fade }
+
+- added [sophieseita.com](https://www.sophieseita.com/) to [studio](studio)
+
+<br>
+
 > (02.25.26)
 {: .fade }
 
@@ -58,7 +65,6 @@ recent site updates:
 
 > &mdash;&mdash;
 
-site to do:
+to do:
 - blog/writing space
 - more photos from past years
-- a space to toss process materials?

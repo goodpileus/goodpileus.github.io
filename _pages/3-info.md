@@ -22,7 +22,7 @@ aidan quinlan
 
 > seattle, wa, usa
 
-> updated: feb 25, 2026
+> updated: jun 25, 2026
 
 > &mdash;&mdash;
 
@@ -95,5 +95,6 @@ previous versions of this site:
 
 > &mdash;&mdash;
 
-this site is hosted on [github](https://github.com/) and assembled by [jekyll](https://jekyllrb.com/)\
+written and tended by hand since 2017, no llm was used. fuck the [poisoned models](https://www.are.na/aidan-quinlan/poisoned-models)\
+hosted on [github](https://github.com/) and assembled by [jekyll](https://jekyllrb.com/) (working to migrate from here...)\
 set in [QT letter goth](https://tug.org/FontCatalogue/qtlettergoth/)

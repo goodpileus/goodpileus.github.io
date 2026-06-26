@@ -15,5 +15,5 @@ more: true
 
 ---
 <p>
-  an online cross-section of <a href="http://aneuscheler.info/">august neuscheler's</a> design and fabrication house, Mound.
+  an online cross-section of <a href="http://aneuscheler.info/">august neuscheler's</a> design and fabrication house, Mound
 </p>
