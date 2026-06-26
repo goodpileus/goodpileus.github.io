@@ -95,6 +95,6 @@ previous versions of this site:
 
 > &mdash;&mdash;
 
-written and tended by hand since 2017, no llm was used. fuck the [poisoned models](https://www.are.na/aidan-quinlan/poisoned-models)\
+written and tended by hand since 2017, no llm has been used. i do not trust the [poisoned models](https://www.are.na/aidan-quinlan/poisoned-models)\
 hosted on [github](https://github.com/) and assembled by [jekyll](https://jekyllrb.com/) (working to migrate from here...)\
 set in [QT letter goth](https://tug.org/FontCatalogue/qtlettergoth/)

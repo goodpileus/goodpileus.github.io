@@ -27,15 +27,16 @@ recent site updates:
 > (06.25.26)
 {: .fade }
 
-- added [sophieseita.com](https://www.sophieseita.com/) to [studio](studio)
+- added projects to [studio](studio):
+  - [sophieseita.com](https://www.sophieseita.com/)
+  - [didempekun.com](https://www.didempekun.com/)
 
 <br>
 
 > (02.25.26)
 {: .fade }
 
-- added project to [studio](studio): 
-  - [draboffice.com](https://draboffice.com/)
+- added [draboffice.com](https://draboffice.com/) to [studio](studio)
 
 <br>
 
