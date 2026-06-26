@@ -95,6 +95,7 @@ previous versions of this site:
 
 > &mdash;&mdash;
 
-designed, written, and tended by hand since 2017, no llm has been used. i do not trust the [poisoned models](https://www.are.na/aidan-quinlan/poisoned-models). this is a branch that needs to be aggressively pruned\
+designed, written, and tended by hand since 2017, no llm has been used. i do not trust the [poisoned models](https://www.are.na/aidan-quinlan/poisoned-models). this is a branch that needs to be aggressively pruned.
+
 hosted on [github](https://github.com/) and assembled by [jekyll](https://jekyllrb.com/) (working to migrate from here...)\
 set in [QT letter goth](https://tug.org/FontCatalogue/qtlettergoth/)
