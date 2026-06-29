@@ -38,14 +38,15 @@ aidan quinlan
 > [Mariah Barden Jones](https://seahorsegirl.world/)\
 > [nicole killian](http://nylondip.com/)\
 > [Cymru Roberts](https://www.samsonandpress.com/)\
+> [august neuscheler](http://aneuscheler.info/)\
 > [Sam Taylor](https://eachother.co/#contact)\
 > [lee rae walsh](https://leeraewalsh.com/)\
 > [garrit lichtenberg](https://garrit.net/)\
 > [Julia Dann](https://www.juliadann.com/)\
 > [Huiyu Yang](https://huiyuu.net/)\
 > [Taehee](https://index.taehee.xyz/)\
+> [Herdimas Anggara](https://ritual.engineer/)\
 > [Rasim Bayramov](https://rasim.run/)\
-> [august neuscheler](http://aneuscheler.info/)\
 > [Mia Navarro](https://www.mianavarro.com/)\
 > [Lauren Thorsen](https://laurenthorson.com/)\
 > [Emily Sara](https://emily-sara.com/)\
@@ -95,7 +96,7 @@ previous versions of this site:
 
 > &mdash;&mdash;
 
-designed, written, and tended by hand since 2017, no llm has been used. i do not trust the [poisoned models](https://www.are.na/aidan-quinlan/poisoned-models). this is a branch that needs to be aggressively pruned.
+designed, written, and tended by hand since 2017. no llm has been used. i do not trust the [poisoned models](https://www.are.na/aidan-quinlan/poisoned-models). this is a branch that needs to be aggressively pruned.
 
 hosted on [github](https://github.com/) and assembled by [jekyll](https://jekyllrb.com/) (working to migrate from here...)\
 set in [QT letter goth](https://tug.org/FontCatalogue/qtlettergoth/)
