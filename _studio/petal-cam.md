@@ -17,4 +17,4 @@ images:
   - path: /studio/img/petal-cam/petal-cam2.png
 ---
 
-<p>poster for <a href="https://foil-music.bandcamp.com)">FOIL</a></p>
+<p>poster for <a href="https://foil-music.bandcamp.com">FOIL</a></p>
